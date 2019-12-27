@@ -1,0 +1,466 @@
+body {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.chart-container {
+  background-color: #f4f9fc;
+  margin: 0 auto;
+  position: relative;
+  display: table;
+  width: 100%;
+  font-size: 0;
+}
+.chart-container:after {
+  content: '';
+  display: table;
+  width: 100%;
+  height: 0;
+  clear: both;
+}
+.chart-container .cc-left,
+.chart-container .cc-right{
+  display: table-cell;
+  width: 50%;
+}
+.chart-container .cc-right {
+  min-height: 552px;
+}
+.chart-container .cc-left {
+  padding-right: 10px;
+}
+.chart-container .cc-left .user-info {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  position: relative;
+  margin-bottom: 10px;
+  padding: 0 15px;
+}
+.chart-container .cc-left .user-info:after {
+  content: '';
+  display: table;
+  width: 100%;
+  height: 0;
+  clear: both;
+}
+.chart-container .cc-left .user-info .img-wrapper {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 6px 0;
+  overflow: hidden;
+}
+.chart-container .cc-left .user-info .img-wrapper img {
+  max-width: 100%;
+}
+.chart-container .cc-left .user-info .total-learn-times {
+  position: absolute;
+  padding: 10px 15px;
+  background-color: #efeff4;
+  right: 15px;
+  left: 75px;
+  margin: 10px 0;
+}
+.chart-container .cc-left .user-info .total-learn-times:before {
+  content: '';
+  position: absolute;
+  border: 8px solid transparent;
+  border-right-color: #efeff4;
+  left: -16px;
+  top: 12px;
+}
+.chart-container .cc-left .user-info .total-learn-times .txt {
+  font-family: PingFangSC-Regular;
+  font-size: 15px;
+  color: #000;
+  letter-spacing: 0;
+  text-align: left;
+}
+.chart-container .cc-left .time-rate {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  min-height: 700px;
+  position: relative;
+}
+.chart-container .cc-left .time-rate:before {
+  content: attr(data-before);
+  font-family: PingFangSC-Medium;
+  font-size: 18px;
+  color: #000;
+  display: block;
+  padding: 7px 15px;
+}
+.chart-container .cc-left .time-rate .tabs {
+  padding: 0 15px;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-header {
+  position: relative;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-header:after {
+  content: '';
+  display: table;
+  width: 100%;
+  height: 0;
+  clear: both;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-header .time-switch {
+  float: left;
+  background-color: #fff;
+  width: 160px;
+  border-radius: 4px;
+  border: 1px solid #666;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-header .time-switch ul {
+  font-size: 0;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-header .time-switch ul li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 12px;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-header .time-switch ul li .txt {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #666;
+  letter-spacing: 0;
+  text-align: center;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-header .time-switch ul li.active {
+  background-color: #666;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-header .time-switch ul li.active .txt {
+  color: #fff;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch {
+  float: right;
+  width: 242px;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch .ds-week,
+.chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch .ds-month {
+  position: relative;
+  text-align: center;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch .ds-week:after,
+.chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch .ds-month:after {
+  content: '';
+  display: table;
+  width: 100%;
+  height: 0;
+  clear: both;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch .ds-week .btn-prev,
+.chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch .ds-month .btn-prev,
+.chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch .ds-week .btn-next,
+.chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch .ds-month .btn-next {
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch .ds-week .btn-prev.disabled,
+.chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch .ds-month .btn-prev.disabled,
+.chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch .ds-week .btn-next.disabled,
+.chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch .ds-month .btn-next.disabled {
+  cursor: default;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch .ds-week .btn-prev,
+.chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch .ds-month .btn-prev {
+  float: left;
+  background: url("../../images/wespeak/arrow_left.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch .ds-week .btn-next,
+.chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch .ds-month .btn-next {
+  float: right;
+  background: url("../../images/wespeak/arrow_right.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch .ds-week .btn-prev.disabled,
+.chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch .ds-month .btn-prev.disabled {
+  float: left;
+  background: url("../../images/wespeak/arrow_left_disabled.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch .ds-week .btn-next.disabled,
+.chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch .ds-month .btn-next.disabled {
+  float: right;
+  background: url("../../images/wespeak/arrow_right_disabled.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch .ds-week .txt,
+.chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch .ds-month .txt {
+  font-family: PingFangSC-Medium;
+  font-size: 14px;
+  color: #17b6fe;
+  letter-spacing: 0;
+  text-align: center;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch .ds-month {
+  display: none;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-body .week-wrapper,
+.chart-container .cc-left .time-rate .tabs .tabs-body .month-wrapper {
+  position: relative;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-body .week-wrapper .timeline-wrapper,
+.chart-container .cc-left .time-rate .tabs .tabs-body .month-wrapper .timeline-wrapper {
+  position: absolute;
+  width: 400px;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-body .week-wrapper .timeline-wrapper .txt-time,
+.chart-container .cc-left .time-rate .tabs .tabs-body .month-wrapper .timeline-wrapper .txt-time {
+  display: block;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #999;
+  letter-spacing: 0;
+  text-align: left;
+  position: relative;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-body .week-wrapper .timeline-wrapper .txt-time:after,
+.chart-container .cc-left .time-rate .tabs .tabs-body .month-wrapper .timeline-wrapper .txt-time:after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  border-top: 1px dashed #666;
+  right: -8px;
+  left: 40px;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-body .week-wrapper .timeline-wrapper .txt-time:first-child,
+.chart-container .cc-left .time-rate .tabs .tabs-body .month-wrapper .timeline-wrapper .txt-time:first-child {
+  margin-top: 22px;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-body .week-wrapper .timeline-wrapper .txt-time:first-child + .txt-time,
+.chart-container .cc-left .time-rate .tabs .tabs-body .month-wrapper .timeline-wrapper .txt-time:first-child + .txt-time {
+  margin-top: 29px;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-body .week-wrapper .progress-wrapper,
+.chart-container .cc-left .time-rate .tabs .tabs-body .month-wrapper .progress-wrapper {
+  width: 364px;
+  margin-left: 45px;
+  margin-top: 15px;
+  font-size: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-body .week-wrapper .progress-wrapper .progress-item,
+.chart-container .cc-left .time-rate .tabs .tabs-body .month-wrapper .progress-wrapper .progress-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 28px;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-body .week-wrapper .progress-wrapper .progress-item .txt-time,
+.chart-container .cc-left .time-rate .tabs .tabs-body .month-wrapper .progress-wrapper .progress-item .txt-time {
+  display: block;
+  margin-bottom: 4px;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-body .week-wrapper .progress-wrapper .progress-item .progress,
+.chart-container .cc-left .time-rate .tabs .tabs-body .month-wrapper .progress-wrapper .progress-item .progress {
+  width: 10px;
+  height: 100px;
+  border-radius: 6px;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  position: relative;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-body .week-wrapper .progress-wrapper .progress-item .progress .progress-bar,
+.chart-container .cc-left .time-rate .tabs .tabs-body .month-wrapper .progress-wrapper .progress-item .progress .progress-bar {
+  width: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 6px;
+  font-size: 0;
+  background-color: #ea3eb8;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-body .week-wrapper .progress-wrapper .progress-item .progress.red .progress-bar {
+  background-color: #ea3eb8;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-body .week-wrapper .progress-wrapper .progress-item .progress.blue .progress-bar {
+  background-color: #abcef5;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-body .week-wrapper .progress-wrapper .progress-item .progress.orange .progress-bar {
+  background-color: orange;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-body .week-wrapper .total-wrapper,
+.chart-container .cc-left .time-rate .tabs .tabs-body .month-wrapper .total-wrapper {
+  text-align: center;
+  position: relative;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-body .week-wrapper .total-wrapper:after,
+.chart-container .cc-left .time-rate .tabs .tabs-body .month-wrapper .total-wrapper:after {
+  content: '';
+  display: table;
+  width: 100%;
+  height: 0;
+  clear: both;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-body .week-wrapper .total-wrapper .txt-date,
+.chart-container .cc-left .time-rate .tabs .tabs-body .month-wrapper .total-wrapper .txt-date,
+.chart-container .cc-left .time-rate .tabs .tabs-body .week-wrapper .total-wrapper .btn-view,
+.chart-container .cc-left .time-rate .tabs .tabs-body .month-wrapper .total-wrapper .btn-view {
+  position: absolute;
+  bottom: 10px;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-body .week-wrapper .total-wrapper .txt-date,
+.chart-container .cc-left .time-rate .tabs .tabs-body .month-wrapper .total-wrapper .txt-date {
+  left: 0;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #666;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-body .week-wrapper .total-wrapper .btn-view,
+.chart-container .cc-left .time-rate .tabs .tabs-body .month-wrapper .total-wrapper .btn-view {
+  right: 0;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #999;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-body .week-wrapper .total-wrapper .txt-time,
+.chart-container .cc-left .time-rate .tabs .tabs-body .month-wrapper .total-wrapper .txt-time {
+  font-family: PingFangSC-Medium;
+  font-size: 40px;
+  color: #060606;
+  letter-spacing: 0;
+  text-align: center;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-body .week-wrapper .total-wrapper .txt-time:after,
+.chart-container .cc-left .time-rate .tabs .tabs-body .month-wrapper .total-wrapper .txt-time:after {
+  content: attr(data-after);
+  font-size: 12px;
+  color: #999;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-body .week-wrapper .appraise .txt,
+.chart-container .cc-left .time-rate .tabs .tabs-body .month-wrapper .appraise .txt {
+  font-family: PingFangSC-Regular;
+  font-size: 15px;
+  color: #333;
+}
+.chart-container .cc-left .time-rate .tabs .tabs-body .month-wrapper {
+  display: none;
+}
+.chart-container .cc-right {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  padding: 18px;
+}
+.chart-container .cc-right .txt-header {
+  margin-bottom: 8px;
+}
+.chart-container .cc-right .txt-header .txt {
+  font-family: PingFangSC-Medium;
+  font-size: 12px;
+  color: #999;
+  margin: 0;
+}
+.chart-container .cc-right .txt-header .txt:before {
+  content: attr(data-before);
+  font-size: 18px;
+  color: #000;
+}
+.chart-container .cc-right .carousel-wrapper .pie-carousel {
+  min-height: 245px;
+  position: relative;
+}
+.chart-container .cc-right .carousel-wrapper .pie-carousel .carousel li {
+  width: 438px;
+  height: 230px;
+  margin: 0 auto;
+  display: none;
+}
+.chart-container .cc-right .carousel-wrapper .pie-carousel .carousel li:first-child {
+  display: block;
+}
+.chart-container .cc-right .carousel-wrapper .pie-carousel .dot-lists {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.chart-container .cc-right .carousel-wrapper .pie-carousel .dot-lists ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 3px;
+}
+.chart-container .cc-right .carousel-wrapper .pie-carousel .dot-lists ul li .dot {
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+.chart-container .cc-right .carousel-wrapper .pie-carousel .dot-lists ul li.active .dot {
+  background-color: #666;
+}
+.chart-container .cc-right .carousel-wrapper .pie-carousel .btn-group {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 148px;
+  top: 50%;
+  margin-top: -74px;
+}
+.chart-container .cc-right .carousel-wrapper .pie-carousel .btn-group .btn.btn-prev,
+.chart-container .cc-right .carousel-wrapper .pie-carousel .btn-group .btn.btn-next {
+  position: absolute;
+  width: 48px;
+  height: 148px;
+  font-size: 0;
+}
+.chart-container .cc-right .carousel-wrapper .pie-carousel .btn-group .btn.btn-prev {
+  left: 0;
+  background: url("../../images/wespeak/btn-prev.png") no-repeat;
+}
+.chart-container .cc-right .carousel-wrapper .pie-carousel .btn-group .btn.btn-next {
+  right: 0;
+  background: url("../../images/wespeak/btn-next.png") no-repeat;
+}
+.chart-container .cc-right .carousel-wrapper .txt {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #666;
+}
+.chart-container .cc-right .total-times {
+  text-align: center;
+}
+.chart-container .cc-right .total-times .txt {
+  font-family: PingFangSC-Medium;
+  font-size: 18px;
+  color: #000;
+  margin: 0;
+}
+.chart-container .cc-right .total-times .txt:after {
+  content: attr(data-after);
+  color: #999;
+  font-size: 12px;
+}
+.chart-container .cc-right .appraise .txt {
+  font-family: PingFangSC-Regular;
+  font-size: 15px;
+  color: #333;
+}
+@media (max-width: 900px) {
+  .chart-container .cc-right .carousel-wrapper .pie-carousel .carousel li {
+    width: 410px;
+  }
+  .chart-container .cc-left .time-rate .tabs .tabs-header .duration-switch {
+    width: 230px;
+  }
+}

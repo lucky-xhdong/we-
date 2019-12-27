@@ -1,0 +1,33 @@
+/* background-color start */
+/* background-color end */
+/* border-color start */
+/* border-color end */
+/* button start */
+/* button end */
+/* color start */
+/* color end */
+/* font-family start */
+/* font-family end */
+.commonModal input.error,
+.form-validate input.error,
+.commonModal textarea.error,
+.form-validate textarea.error,
+.commonModal select.error,
+.form-validate select.error {
+  border: 1px solid #f00;
+}
+.commonModal input.error:focus,
+.form-validate input.error:focus,
+.commonModal textarea.error:focus,
+.form-validate textarea.error:focus,
+.commonModal select.error:focus,
+.form-validate select.error:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+}
+.commonModal label.error,
+.form-validate label.error {
+  margin-left: 10px;
+  width: auto;
+  display: inline;
+  color: #f00;
+}

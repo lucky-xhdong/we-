@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.teacher-list-container {
+  background-color: #f4f9fc;
+  width: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.teacher-list-container .tlc-handle-group {
+  background-color: #fff;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+  margin: 20px 40px;
+  padding: 0 25px;
+  display: flex;
+}
+.teacher-list-container .tlc-handle-group .tlc-tabs {
+  flex: 1;
+}
+.teacher-list-container .tlc-handle-group .tlc-tabs ul {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+.teacher-list-container .tlc-handle-group .tlc-tabs ul li {
+  display: inline-block;
+  vertical-align: middle;
+  list-style: none;
+  width: 32%;
+  padding: 0 10px;
+  line-height: 44px;
+  text-align: center;
+}
+.teacher-list-container .tlc-handle-group .tlc-tabs ul li .txt {
+  font-size: 14px;
+  color: #999;
+  text-decoration: none;
+}
+.teacher-list-container .tlc-handle-group .tlc-tabs ul li:hover .txt,
+.teacher-list-container .tlc-handle-group .tlc-tabs ul li.active .txt {
+  color: #17b6fe;
+}
+.teacher-list-container .tlc-handle-group .search-group {
+  flex: 0 0 25%;
+  position: relative;
+  padding: 7px 0;
+}
+.teacher-list-container .tlc-handle-group .search-group .form-control {
+  border: none;
+  outline: none;
+  padding: 5px 25px 5px 10px;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+}
+.teacher-list-container .tlc-handle-group .search-group .btn-search {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  outline: none;
+  background: url("../../images/icon-search.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.teacher-list-container .tlc-members {
+  margin: 20px 40px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+}
+.teacher-list-container .tlc-members ul {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+.teacher-list-container .tlc-members ul li {
+  list-style: none;
+  width: 50%;
+  display: inline-block;
+  height: 120px;
+  overflow: hidden;
+  background-color: #fff;
+  border-bottom: 1px solid #f7f7f7;
+}
+.teacher-list-container .tlc-members ul li:nth-child(even) .tlc-members_inner {
+  border-left: 1px solid #f7f7f7;
+}
+.teacher-list-container .tlc-members ul li .tlc-members_inner {
+  display: flex;
+  padding: 0 12px;
+}
+.teacher-list-container .tlc-members ul li .tlc-members_inner .index {
+  flex: 0 0 40px;
+  margin: 40px 0;
+  text-align: center;
+}
+.teacher-list-container .tlc-members ul li .tlc-members_inner .index .txt {
+  line-height: 42px;
+  font-size: 30px;
+  color: #666;
+}
+.teacher-list-container .tlc-members ul li .tlc-members_inner .img-group {
+  height: 80px;
+  flex: 0 0 80px;
+  margin: 20px 0;
+}
+.teacher-list-container .tlc-members ul li .tlc-members_inner .img-group .avatar {
+  max-width: 100%;
+}
+.teacher-list-container .tlc-members ul li .tlc-members_inner .txt-group {
+  flex: 1;
+  overflow: hidden;
+}
+.teacher-list-container .tlc-members ul li .tlc-members_inner .txt-group .title {
+  font-size: 16px;
+  color: #333;
+  margin: 18px 25px 9px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.teacher-list-container .tlc-members ul li .tlc-members_inner .txt-group .total {
+  display: flex;
+}
+.teacher-list-container .tlc-members ul li .tlc-members_inner .txt-group .total .txt-time,
+.teacher-list-container .tlc-members ul li .tlc-members_inner .txt-group .total .txt-score,
+.teacher-list-container .tlc-members ul li .tlc-members_inner .txt-group .total .txt-days {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  margin-top: 28px;
+}
+.teacher-list-container .tlc-members ul li .tlc-members_inner .txt-group .total .txt-time:before,
+.teacher-list-container .tlc-members ul li .tlc-members_inner .txt-group .total .txt-score:before,
+.teacher-list-container .tlc-members ul li .tlc-members_inner .txt-group .total .txt-days:before {
+  content: attr(data-before);
+  position: absolute;
+  top: -28px;
+  font-size: 12px;
+  color: #999;
+  line-height: 28px;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+.teacher-list-container .tlc-members ul li .tlc-members_inner .txt-group .total .txt-time:after,
+.teacher-list-container .tlc-members ul li .tlc-members_inner .txt-group .total .txt-score:after,
+.teacher-list-container .tlc-members ul li .tlc-members_inner .txt-group .total .txt-days:after {
+  content: attr(data-after);
+  font-size: 12px;
+  color: #333;
+}
+.teacher-list-container .tlc-members ul li .tlc-members_inner .txt-group .total .txt-time.active,
+.teacher-list-container .tlc-members ul li .tlc-members_inner .txt-group .total .txt-score.active,
+.teacher-list-container .tlc-members ul li .tlc-members_inner .txt-group .total .txt-days.active {
+  color: #63cbfc;
+}
+.teacher-list-container .tlc-members ul li .tlc-members_inner .txt-group .total .txt-time.active:after,
+.teacher-list-container .tlc-members ul li .tlc-members_inner .txt-group .total .txt-score.active:after,
+.teacher-list-container .tlc-members ul li .tlc-members_inner .txt-group .total .txt-days.active:after {
+  color: #63cbfc;
+}
+.teacher-list-container .tlc-members ul li .tlc-members_inner .txt-group .total .txt-time,
+.teacher-list-container .tlc-members ul li .tlc-members_inner .txt-group .total .txt-score {
+  border-right: 1px solid #d8d8d8;
+}
+@media (max-width: 667px) {
+  .teacher-list-container .tlc-handle-group {
+    display: block;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+    margin: 10px 20px;
+    padding: 0 15px;
+  }
+  .teacher-list-container .tlc-members {
+    margin: 10px 20px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+  }
+  .teacher-list-container .tlc-members ul li {
+    width: 100%;
+    display: block;
+  }
+  .teacher-list-container .tlc-members ul li .tlc-members_inner {
+    padding: 0 5px;
+  }
+}
+@media (max-width: 480px) {
+  .teacher-list-container .tlc-handle-group .tlc-tabs {
+    padding-top: 15px;
+  }
+  .teacher-list-container .tlc-handle-group .tlc-tabs ul li {
+    line-height: 22px;
+  }
+  .teacher-list-container .tlc-members ul li {
+    height: 100px;
+  }
+  .teacher-list-container .tlc-members ul li .tlc-members_inner .index {
+    margin: 30px 0;
+    flex: 0 0 20px;
+  }
+  .teacher-list-container .tlc-members ul li .tlc-members_inner .index .txt {
+    font-size: 18px;
+  }
+  .teacher-list-container .tlc-members ul li .tlc-members_inner .img-group {
+    flex: 0 0 60px;
+    height: 60px;
+  }
+  .teacher-list-container .tlc-members ul li .tlc-members_inner .txt-group .title {
+    margin: 12px 10px 4px;
+  }
+}

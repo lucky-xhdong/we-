@@ -1,0 +1,21 @@
+/* background-color start */
+/* background-color end */
+/* border-color start */
+/* border-color end */
+/* button start */
+/* button end */
+/* color start */
+/* color end */
+/* font-family start */
+/* font-family end */
+.common-breadcrumb .breadcrumb {
+  border-radius: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+}
+.common-breadcrumb .breadcrumb .breadcrumb-item a {
+  color: #666;
+}
+.common-breadcrumb .breadcrumb .breadcrumb-item + .breadcrumb-item:before {
+  content: '>';
+}

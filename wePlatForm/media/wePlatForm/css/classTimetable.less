@@ -1,0 +1,486 @@
+@import "variable";
+.ClassTimetable {
+  width: auto;
+  margin: 0 auto;
+  font-size: 14px;
+  > .row {
+    min-height: 956px;
+  }
+  .ct--main-wrapper {
+    padding:0;
+    background-color: @background-color7;
+    .ct--main__content {
+      overflow: hidden;
+      margin: 0 15px 10px;
+      > div > .select-group {
+        margin-bottom: 15px;
+      }
+
+      .choose-date {
+        margin-bottom: 15px;
+        background-color: @background-color;
+        &:before {
+          content: attr(data-before);
+          display: block;
+          font-size: 14px;
+          color: @color3;
+          padding: 10px 15px;
+          background-color: @background-color8;
+        }
+        .form-row {
+          margin: 10px 15px;
+          position: relative;
+          white-space: nowrap;
+          &:before {
+            content: attr(data-before);
+            font-size: 14px;
+            color: #666;
+            width: 70px;
+            line-height:30px;
+            text-align: right;
+            display: inline-block;
+            vertical-align: middle;
+          }
+          ._input-date-group {
+            display: flex;
+            line-height:30px;
+          }
+          .form-control {
+          }
+        }
+        .btn-group {
+          text-align: center;
+          display: block;
+          padding-bottom: 10px;
+          .btn-confirm {
+            display: inline-block;
+            margin:0 10px;
+            width: 100px;
+            text-align: center;
+            border-radius: 0;
+            padding:5px 12px;
+            color: @color;
+            border: 1px solid @button-color;
+            background-color: @button-color;
+            &:hover {
+              text-decoration: none;
+              color: @color2;
+              background-color: @button-color2;
+            }
+          }
+        }
+      }
+      .ct--main__basic, .ct--main__appraise, .ct--main__score, .ct--main__suggest {
+        border-radius: 0;
+        border-color: transparent;
+        margin-bottom: 15px;
+        .card-header {
+          margin:-1px;
+          padding: 0;
+          border-radius: 0;
+          border-bottom:0;
+          background-color: @background-color8;
+          h5 {
+            height: 48px;
+            line-height: 44px;
+            .btn-link {
+              width:100%;
+              text-align: left;
+              font-size: 14px;
+              color: @color4;
+              padding:11px 10px;
+              &:hover {
+                text-decoration: none;
+              }
+              .icon {
+                float: right;
+                font-size: 12px;
+                color: @color10;
+                margin:4px 0;
+                -webkit-transition: all .2s ease-in .1s;
+                -moz-transition: all .2s ease-in .1s;
+                -ms-transition: all .2s ease-in .1s;
+                -o-transition: all .2s ease-in .1s;
+                transition: all .2s ease-in .1s;
+                -webkit-transform: scale(.5);
+                -moz-transform: scale(.5);
+                -ms-transform: scale(.5);
+                -o-transform: scale(.5);
+                transform: scale(.5);
+              }
+            }
+          }
+          &:hover {
+            h5 {
+              .btn-link {
+                .icon {
+                  -webkit-transform: rotate(180deg) scale(.5);
+                  -moz-transform: rotate(180deg) scale(.5);
+                  -ms-transform: rotate(180deg) scale(.5);
+                  -o-transform: rotate(180deg) scale(.5);
+                  transform: rotate(180deg) scale(.5);
+                }
+              }
+            }
+          }
+        }
+      }
+      .ct--main__basic {
+        .card-body {
+          .ct--main__basic_item {
+            text-align: left;
+            min-height: 30px;
+            line-height: 30px;
+            color: @color3;
+            font-size: 14px;
+            &:before {
+              content: attr(data-before);
+              display: inline-block;
+              width: 200px;
+              text-align: right;
+              color: @color3;
+            }
+          }
+        }
+      }
+      .ct--main__appraise {
+        .card-body {
+          .table-group {
+            .table {
+              position: relative;
+              margin-bottom:0;
+              &:before {
+                content: attr(data-before);
+                position: absolute;
+                width: 80px;
+                height:100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: @color;
+                left:0;
+                top:0;
+              }
+              &.table-teacher {
+                &:before {
+                  background-color: @background-color5;
+                }
+              }
+              &.table-student {
+                &:before {
+                  background-color: @background-color6;
+                }
+              }
+              tbody {
+                tr {
+                  th {
+                    text-align: right;
+                    width: 40%;
+                    span {
+                      line-height: 30px;
+                      font-weight: lighter;
+                      font-size: 14px;
+                    }
+                  }
+                  td {
+                    vertical-align: middle;
+                  }
+                }
+              }
+            }
+            .btn-group {
+              text-align: center;
+              display: block;
+              margin-bottom: 10px;
+              .btn-save, .btn-submit {
+                display: inline-block;
+                margin:0 10px;
+                width: 100px;
+                text-align: center;
+                border-radius: 0;
+                padding:5px 12px;
+              }
+              .btn-save {
+                color: @color;
+                border-color: @button-color;
+                background-color: @button-color;
+              }
+              .btn-submit {
+                color: @color;
+                border-color: @button-color1;
+                background-color: @button-color1;
+              }
+            }
+          }
+          .txt-group {
+            margin:10px 0;
+            &:before {
+              content: attr(data-before);
+              display: block;
+              padding: 10px 15px;
+              background-color: @background-color7;
+            }
+            p {
+              margin:10px 0;
+              padding:0 35px;
+            }
+          }
+        }
+      }
+      .ct--main__score {
+      }
+      .ct--main__suggest {
+        .form-group {
+          .form-group__item {
+            position: relative;
+            margin-bottom:15px;
+            &:before,.form-control {
+              white-space: nowrap;
+              display: inline-block;
+              vertical-align: top;
+            }
+            &:before {
+              content: attr(data-before);
+              width: 150px;
+              text-align: right;;
+              font-size: 14px;
+              line-height:30px;
+              color: #666;
+            }
+            .form-control {
+              width:70%;
+            }
+          }
+          textarea {
+            font-size: 14px;
+          }
+        }
+        .btn-add {
+          position: relative;
+          overflow: hidden;
+          .icon-add, .path1, .path2 {
+            font-style: normal;
+          }
+          .icon-add {
+            margin-right: 5px;
+          }
+          .upload-file {
+            cursor: pointer;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+          }
+        }
+      }
+      .basic-progress {
+        .form-group {
+          .form-group__item {
+            position: relative;
+            margin-bottom:15px;
+            &:before,.form-control {
+              white-space: nowrap;
+              display: inline-block;
+              vertical-align: top;
+            }
+            &:before {
+              content: attr(data-before);
+              width: 150px;
+              text-align: right;;
+              font-size: 14px;
+              line-height:30px;
+              color: #666;
+            }
+            .form-control {
+              width:70%;
+            }
+          }
+        }
+        .select-group,
+        ._input-group,
+        .radio-group,
+        .checkbox-group {
+          padding:0 15px;
+        }
+        .radio-group,
+        .checkbox-group {
+          margin:0 5px 15px;
+          position: relative;
+          .form-row {
+            font-size: 14px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left:138px;
+            &:before {
+              content: attr(data-before);
+              position: absolute;
+              min-width: 155px;
+              padding-right: 10px;
+              text-align: right;
+              color: #666;
+              left:0;
+            }
+          }
+        }
+        ._input-group {
+          .form-control {
+            font-size: 14px;
+          }
+        }
+      }
+      .course-appraise {
+        .table-group {
+          padding:0 15px;
+          margin-bottom: 15px;
+          .table {
+            position: relative;
+            margin-bottom:0;
+            &:before {
+              content: attr(data-before);
+              position: absolute;
+              width: 80px;
+              height:100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: @color;
+              left:0;
+              top:0;
+            }
+            &.table-teacher {
+              &:before {
+                background-color: @background-color5;
+              }
+            }
+            &.table-student {
+              &:before {
+                background-color: @background-color6;
+              }
+            }
+            tbody {
+              tr {
+                th {
+                  text-align: right;
+                  span {
+                    line-height: 30px;
+                    font-weight: lighter;
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .form-group {
+          .form-group__item {
+            position: relative;
+            margin-bottom:15px;
+            &:before,.form-control {
+              white-space: nowrap;
+              display: inline-block;
+              vertical-align: top;
+            }
+            &:before {
+              content: attr(data-before);
+              width: 150px;
+              text-align: right;;
+              font-size: 14px;
+              line-height:30px;
+              color: #666;
+            }
+            .form-control {
+              width:70%;
+            }
+          }
+          textarea {
+            font-size: 14px;
+          }
+        }
+      }
+      .score-table {
+        &.score-table_edit {
+        }
+        table {
+          width:100%;
+          margin-bottom: 15px;
+          border: 1px solid @border-color4;
+          tr {
+            border-top:1px solid @border-color4;
+            th {
+              background-color: @background-color7;
+              vertical-align: middle;
+              border: none;
+              text-align: center;
+              padding:10px 15px;
+            }
+            td {
+              vertical-align: middle;
+              padding:0;
+              &:nth-child(odd) {
+                background-color: @background-color;
+              }
+              &:nth-child(even) {
+                background-color: @background-color10;
+              }
+              span {
+                padding:5px 10px;
+                display: block;
+              }
+              p {
+                margin:0;
+                padding:5px 10px;
+                border-top:1px solid @border-color4;
+                &:first-child {
+                  border-top:none;
+                }
+              }
+              .form-control-group {
+                text-align: center;
+                .form-control {
+                  width:100px;
+                  height: 30px;
+                  line-height: 30px;
+                  margin:0 auto;
+                }
+              }
+              &:nth-child(4) {
+                span {
+                  border-top:1px solid @border-color4;
+                  &:first-child {
+                    border-top: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .btn-group {
+        padding:0 15px;
+        text-align: center;
+        display: block;
+        margin-bottom: 10px;
+        .btn-save, .btn-submit {
+          display: inline-block;
+          margin:0 10px;
+          border-radius: 0;
+          width: 100px;
+          padding:5px 12px;
+        }
+        .btn-save {
+          color: @color;
+          border-color: @button-color;
+          background-color: @button-color;
+        }
+        .btn-submit {
+          color: @color;
+          border-color: @button-color1;
+          background-color: @button-color1;
+        }
+      }
+    }
+  }
+}

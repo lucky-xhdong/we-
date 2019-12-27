@@ -1,0 +1,119 @@
+.attachment-box a {
+	cursor: pointer;
+}
+.attachment-box span {
+	display: table-cell;
+}
+.attachment-box {
+	background-color: #f2f4f4;
+	border: 1px solid #d9e0e1;
+	border-radius: 2px;
+	/*min-width: 208px;
+	max-width: 500px;*/
+}
+
+@media (max-width:320px) {
+.attachment-box {
+	min-width: 197px;
+}
+}
+.attachment-info,
+.attachment-link:first-child {
+	padding-left: 8px;
+}
+.attachment-box, .attachment-innerbox, .attachment-info {
+	height: auto;
+	overflow: hidden;
+}
+.attachment-innerbox {
+	margin-top: 1px;
+	background-color: #f2f4f4;
+}
+.attachment-icon {
+	width: 47px;
+	height: 41px;
+	background: url(../images/attachment-icon-file.png) center center  no-repeat;
+	text-indent: -9999px;
+	padding-top: 2px;
+	padding-left: 5px;
+	padding-bottom: 2px;
+}
+.attachment-icon-application-pdf {
+	background: url(../images/attachment-icon-pdf.png) center center  no-repeat;
+}
+.attachment-icon-text-html {
+	background: url(../images/attachment-icon-html.png) center center  no-repeat;
+}
+.attachment-icon-text-htm {
+	background: url(../images/attachment-icon-html.png) center center  no-repeat;
+}
+.attachment-icon-course {
+	background: url(../images/attachment-icon-course.png) center center no-repeat;
+}
+.attachment-icon-text-plain {
+}
+.attachment-icon-application-msword {
+	background: url(../images/attachment-icon-doc.png) center center  no-repeat;
+}
+.attachment-icon-application-x-iwork-keynote-sffkey {
+	background: url(../images/attachment-icon-note.png) center center  no-repeat;
+}
+.attachment-icon-application-vnd-ms-powerpoint {
+	background: url(../images/attachment-icon-ppt.png) center center  no-repeat;
+}
+.attachment-icon-application-vnd-openxmlformats-officedocument-presentationml-presentation {
+	background: url(../images/attachment-icon-ppt.png) center center  no-repeat;
+}
+.attachment-icon-video-mp4 {
+	background: url(../images/attachment-icon-video.png) center center  no-repeat;
+}
+.attachment-icon-video-quicktime {
+	background: url(../images/attachment-icon-video.png) center center  no-repeat;
+}
+.attachment-icon-audio-mp3 {
+	background: url(../images/attachment-icon-audio.png) center center  no-repeat;
+}
+.clear {
+	clear: both;
+}
+.attachment-right {
+	margin: 6px 0px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.attachment-right div {
+	line-height: 20px;
+	margin-right: 10px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.attachment-right, .attachment-right div {
+	height: auto;
+	overflow: hidden;
+}
+.document_name, .btn-link {
+	font-size: 12px;
+}
+.video_box {
+
+}
+.img_video {
+	width: 200px;
+	height: 200px;
+	background: #a7a7a7 url(../images/beta4-play-video.png) center no-repeat;
+}
+.div_p_r {
+	position: relative;
+}
+.display_block {
+	display: block;
+}
+.div_p_a {
+	position: absolute;
+}
+.btn_popup_play {
+	margin-top: 20px;
+	margin-left: -65px;
+}
+.video_play {
+}

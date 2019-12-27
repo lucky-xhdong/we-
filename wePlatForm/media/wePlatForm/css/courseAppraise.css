@@ -1,0 +1,92 @@
+/* background-color start */
+/* background-color end */
+/* border-color start */
+/* border-color end */
+/* button start */
+/* button end */
+/* color start */
+/* color end */
+/* font-family start */
+/* font-family end */
+.CourseAppraise {
+  width: auto;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.CourseAppraise .row {
+  min-height: 956px;
+}
+.CourseAppraise .ca--main-wrapper {
+  padding: 0;
+  background-color: #eff3f8;
+}
+.CourseAppraise .ca--main-wrapper .ca--main__content {
+  overflow: hidden;
+  background-color: #fff;
+  margin: 0 15px 10px;
+}
+.CourseAppraise .ca--main-wrapper .ca--main__content .table-group {
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+.CourseAppraise .ca--main-wrapper .ca--main__content .table-group:before {
+  content: attr(data-before);
+  display: block;
+  padding: 16px 20px 14px;
+  margin-bottom: 15px;
+  background-color: #dde1df;
+}
+.CourseAppraise .ca--main-wrapper .ca--main__content .table-group .table {
+  position: relative;
+  margin-bottom: 0;
+}
+.CourseAppraise .ca--main-wrapper .ca--main__content .table-group .table:before {
+  content: attr(data-before);
+  position: absolute;
+  width: 80px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  left: 0;
+  top: 0;
+}
+.CourseAppraise .ca--main-wrapper .ca--main__content .table-group .table.table-teacher:before {
+  background-color: #65a9ff;
+}
+.CourseAppraise .ca--main-wrapper .ca--main__content .table-group .table.table-student:before {
+  background-color: #fb6767;
+}
+.CourseAppraise .ca--main-wrapper .ca--main__content .table-group .table tbody tr th {
+  text-align: right;
+}
+.CourseAppraise .ca--main-wrapper .ca--main__content .table-group .table tbody tr th span {
+  line-height: 30px;
+  font-weight: lighter;
+  font-size: 14px;
+}
+.CourseAppraise .ca--main-wrapper .ca--main__content .btn-group {
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+.CourseAppraise .ca--main-wrapper .ca--main__content .btn-group .btn-save,
+.CourseAppraise .ca--main-wrapper .ca--main__content .btn-group .btn-submit {
+  display: inline-block;
+  margin: 0 10px;
+  width: 100px;
+  text-align: center;
+  border-radius: 0;
+  padding: 5px 12px;
+}
+.CourseAppraise .ca--main-wrapper .ca--main__content .btn-group .btn-save {
+  color: #fff;
+  border-color: #65a9ff;
+  background-color: #65a9ff;
+}
+.CourseAppraise .ca--main-wrapper .ca--main__content .btn-group .btn-submit {
+  color: #fff;
+  border-color: #fb6767;
+  background-color: #fb6767;
+}

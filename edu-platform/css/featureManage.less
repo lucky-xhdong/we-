@@ -1,0 +1,45 @@
+@import "variable";
+.FeatureManage {
+  width: 1200px;
+  margin: 0 auto;
+  .fm--main-wrapper {
+    margin-left: -15px;
+    background-color: @background-color7;
+    .fm--main__content {
+      margin:15px;
+      background-color: @background-color;
+      .fm--main__tabs {
+        .nav-item {
+          background-color: @background-color9;
+          .nav-link {
+            color: @color4;
+            &.active {
+              border-color: transparent;
+              border-radius: 0;
+            }
+          }
+        }
+      }
+      .fm--main__cons {
+        .form-check-group {
+          display: block;
+          padding: 12px 18px;
+        }
+        .btn-group {
+          display: block;
+          text-align: right;
+          margin: 20px 0;
+          .icon-add, .path1, .path2 {
+            font-style: normal;
+          }
+          .icon-add {
+            margin-right: 5px;
+          }
+        }
+        .pagination {
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}

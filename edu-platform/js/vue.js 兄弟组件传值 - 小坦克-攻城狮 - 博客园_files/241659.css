@@ -1,0 +1,41 @@
+body{
+
+}
+#mylinks a{display:none}
+#banner{ background: #E9F1F8;height:100px}
+#banner #bnr_pic{display:none;}
+#myheader {
+    background-color: #333;
+    height: 44px;
+    clear: both;
+    position: relative;
+}
+#mynavList {
+    float: left;
+}
+#mynavList li {
+    float: left;
+}
+#mynavList a:link, #mynavList a:visited, #mynavList a:active {
+    color: #fff;
+    text-shadow: 3px 3px 3px #000;
+}
+#mynavList a {
+    margin: 0 10px 0 0;
+    padding: 0 10px;
+line-height:44px;
+    font: 14px/1.5em "微软雅黑";
+    display: block;
+}
+
+
+#calendar,#ad_t2,#cnblogs_c1,#under_post_news,#cnblogs_c2,#under_post_kb{display:none}
+.commentform{margin-bottom:120px}
+#mytop{position:fixed;right:10%;bottom:10%;width:60px;height:60px;border:1px solid #0D79D1;border-radius:50%;background:#0f88eb}
+#mytop a{display:block;padding-top:13px;text-align:center;color:#fff}
+#mytop:hover{background:#0D79D1}
+#mytop:hover a{text-decoration:none}
+
+#mytitle{background:#E9F1F8;padding-left:20px;padding-top:15px;}
+#mytitle p{margin:0;padding:0;font-size:16px;text-align:left;}
+#mytitle h3{}

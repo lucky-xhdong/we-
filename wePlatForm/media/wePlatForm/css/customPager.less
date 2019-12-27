@@ -1,0 +1,36 @@
+@import "variable";
+.custom-pager {
+  ul {
+    padding:20px 0;
+    justify-content: center;
+    li {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      line-height: 28px !important;
+      margin: 0 3px;
+      background-color: @background-color;
+      border: 1px solid @border-color9;
+      vertical-align: top;
+      position: relative;
+      white-space: normal;
+      text-overflow: inherit;
+      a {
+        color: @color4;
+        padding: 0 10px;
+        text-align: center;
+        cursor: pointer;
+        font-family: SimHei;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      &.active {
+        a {
+          color: @color7 !important;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

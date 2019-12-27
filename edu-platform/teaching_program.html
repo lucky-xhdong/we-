@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>教学计划</title>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container-fluid TeachingProgram">
+    <div class="row">
+        <!-- 左侧菜单 start -->
+        <div class="col-md-3">
+            <div class="common-left-menu">
+                <!-- logo start -->
+                <div class="logo-wrapper">
+                    <i class="icon-logo"></i>
+                    <span class="txt-logo">唯佳教育平台</span>
+                </div>
+                <!-- logo end -->
+                <!-- menu start -->
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <div class="nav-item__main">
+                            <i class="icon-menu icon-feature-manager"></i>
+                            <a class="nav-link active" href="feature_manage.html">特征管理</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item__main">
+                            <i class="icon-menu icon-regional-archive"></i>
+                            <a class="nav-link active" href="regional_archives.html">区域档案</a>
+                        </div>
+                        <ul class="nav-item__sub hide">
+                            <li class="nav-item__sub_item"><a href="javascript:;" class="nav-link__sub">选项1</a></li>
+                            <li class="nav-item__sub_item"><a href="javascript:;" class="nav-link__sub">选项2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item__main">
+                            <i class="icon-menu icon-regional-archive"></i>
+                            <a class="nav-link active" href="javascript:;">区域档案</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item__main">
+                            <i class="icon-menu icon-school-manage"></i>
+                            <a class="nav-link active" href="javascript:;">学校管理</a>
+                        </div>
+                        <ul class="nav-item__sub hide">
+                            <li class="nav-item__sub_item"><a href="javascript:;" class="nav-link__sub">学校</a></li>
+                            <li class="nav-item__sub_item"><a href="javascript:;" class="nav-link__sub">老师</a></li>
+                            <li class="nav-item__sub_item"><a href="javascript:;" class="nav-link__sub">学生</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item__main">
+                            <i class="icon-menu icon-content-manage"></i>
+                            <a class="nav-link active" href="javascript:;">内容管理</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item__main">
+                            <i class="icon-menu icon-teaching-resource"></i>
+                            <a class="nav-link active" href="teaching_program.html">教学资源</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item__main">
+                            <i class="icon-menu icon-progress-manage"></i>
+                            <a class="nav-link active" href="javascript:;">进度管理</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item__main">
+                            <i class="icon-menu icon-plan-audit"></i>
+                            <a class="nav-link active" href="javascript:;">计划审核</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item__main">
+                            <i class="icon-menu icon-data-statistic"></i>
+                            <a class="nav-link active" href="javascript:;">数据统计</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item__main">
+                            <i class="icon-menu icon-report-import"></i>
+                            <a class="nav-link active" href="javascript:;">成绩导入</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- menu end -->
+            </div>
+        </div>
+        <!-- 左侧菜单 end -->
+        <div class="col-md-9 tp--main-wrapper">
+            <!--菜单切换 start-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light common-top-menu">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="javascript:;">素材库</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:;">消息管理</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav__right">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:;" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">我的工作台</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="javascript:;">选项1</a>
+                                <a class="dropdown-item" href="javascript:;">选项2</a>
+                                <a class="dropdown-item" href="javascript:;">选项3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="avatar-wrapper">
+                                <a href="javascript:;">
+                                    <img src="images/logo.png" alt="">
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--菜单切换 end-->
+            <!--面包屑 start-->
+            <nav class="common-breadcrumb" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="javascript:;">首页</a></li>
+                    <li class="breadcrumb-item"><a href="javascript:;">学校管理</a></li>
+                    <li class="breadcrumb-item"><a href="javascript:;">学校管理</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">教研员</li>
+                </ol>
+            </nav>
+            <!--面包屑 end-->
+            <!--主体内容 start-->
+            <div class="tp--main__content">
+                <div class="content__moudle1">
+                    <div class="create-wrapper" data-before="教学计划创建">
+                        <div class="input-group">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-sm" placeholder="计划标题">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="3" placeholder="计划介绍"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="choosedate-wrapper" data-before="日期选择">
+                        <div class="radio-group">
+                          <div class="custom-control custom-radio">
+                            <input type="radio" checked id="day" name="feature" class="custom-control-input">
+                            <label class="custom-control-label" for="day">按日创建计划</label>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input type="radio" checked id="week" name="feature" class="custom-control-input">
+                            <label class="custom-control-label" for="week">按周创建计划</label>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input type="radio" checked id="month" name="feature" class="custom-control-input">
+                            <label class="custom-control-label" for="month">按月创建计划</label>
+                          </div>
+                        </div>
+                        <div class="choose-handle" data-after=">" data-toggle="modal" data-target=".teaching-program__choose_date"><a href="javascript:;" class="txt-date">2018-23-23 至 2018-23-23</a></div>
+                        <div class="add-handle" data-after=">" data-toggle="modal" data-target=".teaching-program__create"><a href="javascript:;" class="txt-add">添加督课记录</a></div>
+                    </div>
+                </div>
+                <div class="content__moudle2">
+                    <div class="service-wrapper" data-before="服务内容">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <select id="inputState" class="form-control form-control-sm">
+                                        <option selected>学校</option>
+                                        <option>学校1</option>
+                                        <option>学校2</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <select id="inputState1" class="form-control form-control-sm">
+                                        <option selected>发布范围</option>
+                                        <option>发布范围1</option>
+                                        <option>发布范围2</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <select id="inputState2" class="form-control form-control-sm">
+                                        <option selected>计划类型</option>
+                                        <option>计划类型1</option>
+                                        <option>计划类型2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <input type="file" class="form-control-file">
+                            </div>
+                            <div class="btn-group">
+                                <button type="submit" class="btn btn-primary btn-save">保存</button>
+                                <button type="submit" class="btn btn-primary btn-submit">提交审核</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--主体内容 end-->
+        </div>
+    </div>
+</div>
+<div class="modal fade teaching-program__create" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">教学计划创建</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="basic-progress" data-before="基本进度">
+                    <form>
+                        <div class="select-group">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <select class="form-control form-control-sm">
+                                        <option selected>请选择区域</option>
+                                        <option>请选择区域1</option>
+                                        <option>请选择区域2</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <select class="form-control form-control-sm">
+                                        <option selected>请选择学校</option>
+                                        <option>请选择学校1</option>
+                                        <option>请选择学校2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <select class="form-control form-control-sm">
+                                        <option selected>请选择督课日期</option>
+                                        <option>请选择督课日期1</option>
+                                        <option>请选择督课日期2</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <select class="form-control form-control-sm">
+                                        <option selected>请选择学校</option>
+                                        <option>请选择学校1</option>
+                                        <option>请选择学校2</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_input-group">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control form-control-sm" placeholder="出勤人数">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control form-control-sm" placeholder="教学进度">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="radio-group">
+                            <div class="form-row" data-before="是否使用教案：">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="useTeaching" name="useTeaching" class="custom-control-input">
+                                    <label class="custom-control-label" for="useTeaching">是</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="unUseTeaching" name="useTeaching" class="custom-control-input">
+                                    <label class="custom-control-label" for="unUseTeaching">否</label>
+                                </div>
+                            </div>
+                            <div class="form-row" data-before="是否使用作业单：">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="useTask" name="useTask" class="custom-control-input">
+                                    <label class="custom-control-label" for="useTask">是</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="unUseTask" name="useTask" class="custom-control-input">
+                                    <label class="custom-control-label" for="unUseTask">否</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_input-group">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <textarea class="form-control" placeholder="作业单名称"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkbox-group">
+                            <div class="form-row" data-before="跟课人员名单：">
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckDisabled">
+                                    <label class="custom-control-label" for="customCheckDisabled">美食/餐厅线上活动</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckDisabled1">
+                                    <label class="custom-control-label" for="customCheckDisabled1">地推活动</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckDisabled2">
+                                    <label class="custom-control-label" for="customCheckDisabled2">线下主题活动</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckDisabled3">
+                                    <label class="custom-control-label" for="customCheckDisabled3">单纯品牌曝光</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="course-appraise" data-before="课堂评价">
+                    <div class="table-group">
+                        <table class="table table-teacher table-striped" data-before="老师">
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><span>时间分配</span></th>
+                                    <td><input type="text" class="form-control form-control-sm"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span>时间分配</span></th>
+                                    <td><input type="text" class="form-control form-control-sm"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span>时间分配</span></th>
+                                    <td><input type="text" class="form-control form-control-sm"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span>时间分配</span></th>
+                                    <td><input type="text" class="form-control form-control-sm"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span>时间分配</span></th>
+                                    <td><input type="text" class="form-control form-control-sm"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span>时间分配</span></th>
+                                    <td><input type="text" class="form-control form-control-sm"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span>时间分配</span></th>
+                                    <td><input type="text" class="form-control form-control-sm"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-student table-striped" data-before="学生">
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><span>时间分配</span></th>
+                                    <td><input type="text" class="form-control form-control-sm"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span>时间分配</span></th>
+                                    <td><input type="text" class="form-control form-control-sm"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span>时间分配</span></th>
+                                    <td><input type="text" class="form-control form-control-sm"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="input-group">
+                        <div class="form-group col-md-12">
+                            <textarea class="form-control" placeholder="课堂教学环节评价"></textarea>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <textarea class="form-control" placeholder="教学亮点"></textarea>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <textarea class="form-control" placeholder="随堂建议"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-group">
+                    <button type="submit" class="btn btn-primary btn-save">保存</button>
+                    <button type="submit" class="btn btn-primary btn-submit">提交审核</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade teaching-program__choose_date" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">选择日期</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="select-group">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <select class="form-control form-control-sm">
+                                    <option selected>2018年</option>
+                                    <option>2018年</option>
+                                    <option>2018年</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <select class="form-control form-control-sm">
+                                    <option selected>5月</option>
+                                    <option>5月</option>
+                                    <option>5月</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-group">
+                    <button type="submit" class="btn btn-primary btn-submit">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        $(document).ready(function () {
+            $('#myTab a').on('click', function (e) {
+                e.preventDefault();
+                $(this).tab('show')
+            })
+        })
+    </script>
+</body>
+</html>

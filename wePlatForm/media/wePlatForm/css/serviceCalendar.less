@@ -1,0 +1,379 @@
+@import "variable";
+.ServiceCalendar {
+  width: auto;
+  margin: 0 auto;
+  font-size: 14px;
+  > .row {
+    min-height: 956px;
+  }
+  .sc--main-wrapper {
+    padding:0;
+    background-color: @background-color7;
+    .sc--main__content {
+      margin: 0 1rem;
+      .sc--tabs {
+        background-color: @background-color;
+        ul {
+          display: flex;
+          border-bottom: 1px solid @border-color15;
+          li {
+            flex: 1;
+            text-align: center;
+            margin-bottom: -1px;
+            border-bottom: 1px solid transparent;
+            a {
+              display: block;
+              padding: 15px 0;
+              position: relative;
+              font-size: 20px;
+              color: @color1;
+              &:before, &:after {
+                content: '';
+                position: absolute;
+              }
+              &:before {
+                width: 1px;
+                height: 30px;
+                left: 0;
+                background-color: @border-color14;
+              }
+              &:after {
+                left: 50%;
+                margin-left: -5px;
+                bottom: -11px;
+                border: 5px solid transparent;
+              }
+            }
+            &:first-child {
+              a {
+                &:before {
+                  background-color: transparent;
+                }
+              }
+            }
+            &:hover, &.active {
+              border-bottom-color: @border-color14;
+              a {
+                text-decoration: none;
+                &:after {
+                  border-top-color: @border-color14;
+                }
+              }
+            }
+          }
+        }
+      }
+      .sc--calendar {
+        margin: 15px 0;
+        background-color: @background-color;
+        display: flex;
+        .sc--calendar_years {
+          width: 200px;
+          padding: 15px 0;
+          background-color: @background-color21;
+          .sc--calendar_years_tab {
+            overflow: hidden;
+            text-align: center;
+            .btn-control {
+              font-family: 'SimHei';
+              color: @color;
+              margin: 12px 0;
+              -webkit-transform: scale(.5);
+              -moz-transform: scale(.5);
+              -ms-transform: scale(.5);
+              -o-transform: scale(.5);
+              transform: scale(.5);
+              .icon {
+                display: inline-block;
+                font-size: 18px;
+                color: @color;
+              }
+              &.btn-prev {
+                float: left;
+                .icon {
+                  -webkit-transform: rotate(90deg);
+                  -moz-transform: rotate(90deg);
+                  -ms-transform: rotate(90deg);
+                  -o-transform: rotate(90deg);
+                  transform: rotate(90deg);
+                }
+              }
+              &.btn-next {
+                float: right;
+                .icon {
+                  -webkit-transform: rotate(270deg);
+                  -moz-transform: rotate(270deg);
+                  -ms-transform: rotate(270deg);
+                  -o-transform: rotate(270deg);
+                  transform: rotate(270deg);
+                }
+              }
+            }
+            .txt {
+              font-size: 26px;
+              font-family: @font-family;
+              color: @color;
+            }
+          }
+          .sc--calendar_years_months {
+            ul {
+              li {
+                > a {
+                  display: block;
+                  overflow: hidden;
+                  padding: 7px 15px 6px;
+                }
+                .txt {
+                  float: left;
+                }
+                .num {
+                  float: right;
+                }
+                .txt, .num {
+                  font-size: 14px;
+                  color: @color;
+                }
+                &:hover {
+                  background-color: @background-color22;
+                }
+              }
+            }
+          }
+        }
+        .sc--calendar_months {
+          flex: 1;
+          margin: 15px;
+          .ui-datepicker {
+            width: 100%;
+            border-color: transparent;
+            .ui-widget-header {
+              padding: 20px 0;
+              border-color: transparent;
+              background-color: transparent;
+              .ui-datepicker-prev, .ui-datepicker-next {
+                margin: 8px 0;
+                opacity: 0;
+                -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+                filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+              }
+            }
+            .ui-datepicker-calendar {
+              thead {
+                th {
+                  padding: 15px 10px;
+                }
+              }
+              tbody {
+                td {
+                  padding: 15px 10px;
+                  .ui-state-default {
+                    text-align: center;
+                    background-color: transparent;
+                    border-color: transparent;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    line-height: 25px;
+                    margin: 0 auto;
+                    &.ui-state-active {
+                      color: @color;
+                      background-color: @background-color23;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .sc--projects {
+        background-color: @background-color;
+        > .btn-group {
+          display: block;
+          width: 100%;
+          min-height: 55px;
+          padding: 20px 0;
+          ._btn {
+            display: block;
+            position: relative;
+            .icon1, .icon2 {
+              position: absolute;
+              left: 50%;
+              margin-left: -10px;
+              -webkit-transform: scale(.5);
+              -moz-transform: scale(.5);
+              -ms-transform: scale(.5);
+              -o-transform: scale(.5);
+              transform: scale(.5);
+              font-size: 18px;
+              color: @color3;
+            }
+            .icon2 {
+              top: 6px;
+            }
+          }
+          &.btn-group-top {
+            ._btn {
+              .icon1 {
+                -webkit-transform: rotate(180deg) scale(.5);
+                -moz-transform: rotate(180deg) scale(.5);
+                -ms-transform: rotate(180deg) scale(.5);
+                -o-transform: rotate(180deg) scale(.5);
+                transform: rotate(180deg) scale(.5);
+              }
+            }
+          }
+          &.btn-group-bottom {
+            ._btn {
+              .icon1,.icon2 {
+                -webkit-transition: all .1s ease .2s;
+                -moz-transition: all .1s ease .2s;
+                -ms-transition: all .1s ease .2s;
+                -o-transition: all .1s ease .2s;
+                transition: all .1s ease .2s;
+                animation: loadmore 1s infinite;
+                -moz-animation: loadmore 1s infinite;
+                -ms-animation: loadmore 1s infinite;
+                -o-animation: loadmore 1s infinite;
+                -webkit-animation: loadmore 1s infinite;
+              }
+            }
+          }
+        }
+        .sc--projects-lists {
+          ul {
+            max-height: 405px;
+            overflow: hidden;
+            li {
+              border-top: 1px solid @border-color11;
+              display: flex;
+              margin: 0 10px;
+              .pl-left {
+                padding: 9px 0;
+                text-align: center;
+                flex: 0 0 148px;
+                position: relative;
+                &:after {
+                  content: '';
+                  position: absolute;
+                  width: 5px;
+                  height: 20px;
+                  top: 20px;
+                  right: -3px;
+                  z-index: 1;
+                  border-radius: 4px;
+                }
+                .txt {
+                  font-size: 16px;
+                  color: @color3;
+                  display: block;
+                  padding: 10px 0;
+                }
+              }
+              .pl-right {
+                padding: 9px 20px;
+                position: relative;
+                &:before {
+                  content: '';
+                  position: absolute;
+                  width: 1px;
+                  height: 100%;
+                  background-color: @border-color11;
+                  left: 0;
+                  top: 0;
+                  bottom: 0;
+                }
+                .txt {
+                  font-size: 16px;
+                  color: @color4;
+                  margin-bottom: 10px;
+                }
+                .btn-group {
+                  ._btn {
+                    font-size: 16px;
+                    color: @color5;
+                    margin-right: 10px;
+                    &:hover {
+                      text-decoration: none;
+                    }
+                  }
+                }
+              }
+              &:nth-child(2n+0) {
+                .pl-left {
+                  &:after {
+                    background-color: @background-color23;
+                  }
+                }
+              }
+              &:nth-child(2n+1) {
+                .pl-left {
+                  &:after {
+                    background-color: @background-color21;
+                  }
+                }
+              }
+              &:nth-child(2n+2) {
+                .pl-left {
+                  &:after {
+                    background-color: @background-color24;
+                  }
+                }
+              }
+              &:nth-child(2n+3) {
+                .pl-left {
+                  &:after {
+                    background-color: @background-color25;
+                  }
+                }
+              }
+              &:last-child {
+                border-bottom: 1px solid @border-color11;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes loadmore {
+  from {
+    margin-top: -5px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+@-moz-keyframes loadmore {
+  from {
+    margin-top: -5px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+@-o-keyframes loadmore {
+  from {
+    margin-top: -5px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+@-ms-keyframes loadmore {
+  from {
+    margin-top: -5px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+@-webkit-keyframes loadmore {
+  from {
+    margin-top: -5px;
+  }
+  to {
+    margin-top: 0;
+  }
+}

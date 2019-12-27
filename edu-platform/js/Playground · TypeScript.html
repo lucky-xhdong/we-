@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" ng-app="examplesApp" lang="en-us"><head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Try TypeScript in your browser!">
+  <meta name="keywords" content="TS Playground, Playground, try TypeScript, REPL">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Playground · TypeScript
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="Playground%20%C2%B7%20TypeScript_files/vendor.css">
+
+  <link rel="stylesheet" href="Playground%20%C2%B7%20TypeScript_files/style.css">
+
+  <!-- Icons --> <!-- TODO: Check that these all wok -->
+  <link rel="apple-touch-icon" sizes="57x57" href="http://www.typescriptlang.org/assets/images/icons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://www.typescriptlang.org/assets/images/icons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://www.typescriptlang.org/assets/images/icons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://www.typescriptlang.org/assets/images/icons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://www.typescriptlang.org/assets/images/icons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://www.typescriptlang.org/assets/images/icons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://www.typescriptlang.org/assets/images/icons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="http://www.typescriptlang.org/assets/images/icons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://www.typescriptlang.org/assets/images/icons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="http://www.typescriptlang.org/assets/images/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://www.typescriptlang.org/assets/images/icons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="http://www.typescriptlang.org/assets/images/icons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="http://www.typescriptlang.org/assets/images/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="http://www.typescriptlang.org/assets/images/icons/manifest.json">
+  <link rel="mask-icon" href="http://www.typescriptlang.org/assets/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="http://www.typescriptlang.org/assets/images/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/assets/images/icons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/assets/images/icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- JS -->
+  <script src="Playground%20%C2%B7%20TypeScript_files/vendors.js"></script>
+
+  <!-- JS -->
+  <script src="Playground%20%C2%B7%20TypeScript_files/all.js"></script>
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.typescriptlang.org/atom.xml">
+
+<script async="async" type="text/javascript" src="Playground%20%C2%B7%20TypeScript_files/editor_002.js"></script><script async="async" type="text/javascript" src="Playground%20%C2%B7%20TypeScript_files/typescriptServices.js"></script><link rel="stylesheet" type="text/css" data-name="vs/editor/editor.main" href="Playground%20%C2%B7%20TypeScript_files/editor.css"><link id="msccCSS" rel="stylesheet" href="Playground%20%C2%B7%20TypeScript_files/mscc-0.css"><style type="text/css" media="screen"></style><script async="async" type="text/javascript" src="Playground%20%C2%B7%20TypeScript_files/editor.js"></script><style type="text/css" media="screen"></style><script async="async" type="text/javascript" src="Playground%20%C2%B7%20TypeScript_files/mode.js"></script></head>
+<body>
+	<script src="Playground%20%C2%B7%20TypeScript_files/al.html" async="" type="text/javascript"></script><script src="Playground%20%C2%B7%20TypeScript_files/sl.js" type="text/javascript" async=""></script><script type="text/javascript">_slot_id = "5e700c94-bf9d-4968-871a-096009ade7ef";</script><a href="#main-content" class="main-content-skip" tabindex="0">
+    Skip to main content
+</a>
+    <header role="banner">
+    <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+         <div class="container-fluid">
+            <!-- Contains the logo and a toggle button for smaller screen sizes. -->
+            <div class="navbar-header">
+              <!-- Toggles the visibility of the nav area on smaller screen sizes. -->
+              <button type="button" class="navbar-toggle pull-left collapsed" data-toggle="collapse" data-target="#navbar-collapse-div">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <!-- Top-left logo. -->
+              <a class="navbar-brand" href="http://www.typescriptlang.org/index.html" aria-label="TypeScript Home Page">
+                <img class="navbar-logo" src="Playground%20%C2%B7%20TypeScript_files/logo_nocircle.svg">
+              </a>
+            </div>
+
+            <!-- The navigation items. -->
+            <div class="collapse navbar-collapse centered-navbar" id="navbar-collapse-div">
+              <ul class="nav navbar-nav">
+                <li class=""><a href="http://www.typescriptlang.org/samples/index.html">Quick Start</a></li>
+                <li class=""><a href="http://www.typescriptlang.org/docs/index.html">Documentation </a></li>
+                <li><a href="http://www.typescriptlang.org/index.html#download-links">Download</a></li>
+                <li class=""><a href="http://www.typescriptlang.org/community/index.html">Connect</a></li>
+                <li class="active"><a href="http://www.typescriptlang.org/play/index.html">Playground</a></li>
+              </ul>
+            </div>
+
+            <!-- The "Fork Me on GitHub!" ribbon. -->
+            <a class="fork-me-ribbon pull-right hidden-xs" href="https://github.com/Microsoft/TypeScript">
+              <img src="Playground%20%C2%B7%20TypeScript_files/fork_me_ribbon.svg" alt="Fork TypeScript on GitHub">
+            </a>
+        </div>
+    </nav>
+</header>
+
+	<div class="container-fluid update-banner">
+	<div class="container">
+		TypeScript 3.0 is now available. <a href="http://www.typescriptlang.org/#download-links" aria-label="Download the latest version of TypeScript">Download</a> our latest version today!
+	</div>
+</div>
+	<div><div id="msccBanner" dir="ltr" data-site-name="uhf-typescript" data-mscc-version="0.4.0" data-nver="aspnet-3.1.3" data-sver="0.1.2" class="cc-banner active" role="alert"><div class="cc-container"><svg class="cc-icon cc-v-center" x="0px" y="0px" viewBox="0 0 44 44" height="30px" fill="none" stroke="currentColor"><circle cx="22" cy="22" r="20" stroke-width="2"></circle><line x1="22" x2="22" y1="18" y2="33" stroke-width="3"></line><line x1="22" x2="22" y1="12" y2="15" stroke-width="3"></line></svg> <span class="cc-v-center cc-text">This site uses cookies for analytics, personalized content and ads. By continuing to browse this site, you agree to this use.</span> <a href="https://go.microsoft.com/fwlink/?linkid=845480" aria-label="Learn more about Microsoft's Cookie Policy" id="msccLearnMore" class="cc-link cc-v-center cc-float-right" data-mscc-ic="false">Learn more</a></div></div></div><main id="main-content" class="content">
+	<div id="playground-host">
+    <div class="playground-options-container">
+    </div>
+    <div>
+        <div id="wrapper" style="padding-right: 20px; padding-left: 20px; height: 431px;">
+            <div style="padding-left: 50px; float: left;">
+                <select id="examples">
+                    <option value="">Select...</option>
+                    <option value="walkthrough1.ts">Classic JavaScript</option>
+                    <option value="walkthrough1.1.ts">Adding Types</option>
+                    <option value="walkthrough2.ts" selected="selected">Using Classes</option>
+                    <option value="inheritance_1.ts">Using Inheritance</option>
+                    <option value="walkthrough2.1.ts">Using Generics</option>
+                    <option value="union_types_1.ts">Unions and Type Guards</option>
+                    <option value="raytracer.ts">Building a Raytracer</option>
+                </select>
+                <span class="frame-title">TypeScript</span>
+                <button class="playground-button" id="share">Share</button>
+                <button class="playground-button" id="options-button">Options</button>
+                <span id="share-message" style="display: none;"></span>
+                <div id="playground-options-menu">
+                    
+                    
+                    <div title="Trigger an error if TypeScript uses 'any' whenever it can't infer a type.">
+                        <input class="ts-bool-opt" id="ts-opt-noImplicitAny" name="noImplicitAny" type="checkbox">
+                        <label for="ts-opt-noImplicitAny">
+                            noImplicitAny
+                            <div class="ts-opt-description">Trigger an error if TypeScript uses 'any' whenever it can't infer a type.</div>
+                        </label>
+                        <hr>
+                    </div>
+                    
+                    <div title="Makes types non-nullable by default, catching a broad class of errors.">
+                        <input class="ts-bool-opt" id="ts-opt-strictNullChecks" name="strictNullChecks" type="checkbox">
+                        <label for="ts-opt-strictNullChecks">
+                            strictNullChecks
+                            <div class="ts-opt-description">Makes types non-nullable by default, catching a broad class of errors.</div>
+                        </label>
+                        <hr>
+                    </div>
+                    
+                    <div title="Disable bivariant parameter checking for function types.">
+                        <input class="ts-bool-opt" id="ts-opt-strictFunctionTypes" name="strictFunctionTypes" type="checkbox">
+                        <label for="ts-opt-strictFunctionTypes">
+                            strictFunctionTypes
+                            <div class="ts-opt-description">Disable bivariant parameter checking for function types.</div>
+                        </label>
+                        <hr>
+                    </div>
+                    
+                    <div title="Ensure non-undefined class properties are initialized in the constructor.">
+                        <input class="ts-bool-opt" id="ts-opt-strictPropertyInitialization" name="strictPropertyInitialization" type="checkbox">
+                        <label for="ts-opt-strictPropertyInitialization">
+                            strictPropertyInitialization
+                            <div class="ts-opt-description">Ensure non-undefined class properties are initialized in the constructor.</div>
+                        </label>
+                        <hr>
+                    </div>
+                    
+                    <div title="Flag locations where the type of a 'this' expression implicitly has the type 'any'.">
+                        <input class="ts-bool-opt" id="ts-opt-noImplicitThis" name="noImplicitThis" type="checkbox">
+                        <label for="ts-opt-noImplicitThis">
+                            noImplicitThis
+                            <div class="ts-opt-description">Flag locations where the type of a 'this' expression implicitly has the type 'any'.</div>
+                        </label>
+                        <hr>
+                    </div>
+                    
+                    <div title="Error on functions which do not return from every branch.">
+                        <input class="ts-bool-opt" id="ts-opt-noImplicitReturns" name="noImplicitReturns" type="checkbox">
+                        <label for="ts-opt-noImplicitReturns">
+                            noImplicitReturns
+                            <div class="ts-opt-description">Error on functions which do not return from every branch.</div>
+                        </label>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="rundiv" style="padding-right: 50px; float: right;">
+                <button class="playground-button" id="execute">Run</button>
+                <span class="frame-title">JavaScript</span>
+            </div>
+            <div style="clear: both;"></div>
+            <div id="typescriptEditor" style="border: 1px solid grey; left: 0px; height: 391px; position: relative; width: 607px;" data-keybinding-context="1" data-mode-id="typescript"><div class="monaco-editor ff mac vs focused" style="width: 605px; height: 389px;"><div class="overflow-guard" style="width: 605px; height: 389px;"><div class="margin-view-overlays monaco-editor-background focused" style="position: absolute; width: 68px; font-family: Menlo, Monaco, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 12px; line-height: 18px; top: 0px; height: 425px;" role="presentation" aria-hidden="true"><div class="glyph-margin" style="left: 0px; width: 0px; height: 425px;"></div><div linenumber="1" style="top:0px;height:18px;" class="view-line"><div class="line-numbers" style="left:0px;width:58px;height:18px;">1</div></div><div linenumber="2" style="top:18px;height:18px;" class="view-line"><div class="line-numbers" style="left:0px;width:58px;height:18px;">2</div></div><div linenumber="3" style="top:36px;height:18px;" class="view-line"><div class="line-numbers" style="left:0px;width:58px;height:18px;">3</div></div></div><div class="monaco-scrollable-element editor-scrollable vs mac" role="presentation" style="position: absolute; overflow: hidden; left: 68px; width: 537px; height: 389px;"><div class="lines-content monaco-editor-background" style="overflow: hidden; width: 1000000px; height: 1000000px; top: 0px; left: 0px;" data-transform=""><div class="view-overlays focused" style="position: absolute; width: 537px; height: 0px;" role="presentation" aria-hidden="true"><div linenumber="1" style="top:0px;height:18px;" class="view-line"></div><div linenumber="2" style="top:18px;height:18px;" class="view-line"><div class="current-line" style="width:537px; height:18px;"></div></div><div linenumber="3" style="top:36px;height:18px;" class="view-line"></div></div><div class="view-rulers"></div><div class="view-zones" style="position: absolute;" role="presentation" aria-hidden="true"></div><div class="view-lines" style="position: absolute; font-family: Menlo, Monaco, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 12px; line-height: 18px; width: 537px; height: 425px;" role="presentation" aria-hidden="true"><div linenumber="1" style="top:0px;height:18px;" class="view-line"><span><span class="token keyword ts">function</span><span class="token ">&nbsp;</span><span class="token identifier ts">test</span><span class="token delimiter parenthesis ts">(</span><span class="token identifier ts">template</span><span class="token delimiter ts">,</span><span class="token ">&nbsp;</span><span class="token identifier ts">name</span><span class="token delimiter ts">,</span><span class="token ">&nbsp;</span><span class="token identifier ts">age</span><span class="token delimiter parenthesis ts">)</span><span class="token ">&nbsp;</span><span class="token delimiter bracket ts">{</span><span class="token ">&nbsp;</span></span></div><div linenumber="2" style="top:18px;height:18px;" class="view-line"><span><span class="token ">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="token identifier ts">console</span><span class="token delimiter ts">.</span><span class="token identifier ts">log</span><span class="token delimiter parenthesis ts">(</span><span class="token identifier ts">template</span><span class="token delimiter parenthesis ts">)</span><span class="token delimiter ts">;</span></span></div><div linenumber="3" style="top:36px;height:18px;" class="view-line"><span><span class="token delimiter bracket ts">}</span></span></div></div><div class="contentWidgets"><div class="quickfix-widget" style="position: absolute; max-width: 537px; visibility: hidden; width: 324px; height: 18px;" widgetid="QuickFixContentWidget"><div style="height: 18px; display: none;"></div><div style="display: none;"><div class="monaco-list" role="listbox" tabindex="0"><div class="monaco-scrollable-element  mac" role="presentation" style="position: relative; overflow: hidden;"><div class="monaco-list-rows" style="overflow: hidden;"></div><div class="invisible scrollbar horizontal" style="position: absolute;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px;"></div></div><div class="invisible scrollbar vertical" style="position: absolute;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 10px;"></div></div></div></div></div></div></div><div class="cursors-layer cursor-line-style cursor-blink"><div class="cursor" style="height: 18px; top: 18px; left: 218px; font-family: Menlo, Monaco, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 12px; line-height: 18px; display: block; visibility: inherit;" role="presentation" aria-hidden="true" linenumber="2" column="27"></div></div></div><div class="invisible scrollbar horizontal" style="position: absolute; width: 523px; height: 10px; left: 0px; bottom: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px; width: 523px;"></div></div><canvas class="decorationsOverviewRuler" style="position: absolute; top: 0px; right: 0px; width: 14px; height: 389px;" width="28" height="778" data-transform=""></canvas><div class="visible scrollbar vertical" style="position: absolute; width: 14px; height: 389px; right: 0px; top: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 14px; height: 356px;"></div></div></div><div style="width: 605px;"></div><div class="overlayWidgets" style="width: 605px;"><div class="editor-widget find-widget" aria-hidden="false" style="position: absolute;" widgetid="editor.contrib.findWidget"><div title="Toggle Replace mode" tabindex="-1" class="button toggle left collapse disabled" role="button" aria-label="Toggle Replace mode" aria-expanded="false" aria-disabled="true"></div><div class="find-part"><div style="width: 221px;" class="monaco-findInput disabled"><div class="monaco-inputbox idle"><div class="wrapper"><input class="input" autocorrect="off" autocapitalize="off" spellcheck="false" wrap="off" aria-label="Find" placeholder="Find" title="Find" style="width: 155px;" disabled="disabled" type="text"></div></div><div class="controls"><div title="Match Case (⌥⌘C)" class="custom-checkbox case-sensitive unchecked" role="checkbox" aria-checked="false" aria-label="Match Case (⌥⌘C)" aria-disabled="true"></div><div title="Match Whole Word (⌥⌘W)" class="custom-checkbox whole-word unchecked" role="checkbox" aria-checked="false" aria-label="Match Whole Word (⌥⌘W)" aria-disabled="true"></div><div title="Use Regular Expression (⌥⌘R)" class="custom-checkbox regex unchecked" role="checkbox" aria-checked="false" aria-label="Use Regular Expression (⌥⌘R)" aria-disabled="true"></div></div></div><div class="matchesCount" style="min-width: 69px;" title="">No results</div><div title="Previous match (⇧⌘G)" tabindex="-1" class="button previous disabled" role="button" aria-label="Previous match (⇧⌘G)" aria-disabled="true"></div><div title="Next match (⌘G)" tabindex="-1" class="button next disabled" role="button" aria-label="Next match (⌘G)" aria-disabled="true"></div><div class="monaco-checkbox" title="Find in selection"><input class="checkbox" id="checkbox-0" disabled="disabled" type="checkbox"><label class="label" for="checkbox-0"></label></div><div title="Close (Escape)" tabindex="-1" class="button close-fw disabled" role="button" aria-label="Close (Escape)" aria-disabled="true"></div></div><div class="replace-part"><div class="replace-input" style="width: 221px;"><div class="monaco-inputbox idle"><div class="wrapper"><input class="input" autocorrect="off" autocapitalize="off" spellcheck="false" wrap="off" aria-label="Replace" placeholder="Replace" title="Replace" disabled="disabled" type="text"></div></div></div><div title="Replace (⇧⌘1)" tabindex="-1" class="button replace disabled" role="button" aria-label="Replace (⇧⌘1)" aria-disabled="true"></div><div title="Replace All (⌥⌘Enter)" tabindex="-1" class="button replace-all disabled" role="button" aria-label="Replace All (⌥⌘Enter)" aria-disabled="true"></div></div></div><div class="monaco-editor-hover hidden" aria-hidden="true" role="presentation" style="position: absolute;" widgetid="editor.contrib.modesGlyphHoverWidget"></div></div><textarea class="inputarea" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="Editor content" role="textbox" aria-multiline="true" aria-haspopup="false" aria-autocomplete="both" style="top: 0px; left: 0px; font-family: Menlo, Monaco, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 12px; line-height: 18px;" wrap="off">function test(template, name, age) { 
+    console.log(template);
+}</textarea><div class="monaco-editor-background line-numbers textAreaCover" style="position: absolute; width: 1px; height: 1px; top: 0px; left: 0px;"></div></div><div class="overflowingContentWidgets"><div class="monaco-editor-hover hidden" tabindex="0" style="position: absolute; max-width: 537px; visibility: hidden;" widgetid="editor.contrib.modesContentHoverWidget"><div class="monaco-scrollable-element  mac" role="presentation" style="position: relative; overflow: hidden;"><div class="monaco-editor-hover-content" style="overflow: hidden; max-height: 250px;"></div><div class="invisible scrollbar horizontal" style="position: absolute;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px;"></div></div><div class="invisible scrollbar vertical" style="position: absolute;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 10px;"></div></div><div class="shadow"></div><div class="shadow"></div><div class="shadow top-left-corner"></div></div></div><div class="editor-widget parameter-hints-widget" style="font-size: 12px; max-height: 250px; position: absolute; max-width: 537px; visibility: hidden; top: -35px; left: 211px;" widgetid="editor.widget.parameterHintsWidget"><div class="wrapper"><div class="buttons"><div class="button previous"></div><div class="button next"></div></div><div class="overloads">1/1</div><div class="body"><div class="signature"><div class="code" style="font-size: 12px; font-family: Menlo, Monaco, &quot;Courier New&quot;, monospace;"><span>log(</span><span class="parameter active">message?: any</span><span>, </span><span class="parameter ">...optionalParams: any[]</span><span>): void</span></div></div><div class="monaco-scrollable-element  mac" role="presentation" style="position: relative; overflow: hidden;"><div class="docs" style="overflow: hidden;"></div><div class="invisible scrollbar horizontal" style="position: absolute; width: 416px; height: 10px; left: 0px; bottom: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px; width: 416px;"></div></div><div class="invisible scrollbar vertical" style="position: absolute; width: 10px; height: 0px; right: 0px; top: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 10px; height: 0px;"></div></div><div class="shadow"></div><div class="shadow"></div><div class="shadow top-left-corner"></div></div></div></div></div><div style="width: 20px; height: 20px; position: absolute; max-width: 537px; visibility: hidden;" class="lightbulb-glyph" widgetid="__lightBulbWidget"></div><div class="editor-widget suggest-widget" style="position: absolute; max-width: 537px; visibility: hidden; line-height: 18px; height: 216px; top: 36px; left: 219px;" widgetid="editor.widget.suggestWidget"><div class="message" style="display: none;"></div><div class="tree"><div class="monaco-list" role="listbox" tabindex="0"><div class="monaco-scrollable-element  mac" role="presentation" style="position: relative; overflow: hidden;"><div class="monaco-list-rows" style="overflow: hidden; height: 0px; transform: translate3d(0px, 0px, 0px);"></div><div class="invisible scrollbar horizontal" style="position: absolute; width: 0px; height: 0px; left: 0px; bottom: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px; width: 0px;"></div></div><div class="invisible scrollbar vertical" style="position: absolute; width: 10px; height: 216px; right: 0px; top: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 10px; height: 216px;"></div></div></div></div></div><div class="details" style="font-size: 12px; display: none;"><div class="header"><span class="title" style="font-family: Menlo, Monaco, &quot;Courier New&quot;, monospace;"><span class="monaco-highlighted-label"></span></span><span class="go-back" title="Go back"></span></div><div class="monaco-scrollable-element  mac" role="presentation" style="position: relative; overflow: hidden;"><div class="body" style="overflow: hidden;"><p class="type" style="font-family: Menlo, Monaco, &quot;Courier New&quot;, monospace;"></p><p class="docs"></p></div><div class="invisible scrollbar horizontal" style="position: absolute;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px;"></div></div><div class="invisible scrollbar vertical" style="position: absolute;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 10px;"></div></div><div class="shadow"></div><div class="shadow"></div><div class="shadow top-left-corner"></div></div></div></div><div style="height: 18px; position: absolute; max-width: 537px; visibility: hidden;" class="monaco-editor rename-box" widgetid="__renameInputWidget"><input class="rename-input" aria-label="Rename input. Type new name and press Enter to commit." style="font-family: Menlo, Monaco, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 12px;" type="text"></div></div><div class="context-view hidden" aria-hidden="true"></div></div></div>
+            <div id="javascriptEditor" style="border: 1px solid grey; top: -393px; height: 391px; position: relative; left: 619px; width: 607px;" data-keybinding-context="1" data-mode-id="javascript"><div class="monaco-editor ff mac vs" style="width: 605px; height: 389px;"><div class="overflow-guard" style="width: 605px; height: 389px;"><div class="margin-view-overlays monaco-editor-background" style="position: absolute; width: 68px; font-family: Menlo, Monaco, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 12px; line-height: 18px; top: 0px; height: 443px;" role="presentation" aria-hidden="true"><div class="glyph-margin" style="left:0px;width:0px;height:443px;"></div><div linenumber="1" style="top:0px;height:18px;" class="view-line"><div class="line-numbers" style="left:0px;width:58px;height:18px;">1</div></div><div linenumber="2" style="top:18px;height:18px;" class="view-line"><div class="line-numbers" style="left:0px;width:58px;height:18px;">2</div></div><div linenumber="3" style="top:36px;height:18px;" class="view-line"><div class="line-numbers" style="left:0px;width:58px;height:18px;">3</div></div><div linenumber="4" style="top:54px;height:18px;" class="view-line"><div class="line-numbers" style="left:0px;width:58px;height:18px;">4</div></div></div><div class="monaco-scrollable-element editor-scrollable vs mac" role="presentation" style="position: absolute; overflow: hidden; left: 68px; width: 537px; height: 389px;"><div class="lines-content monaco-editor-background" style="overflow: hidden; width: 1000000px; height: 1000000px; top: 0px; left: 0px;" data-transform=""><div class="view-overlays" style="position: absolute; width: 537px; height: 0px;" role="presentation" aria-hidden="true"><div linenumber="1" style="top:0px;height:18px;" class="view-line"></div><div linenumber="2" style="top:18px;height:18px;" class="view-line"></div><div linenumber="3" style="top:36px;height:18px;" class="view-line"></div><div linenumber="4" style="top:54px;height:18px;" class="view-line"></div></div><div class="view-rulers"></div><div class="view-zones" style="position: absolute;" role="presentation" aria-hidden="true"></div><div class="view-lines" style="position: absolute; font-family: Menlo, Monaco, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 12px; line-height: 18px; width: 537px; height: 443px;" role="presentation" aria-hidden="true"><div linenumber="1" style="top:0px;height:18px;" class="view-line"><span><span class="token keyword js">function</span><span class="token ">&nbsp;</span><span class="token identifier js">test</span><span class="token delimiter parenthesis js">(</span><span class="token identifier js">template</span><span class="token delimiter js">,</span><span class="token ">&nbsp;</span><span class="token identifier js">name</span><span class="token delimiter js">,</span><span class="token ">&nbsp;</span><span class="token identifier js">age</span><span class="token delimiter parenthesis js">)</span><span class="token ">&nbsp;</span><span class="token delimiter bracket js">{</span></span></div><div linenumber="2" style="top:18px;height:18px;" class="view-line"><span><span class="token ">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="token identifier js">console</span><span class="token delimiter js">.</span><span class="token identifier js">log</span><span class="token delimiter parenthesis js">(</span><span class="token identifier js">template</span><span class="token delimiter parenthesis js">)</span><span class="token delimiter js">;</span></span></div><div linenumber="3" style="top:36px;height:18px;" class="view-line"><span><span class="token delimiter bracket js">}</span></span></div><div linenumber="4" style="top:54px;height:18px;" class="view-line"><span><span>&nbsp;</span></span></div></div><div class="contentWidgets"><div class="quickfix-widget" style="position: absolute; max-width: 537px; visibility: hidden; width: 324px; height: 18px;" widgetid="QuickFixContentWidget"><div style="height: 18px; display: none;"></div><div style="display: none;"><div class="monaco-list" role="listbox" tabindex="0"><div class="monaco-scrollable-element  mac" role="presentation" style="position: relative; overflow: hidden;"><div class="monaco-list-rows" style="overflow: hidden;"></div><div class="invisible scrollbar horizontal" style="position: absolute;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px;"></div></div><div class="invisible scrollbar vertical" style="position: absolute;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 10px;"></div></div></div></div></div></div></div><div class="cursors-layer cursor-line-style cursor-solid"><div class="cursor" style="height: 18px; top: 0px; left: 0px; font-family: Menlo, Monaco, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 12px; line-height: 18px; display: block; visibility: hidden;" role="presentation" aria-hidden="true" linenumber="1" column="1"></div></div></div><div class="invisible scrollbar horizontal" style="position: absolute; width: 523px; height: 10px; left: 0px; bottom: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px; width: 523px;"></div></div><canvas class="decorationsOverviewRuler" style="position: absolute; top: 0px; right: 0px; width: 14px; height: 389px;" width="28" height="778" data-transform=""></canvas><div class="invisible scrollbar vertical fade" style="position: absolute; width: 14px; height: 389px; right: 0px; top: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 14px; height: 341px;"></div></div></div><div style="width: 605px;"></div><div class="overlayWidgets" style="width: 605px;"><div class="editor-widget find-widget" aria-hidden="false" style="position: absolute;" widgetid="editor.contrib.findWidget"><div title="Toggle Replace mode" tabindex="-1" class="button toggle left collapse disabled" role="button" aria-label="Toggle Replace mode" aria-expanded="false" aria-disabled="true"></div><div class="find-part"><div style="width: 221px;" class="monaco-findInput disabled"><div class="monaco-inputbox idle"><div class="wrapper"><input class="input" autocorrect="off" autocapitalize="off" spellcheck="false" wrap="off" aria-label="Find" placeholder="Find" title="Find" style="width: 155px;" disabled="disabled" type="text"></div></div><div class="controls"><div title="Match Case (⌥⌘C)" class="custom-checkbox case-sensitive unchecked" role="checkbox" aria-checked="false" aria-label="Match Case (⌥⌘C)" aria-disabled="true"></div><div title="Match Whole Word (⌥⌘W)" class="custom-checkbox whole-word unchecked" role="checkbox" aria-checked="false" aria-label="Match Whole Word (⌥⌘W)" aria-disabled="true"></div><div title="Use Regular Expression (⌥⌘R)" class="custom-checkbox regex unchecked" role="checkbox" aria-checked="false" aria-label="Use Regular Expression (⌥⌘R)" aria-disabled="true"></div></div></div><div class="matchesCount" style="min-width: 69px;" title="">No results</div><div title="Previous match (⇧⌘G)" tabindex="-1" class="button previous disabled" role="button" aria-label="Previous match (⇧⌘G)" aria-disabled="true"></div><div title="Next match (⌘G)" tabindex="-1" class="button next disabled" role="button" aria-label="Next match (⌘G)" aria-disabled="true"></div><div class="monaco-checkbox" title="Find in selection"><input class="checkbox" id="checkbox-1" disabled="disabled" type="checkbox"><label class="label" for="checkbox-1"></label></div><div title="Close (Escape)" tabindex="-1" class="button close-fw disabled" role="button" aria-label="Close (Escape)" aria-disabled="true"></div></div><div class="replace-part"><div class="replace-input" style="width: 221px;"><div class="monaco-inputbox idle"><div class="wrapper"><input class="input" autocorrect="off" autocapitalize="off" spellcheck="false" wrap="off" aria-label="Replace" placeholder="Replace" title="Replace" disabled="disabled" type="text"></div></div></div><div title="Replace (⇧⌘1)" tabindex="-1" class="button replace disabled" role="button" aria-label="Replace (⇧⌘1)" aria-disabled="true"></div><div title="Replace All (⌥⌘Enter)" tabindex="-1" class="button replace-all disabled" role="button" aria-label="Replace All (⌥⌘Enter)" aria-disabled="true"></div></div></div><div class="monaco-editor-hover hidden" aria-hidden="true" role="presentation" style="position: absolute;" widgetid="editor.contrib.modesGlyphHoverWidget"></div></div><textarea class="inputarea" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="Editor content" role="textbox" aria-multiline="true" aria-haspopup="false" aria-autocomplete="both" style="top: 0px; left: 0px; font-family: Menlo, Monaco, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 12px; line-height: 18px;" wrap="off">function test(template, name, age) {
+    console.log(template);
+}
+</textarea><div class="monaco-editor-background line-numbers textAreaCover" style="position: absolute; width: 1px; height: 1px; top: 0px; left: 0px;"></div></div><div class="overflowingContentWidgets"><div class="monaco-editor-hover hidden" tabindex="0" style="position: absolute; max-width: 537px; visibility: hidden;" widgetid="editor.contrib.modesContentHoverWidget"><div class="monaco-scrollable-element  mac" role="presentation" style="position: relative; overflow: hidden;"><div class="monaco-editor-hover-content" style="overflow: hidden; max-height: 250px;"></div><div class="invisible scrollbar horizontal" style="position: absolute;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px;"></div></div><div class="invisible scrollbar vertical" style="position: absolute;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 10px;"></div></div><div class="shadow"></div><div class="shadow"></div><div class="shadow top-left-corner"></div></div></div><div class="editor-widget parameter-hints-widget" style="font-size: 12px; max-height: 250px; position: absolute; max-width: 537px; visibility: hidden;" widgetid="editor.widget.parameterHintsWidget"><div class="wrapper"><div class="buttons"><div class="button previous"></div><div class="button next"></div></div><div class="overloads"></div><div class="body"><div class="signature"></div><div class="monaco-scrollable-element  mac" role="presentation" style="position: relative; overflow: hidden;"><div class="docs" style="overflow: hidden;"></div><div class="invisible scrollbar horizontal" style="position: absolute;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px;"></div></div><div class="invisible scrollbar vertical" style="position: absolute;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 10px;"></div></div><div class="shadow"></div><div class="shadow"></div><div class="shadow top-left-corner"></div></div></div></div></div><div style="width: 20px; height: 20px; position: absolute; max-width: 537px; visibility: hidden;" class="lightbulb-glyph" widgetid="__lightBulbWidget"></div><div class="editor-widget suggest-widget" style="position: absolute; max-width: 537px; visibility: hidden;" widgetid="editor.widget.suggestWidget"><div class="message" style="display: none;"></div><div class="tree"><div class="monaco-list" role="listbox" tabindex="0"><div class="monaco-scrollable-element  mac" role="presentation" style="position: relative; overflow: hidden;"><div class="monaco-list-rows" style="overflow: hidden; height: 0px;"></div><div class="invisible scrollbar horizontal" style="position: absolute;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px;"></div></div><div class="invisible scrollbar vertical" style="position: absolute;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 10px;"></div></div></div></div></div><div class="details" style="font-size: 12px; display: none;"><div class="header"><span class="title" style="font-family: Menlo, Monaco, &quot;Courier New&quot;, monospace;"><span class="monaco-highlighted-label"></span></span><span class="go-back" title="Go back"></span></div><div class="monaco-scrollable-element  mac" role="presentation" style="position: relative; overflow: hidden;"><div class="body" style="overflow: hidden;"><p class="type" style="font-family: Menlo, Monaco, &quot;Courier New&quot;, monospace;"></p><p class="docs"></p></div><div class="invisible scrollbar horizontal" style="position: absolute;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px;"></div></div><div class="invisible scrollbar vertical" style="position: absolute;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 10px;"></div></div><div class="shadow"></div><div class="shadow"></div><div class="shadow top-left-corner"></div></div></div></div><div style="height: 18px; position: absolute; max-width: 537px; visibility: hidden;" class="monaco-editor rename-box" widgetid="__renameInputWidget"><input class="rename-input" aria-label="Rename input. Type new name and press Enter to commit." style="font-family: Menlo, Monaco, &quot;Courier New&quot;, monospace; font-weight: normal; font-size: 12px;" type="text"></div></div><div class="context-view hidden" aria-hidden="true"></div></div></div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script>
+        var startTime = (new Date()).getTime();
+</script>
+<script src="Playground%20%C2%B7%20TypeScript_files/loader.js"></script>
+<script type="text/javascript" src="Playground%20%C2%B7%20TypeScript_files/playground.js"></script>
+
+	</main>
+	<footer role="contentinfo">
+    <div class="container-fluid signature-container">
+        <div class="container">
+            <div class="row signature">
+                <div class="col-sm-7 col-xs-12">
+                    <p class="pull-left">Made with <span class="glyphicon glyphicon-heart"></span> in Redmond</p>
+                    <div class="twitter-buttons pull-left">
+                        <a class="twitter-follow-button" href="https://twitter.com/typescriptlang">Follow @Typescriptlang</a>
+                    </div>
+                    <div class="github-buttons pull-left" role="link" onkeypress="window.location.href = 'https://github.com/Microsoft/TypeScript'" tabindex="0" aria-label="Star TypeScript on GitHub">
+                        <iframe allowtransparency="true" scrolling="no" tabindex="-1" style="width: 1px; height: 0px; border: medium none;" src="Playground%20%C2%B7%20TypeScript_files/buttons.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-xs-12">
+                    <img class="ms-logo-footer pull-right" src="Playground%20%C2%B7%20TypeScript_files/Microsoft-logo_rgb_c-gray.svg">
+                    <p class="copyright pull-right">©2012-2018 Microsoft</p>
+                    <p class="privacy pull-right"><a href="https://go.microsoft.com/fwlink/?LinkId=521839" data-mscc-ic="false">Privacy</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="Playground%20%C2%B7%20TypeScript_files/cc.js"></script>
+<script src="Playground%20%C2%B7%20TypeScript_files/a.html" type="text/javascript" charset="utf-8" async=""></script></body><!-- JS --></html>

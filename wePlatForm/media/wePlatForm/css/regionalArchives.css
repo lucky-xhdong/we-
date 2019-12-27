@@ -1,0 +1,145 @@
+/* background-color start */
+/* background-color end */
+/* border-color start */
+/* border-color end */
+/* button start */
+/* button end */
+/* color start */
+/* color end */
+/* font-family start */
+/* font-family end */
+.RegionalArchives {
+  width: auto;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.RegionalArchives .row {
+  min-height: 956px;
+}
+.RegionalArchives .ra--main-wrapper {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 10px;
+  background-color: #eff3f8;
+}
+.RegionalArchives .ra--main-wrapper .ra--main__content {
+  margin: 0 15px 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+}
+.RegionalArchives .ra--main-wrapper .ra--main__content:before {
+  content: attr(data-before);
+  display: block;
+  background-color: #ddecff;
+  color: #666;
+  font-size: 14px;
+  padding: 12px 10px;
+}
+.RegionalArchives .ra--main-wrapper .ra--main__content .form-row {
+  margin: 15px;
+}
+.RegionalArchives .ra--main-wrapper .ra--main__content .form-row .form-row__item {
+  position: relative;
+  white-space: nowrap;
+}
+.RegionalArchives .ra--main-wrapper .ra--main__content .form-row .form-row__item:before,
+.RegionalArchives .ra--main-wrapper .ra--main__content .form-row .form-row__item .form-control {
+  display: inline-block;
+  vertical-align: middle;
+}
+.RegionalArchives .ra--main-wrapper .ra--main__content .form-row .form-row__item:before {
+  content: attr(data-before);
+  font-size: 14px;
+  color: #666;
+  width: 70px;
+  text-align: right;
+}
+.RegionalArchives .ra--main-wrapper .ra--main__content .form-row .form-row__item .form-control {
+  width: 125px;
+}
+.RegionalArchives .ra--main-wrapper .ra--main__content .form-row .btn-oprate {
+  display: inline-block;
+  text-align: center;
+  border-radius: 0;
+  padding: 4px 12px;
+  width: 80px;
+  position: relative;
+  margin: 0 10px;
+  right: 0;
+  color: #fff;
+  border-color: #65a9ff;
+  background-color: #65a9ff;
+}
+.RegionalArchives .ra--main-wrapper .ra--main__content .form-row .btn-oprate:hover {
+  color: #65a9ff;
+  background-color: #fff;
+}
+.RegionalArchives .ra--main-wrapper .ra--main__content .form-row .form-row__search {
+  position: relative;
+}
+.RegionalArchives .ra--main-wrapper .ra--main__content .form-row .form-row__search .form-control {
+  padding-right: 30px;
+}
+.RegionalArchives .ra--main-wrapper .ra--main__content .form-row .form-row__search .btn-search {
+  background-color: transparent;
+  position: absolute;
+  padding: 1px 4px;
+  right: 10px;
+  top: 1px;
+}
+.RegionalArchives .ra--main-wrapper .ra--main__content .form-row.form-row__wrap .form-row__item .form-control {
+  width: 196px;
+}
+.RegionalArchives .ra--main-wrapper .ra--main__content .form-row.form-row__wrap .form-row__search {
+  text-align: right;
+}
+.RegionalArchives .ra--main-wrapper .ra--main__content .form-row.form-row__wrap .form-row__search .btn-search {
+  display: inline-block;
+  text-align: center;
+  border-radius: 0;
+  padding: 5px 12px;
+  width: 83px;
+  position: relative;
+  right: 0;
+  color: #fff;
+  border-color: #65a9ff;
+  background-color: #65a9ff;
+}
+.RegionalArchives .ra--main-wrapper .ra--main__content .form-row.form-row__wrap .form-row__search .btn-search:hover {
+  color: #65a9ff;
+  background-color: #fff;
+}
+.RegionalArchives .ra--main-wrapper .ra--main__content .btn-group-end {
+  margin: 15px 0;
+  padding: 0 20px;
+  text-align: right;
+}
+.RegionalArchives .ra--main-wrapper .ra--main__content .btn-group-end .btn-outline-primary {
+  display: inline-block;
+  text-align: center;
+  border-radius: 0;
+  padding: 5px 12px;
+  color: #fff;
+  border-color: #65a9ff;
+  background-color: #65a9ff;
+}
+.RegionalArchives .ra--main-wrapper .ra--main__content .btn-group-end .btn-outline-primary:hover {
+  color: #65a9ff;
+  background-color: #fff;
+}
+.RegionalArchives .ra--main-wrapper .ra--main__content .btn-group {
+  display: block;
+  text-align: right;
+  margin: 20px 0;
+}
+.RegionalArchives .ra--main-wrapper .ra--main__content .btn-group .icon-add,
+.RegionalArchives .ra--main-wrapper .ra--main__content .btn-group .path1,
+.RegionalArchives .ra--main-wrapper .ra--main__content .btn-group .path2 {
+  font-style: normal;
+}
+.RegionalArchives .ra--main-wrapper .ra--main__content .btn-group .icon-add {
+  margin-right: 5px;
+}
+.RegionalArchives .ra--main-wrapper .ra--main__content .pagination {
+  justify-content: flex-end;
+}

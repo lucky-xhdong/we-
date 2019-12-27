@@ -1,0 +1,489 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.mark-homework-container {
+  background-color: #f4f9fc;
+  overflow: hidden;
+}
+.mark-homework-container .handle-group {
+  background-color: #fff;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+  margin: 20px 40px;
+  padding: 10px 20px;
+  display: flex;
+}
+.mark-homework-container .handle-group .checkbox-group {
+  flex: 1;
+}
+.mark-homework-container .handle-group .checkbox-group .cg-label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.mark-homework-container .handle-group .checkbox-group .cg-label .txt {
+  font-size: 16px;
+  color: #333;
+}
+.mark-homework-container .handle-group .sort-group {
+  padding: 0 20px;
+  position: relative;
+}
+.mark-homework-container .handle-group .sort-group .txt-sort {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  color: #17b6fe;
+}
+.mark-homework-container .handle-group .sort-group .txt-sort:after {
+  content: '';
+  position: absolute;
+  border: 5px solid transparent;
+  border-top-color: #17b6fe;
+  top: 50%;
+  margin-top: -2px;
+  margin-left: 5px;
+  -webkit-transition: all .1s ease .1s;
+  -moz-transition: all .1s ease .1s;
+  -ms-transition: all .1s ease .1s;
+  -o-transition: all .1s ease .1s;
+  transition: all .1s ease .1s;
+}
+.mark-homework-container .handle-group .sort-group .txt-sort.reverse:after {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  margin-top: -8px;
+}
+.mark-homework-container .mhc-main {
+  background-color: #fff;
+  border: 1px solid #eee;
+  display: flex;
+}
+.mark-homework-container .mhc-main .mhc-list {
+  flex: 0 0 300px;
+  min-height: 400px;
+}
+.mark-homework-container .mhc-main .mhc-list ul li {
+  position: relative;
+  padding-left: 40px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.mark-homework-container .mhc-main .mhc-list ul li .mhc-list_title {
+  overflow: hidden;
+  line-height: 28px;
+}
+.mark-homework-container .mhc-main .mhc-list ul li .mhc-list_title .name {
+  float: left;
+  font-size: 16px;
+  color: #000;
+}
+.mark-homework-container .mhc-main .mhc-list ul li .mhc-list_title .name:after {
+  content: attr(data-after);
+  font-size: 14px;
+  color: #666;
+}
+.mark-homework-container .mhc-main .mhc-list ul li .mhc-list_title .time {
+  float: right;
+  font-size: 14px;
+  color: #666;
+}
+.mark-homework-container .mhc-main .mhc-list ul li .mhc-list_lesson {
+  overflow: hidden;
+  line-height: 27px;
+}
+.mark-homework-container .mhc-main .mhc-list ul li .mhc-list_lesson .name {
+  float: left;
+  font-size: 12px;
+  color: #666;
+}
+.mark-homework-container .mhc-main .mhc-list ul li .mhc-list_lesson .scored,
+.mark-homework-container .mhc-main .mhc-list ul li .mhc-list_lesson .unscore {
+  float: right;
+}
+.mark-homework-container .mhc-main .mhc-list ul li:before {
+  content: attr(data-before);
+  position: absolute;
+  width: 28px;
+  bottom: -1px;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding-top: 14px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.mark-homework-container .mhc-main .mhc-list ul li.marked .mhc-list_lesson .scored {
+  font-size: 14px;
+  color: #b06510;
+}
+.mark-homework-container .mhc-main .mhc-list ul li.marked:before {
+  background-color: #17b6fe;
+}
+.mark-homework-container .mhc-main .mhc-list ul li.unmark .mhc-list_lesson .unscore {
+  font-size: 14px;
+  color: #999;
+}
+.mark-homework-container .mhc-main .mhc-list ul li.unmark:before {
+  background-color: #f47075;
+}
+.mark-homework-container .mhc-main .mhc-list ul li:hover,
+.mark-homework-container .mhc-main .mhc-list ul li.active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.mark-homework-container .mhc-main .mhc-detail {
+  flex: 1;
+  padding: 0 30px 30px;
+  min-height: 400px;
+  border-left: 1px solid #d9d9d9;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_hgroup .mhc-list_title {
+  overflow: hidden;
+  padding: 14px 0 10px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_hgroup .mhc-list_title .name {
+  float: left;
+  font-size: 16px;
+  color: #000;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_hgroup .mhc-list_title .name:after {
+  content: attr(data-after);
+  font-size: 14px;
+  color: #666;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_hgroup .mhc-list_title .time {
+  float: right;
+  font-size: 14px;
+  color: #666;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_marked .score-wrapper {
+  display: flex;
+  padding: 10px 0;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_marked .score-wrapper .work-type {
+  flex: 1;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_marked .score-wrapper .work-type .marked-type_audio:before {
+  content: attr(data-before);
+  font-size: 12px;
+  color: #666;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_marked .score-wrapper .work-type .marked-type_audio .audio-group {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 318px;
+  height: 28px;
+  margin: 10px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_marked .score-wrapper .work-type .marked-type_audio .audio-group .btn {
+  display: inline-block;
+  width: 11px;
+  font-size: 0;
+  margin-left: 14px;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_marked .score-wrapper .work-type .marked-type_audio .audio-group .btn.btn-pause {
+  height: 16px;
+  background: url("/media/images/icon-pause-gray.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_marked .score-wrapper .work-type .marked-type_audio .audio-group .btn.btn-pause:hover {
+  background: url("/media/images/icon-pause.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_marked .score-wrapper .work-type .marked-type_audio .audio-group .btn.btn-play {
+  height: 18px;
+  background: url("/media/images/icon-play-gray.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_marked .score-wrapper .work-type .marked-type_audio .audio-group .btn.btn-play:hover {
+  background: url("/media/images/icon-play.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_marked .score-wrapper .work-type .marked-type_audio .audio-group .progress {
+  flex: 1;
+  margin: 0 20px;
+  background-color: #d8d8d8;
+  width: 262px;
+  height: 4px;
+  border-radius: 4px;
+  font-size: 0;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_marked .score-wrapper .work-type .marked-type_audio .audio-group .progress .progress-bar {
+  background-color: #fcac2a;
+  border-radius: 4px;
+  height: 4px;
+  width: 10%;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_marked .score-wrapper .work-type .marked-type_audio .audio-group .audio {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_marked .score-wrapper .work-type .marked-type_txt:before {
+  content: attr(data-before);
+  font-size: 12px;
+  color: #666;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_marked .score-wrapper .work-type .marked-type_txt .txt {
+  font-size: 14px;
+  color: #000;
+  word-wrap: break-word;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_marked .score-wrapper .score-group {
+  text-align: right;
+  padding-left: 15px;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_marked .score-wrapper .score-group:before {
+  content: attr(data-before);
+  font-size: 12px;
+  color: #666;
+  display: block;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_marked .score-wrapper .score-group .txt {
+  font-size: 20px;
+  color: #b06510;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_marked .comment-wrapper {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d8d8d8;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_marked .comment-wrapper:before {
+  content: attr(data-before);
+  font-size: 12px;
+  color: #666;
+  display: block;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_marked .comment-wrapper .txt {
+  font-size: 14px;
+  color: #fe5500;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark.mhc-detail_unmark_composition {
+  border-top: 1px solid #d8d8d8;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .score-wrapper {
+  display: flex;
+  padding: 10px 0;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .score-wrapper .work-type {
+  flex: 1;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .score-wrapper .work-type .marked-type_audio:before {
+  content: attr(data-before);
+  font-size: 12px;
+  color: #666;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .score-wrapper .work-type .marked-type_audio .audio-group {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 318px;
+  height: 28px;
+  margin: 10px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .score-wrapper .work-type .marked-type_audio .audio-group .btn {
+  display: inline-block;
+  width: 11px;
+  font-size: 0;
+  margin-left: 14px;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .score-wrapper .work-type .marked-type_audio .audio-group .btn.btn-pause {
+  height: 16px;
+  background: url("/media/images/icon-pause-gray.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .score-wrapper .work-type .marked-type_audio .audio-group .btn.btn-pause:hover {
+  background: url("/media/images/icon-pause.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .score-wrapper .work-type .marked-type_audio .audio-group .btn.btn-play {
+  height: 18px;
+  background: url("/media/images/icon-play-gray.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .score-wrapper .work-type .marked-type_audio .audio-group .btn.btn-play:hover {
+  background: url("/media/images/icon-play.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .score-wrapper .work-type .marked-type_audio .audio-group .progress {
+  flex: 1;
+  margin: 0 20px;
+  background-color: #d8d8d8;
+  width: 262px;
+  height: 4px;
+  border-radius: 4px;
+  font-size: 0;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .score-wrapper .work-type .marked-type_audio .audio-group .progress .progress-bar {
+  background-color: #fcac2a;
+  border-radius: 4px;
+  height: 4px;
+  width: 10%;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .score-wrapper .work-type .marked-type_audio .audio-group .audio {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .score-wrapper .work-type .marked-type_txt:before {
+  content: attr(data-before);
+  font-size: 12px;
+  color: #666;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .score-wrapper .work-type .marked-type_txt .txt {
+  font-size: 14px;
+  color: #000;
+  word-wrap: break-word;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .score-wrapper .score-group {
+  text-align: right;
+  padding-left: 15px;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .score-wrapper .score-group:before {
+  content: attr(data-before);
+  font-size: 12px;
+  color: #666;
+  display: block;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .score-wrapper .score-group .txt {
+  font-size: 20px;
+  color: #b06510;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .comment-wrapper {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d8d8d8;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .comment-wrapper:before {
+  content: attr(data-before);
+  font-size: 12px;
+  color: #666;
+  display: block;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .comment-wrapper .txt {
+  font-size: 14px;
+  color: #fe5500;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .comment-level {
+  margin-bottom: 15px;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .comment-level:before {
+  content: attr(data-before);
+  font-size: 12px;
+  color: #666;
+  line-height: 30px;
+  display: block;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .comment-level ul li {
+  position: relative;
+  padding-right: 30px;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .comment-level ul li .txt {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .comment-level ul li:after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 16px;
+  right: 5px;
+  top: 8px;
+  background: url("/media/images/icon-selected.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .comment-level ul li:hover .txt,
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .comment-level ul li.active .txt {
+  color: #000;
+}
+.mark-homework-container .mhc-main .mhc-detail .mhc-detail_unmark .comment-level ul li.active:after {
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+.mark-homework-container .mhc-main .mhc-detail .btn-group {
+  margin: 10px;
+}
+.mark-homework-container .mhc-main .mhc-detail .btn-group .btn {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.mark-homework-container .mhc-main .mhc-detail .btn-group .btn.btn-submit {
+  background-color: #17b6fe;
+  border-radius: 4px;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+}
+@media (max-width: 568px) {
+  .mark-homework-container .handle-group {
+    margin: 10px;
+  }
+  .mark-homework-container .mhc-main {
+    display: block;
+    overflow: hidden;
+  }
+  .mark-homework-container .mhc-main .mhc-list,
+  .mark-homework-container .mhc-main .mhc-detail {
+    min-height: 200px;
+    padding: 0 10px;
+    margin: 10px 0;
+  }
+  .mark-homework-container .mhc-main .mhc-detail {
+    border-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .mark-homework-container .handle-group {
+    display: block;
+    padding: 10px;
+  }
+  .mark-homework-container .handle-group .sort-group {
+    text-align: right;
+    margin-top: 10px;
+  }
+}

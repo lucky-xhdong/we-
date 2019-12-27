@@ -1,0 +1,248 @@
+@import "variable";
+.TeachingProgram {
+  width: auto;
+  margin: 0 auto;
+  font-size: 14px;
+  > .row {
+    min-height: 956px;
+  }
+  .tp--main-wrapper {
+    padding:0;
+    background-color: @background-color7;
+    .tp--main__content {
+      margin: 0 15px 10px;
+      .content__moudle1 {
+        display: flex;
+        margin-bottom: 15px;
+        .create-wrapper {
+          background-color: @background-color;
+          margin-right: 10px;
+          flex: 1;
+          &:before {
+            content: attr(data-before);
+            display: block;
+            background: @background-color8;
+            text-align: left;
+            padding: 12px 15px;
+          }
+          .input-group {
+            padding: 15px;
+          }
+          .input-group, form, .form-group {
+            width:100%;
+            .form-control {
+              width:100%;
+              font-size: 14px;
+            }
+          }
+        }
+        .form-content {
+          background-color: @background-color;
+          &:before {
+            content: attr(data-before);
+            display: block;
+            background: @background-color8;
+            text-align: left;
+            padding: 12px 15px;
+          }
+          > form {
+            padding: 15px;
+          }
+          .form-row {
+            position: relative;
+            margin-bottom:15px;
+            &:before {
+              content: attr(data-before);
+              display: inline-block;
+              vertical-align: middle;
+              width: 100px;
+              text-align: right;;
+              font-size: 14px;
+              line-height:30px;
+              color: #666;
+            }
+            > .form-control {
+              width:87%;
+            }
+            .form-row__item {
+              margin-right:10px;
+              width:240px;
+            }
+          }
+          .btn-group {
+            text-align: center;
+            display: block;
+            margin-bottom: 10px;
+            .btn-save {
+              display: inline-block;
+              margin:0 10px;
+              width: 100px;
+              text-align: center;
+              border-radius: 0;
+              padding:5px 12px;
+              color: @color;
+              border-color: @button-color;
+              background-color: @button-color;
+              &:hover {
+                color: @color2;
+                background-color: @button-color2;
+              }
+            }
+          }
+        }
+        .choosedate-wrapper {
+          width: 300px;
+          background-color: @background-color;
+          &:before {
+            content: attr(data-before);
+            display: block;
+            background: @background-color8;
+            text-align: left;
+            padding: 12px 15px;
+          }
+          .radio-group {
+            margin: 10px 0;
+            .custom-control {
+              display: block;
+              margin: 10px 20px;
+              text-align: left;
+            }
+          }
+          .choose-handle, .add-handle {
+            text-align: left;
+            padding: 10px;
+            margin-bottom: 18px;
+            position: relative;
+            &:after {
+              content: attr(data-after);
+              position: absolute;
+              color: @color;
+              font-family: @font-family1;
+              width: 8px;
+              height: 18px;
+              right: 10px;
+              top:50%;
+              margin-top: -9px;
+            }
+            a {
+              display: block;
+              color: @color;
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+          .choose-handle {
+            background-color: @background-color5;
+          }
+          .add-handle {
+            background-color: @background-color6;
+          }
+        }
+      }
+      .content__moudle2 {
+        .service-wrapper {
+          padding-bottom: 15px;
+          background-color: @background-color;
+          &:before {
+            content: attr(data-before);
+            display: block;
+            background: @background-color8;
+            text-align: left;
+            padding: 12px 15px;
+            margin-bottom: 15px;
+          }
+          .form-row {
+            margin:0 5px;
+            .form-control-file {
+              margin:0 5px;
+            }
+          }
+          .btn-group {
+            text-align: center;
+            display: block;
+            margin-bottom: 10px;
+            .btn-save, .btn-submit {
+              display: inline-block;
+              margin:0 10px;
+              width: 100px;
+              text-align: center;
+              border-radius: 0;
+              padding:5px 12px;
+            }
+            .btn-save {
+              color: @color;
+              border-color: @button-color;
+              background-color: @button-color;
+            }
+            .btn-submit {
+              color: @color;
+              border-color: @button-color1;
+              background-color: @button-color1;
+            }
+          }
+          .reminder {
+            text-align: center;
+            margin:200px 0;
+          }
+        }
+      }
+      .btn-group-upload {
+        display: block;
+        text-align: right;
+        margin: 0 6px;
+        width: 100%;
+        .btn-add {
+          position: relative;
+          overflow: hidden;
+          margin:0 10px;
+          width: 100px;
+          text-align: center;
+          border-radius: 0;
+          padding:5px 12px;
+          color: @color;
+          border-color: @button-color;
+          background-color: @button-color;
+          .upload-file {
+            cursor: pointer;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.teaching-program__choose_date {
+  .modal-footer {
+    .btn-group {
+      padding:0 15px;
+      text-align: center;
+      display: block;
+      margin-bottom: 10px;
+      .btn-save, .btn-confirm {
+        display: inline-block;
+        margin:0 10px;
+        border-radius: 0;
+        width: 100px;
+        padding:5px 12px;
+      }
+      .btn-confirm {
+        color: @color;
+        border-color: @button-color;
+        background-color: @button-color;
+      }
+      .btn-save {
+        color: @color;
+        border-color: @button-color1;
+        background-color: @button-color1;
+      }
+    }
+  }
+}

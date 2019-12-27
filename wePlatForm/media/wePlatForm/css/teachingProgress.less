@@ -1,0 +1,282 @@
+@import "variable";
+.TeachingProgress {
+  width: auto;
+  margin: 0 auto;
+  font-size: 14px;
+  > .row {
+    min-height: 956px;
+  }
+  .tp--main-wrapper {
+    padding:0;
+    background-color: @background-color7;
+    .tp--main__content {
+      margin: 0 15px 10px;
+      .basic-info {
+        margin-bottom: 15px;
+        background-color: @background-color;
+        &:before {
+          content: attr(data-before);
+          display: block;
+          font-size: 14px;
+          color: @color3;
+          padding: 12px 10px;
+          background-color: @background-color8;
+        }
+        ul {
+          margin: 0;
+          padding: 15px 30px;
+          li {
+            list-style: none;
+            position: relative;
+            padding-left: 75px;
+            &:before {
+              content: attr(data-before);
+              position: absolute;
+              font-size: 14px;
+              color: @color3;
+              left: 0;
+            }
+            p {
+              font-size: 14px;
+              color: @color4;
+            }
+          }
+        }
+      }
+      .reference-resource {
+        margin-bottom: 15px;
+        background-color: @background-color;
+        &:before {
+          content: attr(data-before);
+          display: block;
+          font-size: 14px;
+          color: @color3;
+          padding: 12px 10px;
+          background-color: @background-color8;
+        }
+        ul {
+          font-size: 0;
+          padding: 10px 25px;
+          li {
+            display: inline-block;
+            vertical-align: middle;
+            overflow: hidden;
+            width: 263px;
+            margin: 10px 5px;
+            .img-wrapper {
+              position: relative;
+              img {
+                max-width: 100%;
+              }
+              .img-icon {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                left:50%;
+                margin-left: -25px;
+                top:50%;
+                margin-top: -32px;
+                .icon {
+                  font-size: 32px;
+                  color: @color2;
+                }
+              }
+              .img-badge {
+                position: absolute;
+                font-size: 14px;
+                color: @color;
+                height: 24px;
+                line-height: 24px;
+                padding-right: 10px;
+                right: 0;
+                top: 10px;
+                z-index: 1;
+                &:before, &:after {
+                  content: '';
+                  position: absolute;
+                  background-color: @background-color1;
+                  opacity: .2;
+                  z-index: -1;
+                  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+                  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+                }
+                &:before {
+                  border-top-left-radius: 50%;
+                  border-bottom-left-radius: 50%;
+                  width: 20px;
+                  height: 24px;
+                  bottom: 0;
+                  left: -20px;
+                }
+                &:after {
+                  left: 0;
+                  right: 0;
+                  top: 0;
+                  bottom: 0;
+                }
+              }
+            }
+            .txt-wrapper {
+              border: 1px solid @border-color9;
+              border-top: none;
+              padding: 10px 15px;
+              .txt {
+                display: block;
+                font-size: 14px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+              }
+            }
+          }
+        }
+      }
+      .teaching-task {
+        margin-bottom: 15px;
+        background-color: @background-color;
+        &:before {
+          content: attr(data-before);
+          display: block;
+          font-size: 14px;
+          color: @color3;
+          padding: 12px 10px;
+          background-color: @background-color8;
+        }
+        > ul {
+          font-size: 0;
+          padding: 10px 25px;
+          li {
+            display: inline-block;
+            vertical-align: middle;
+            overflow: hidden;
+            width: 263px;
+            margin: 10px 5px;
+            padding: 10px 15px;
+            border: 1px solid @border-color9;
+            .title-group {
+              position: relative;
+              padding: 10px 0;
+              &:after {
+                content: '';
+                position: absolute;
+                width: 40px;
+                height: 1px;
+                background-color: @background-color5;
+                left: 0;
+                bottom: 0;
+              }
+              span {
+                font-size: 16px;
+                color: @color3;
+                display: block;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+              }
+            }
+            .txt-group {
+              padding: 10px 0;
+              p {
+                font-size: 14px;
+                color: @color4;
+                margin: 0;
+              }
+            }
+            .resource-lists {
+              margin: 20px 0;
+              &:before {
+                content: attr(data-before);
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 14px;
+                color: @color2;
+              }
+              .resource-lists_item {
+                display: inline-block;
+                vertical-align: middle;
+                width: 35px;
+                height: 35px;
+                border: 1px solid @border-color2;
+                border-radius: 4px;
+                padding: 5px;
+                margin: 0 5px;
+                -webkit-transition: all .1s ease .1s;
+                -moz-transition: all .1s ease .1s;
+                -ms-transition: all .1s ease .1s;
+                -o-transition: all .1s ease .1s;
+                transition: all .1s ease .1s;
+                .icon {
+                  display: inline-block;
+                  font-size: 24px;
+                  color: @color2;
+                  position: relative;
+                  -webkit-transition: all .1s ease .1s;
+                  -moz-transition: all .1s ease .1s;
+                  -ms-transition: all .1s ease .1s;
+                  -o-transition: all .1s ease .1s;
+                  transition: all .1s ease .1s;
+                  &.icon-zip-o {
+                    .path1, .path2, .path3, .path4, .path5, .path6, .path7, .path8 {
+                      position: absolute;
+                    }
+                  }
+                }
+                &:hover {
+                  text-decoration: none;
+                  border-radius: 0;
+                }
+              }
+            }
+            .btn-group {
+              display: block;
+              margin: 10px 0;
+              position: relative;
+              .txt-percent {
+                font-size: 14px;
+                color: #666;
+                display: block;
+                text-align: center;
+                margin-bottom: 5px;
+              }
+              .btn-upload {
+                display: block;
+                width: 100px;
+                height: 30px;
+                line-height: 30px;
+                margin: 0 auto;
+                text-align: center;
+                font-size: 14px;
+                color: @color4;
+                border: 1px solid @border-color8;
+                -webkit-transition: all .1s ease .1s;
+                -moz-transition: all .1s ease .1s;
+                -ms-transition: all .1s ease .1s;
+                -o-transition: all .1s ease .1s;
+                transition: all .1s ease .1s;
+                &:hover {
+                  text-decoration: none;
+                  color: @color2;
+                  border: 1px solid @border-color2;
+                }
+              }
+              .btn-upload-file {
+                position: absolute;
+                width: 100px;
+                height: 30px;
+                left:50%;
+                margin-left: -50px;
+                opacity: 0;
+                cursor: pointer;
+                -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+                filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="UTF-8">
+    <title></title>
+    <?=$this->load->view("exam/tmpl/meta")?>
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>media/exam/css/testSystemTeacher.css">
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>media/exam/css/common.css">
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>media/exam/css/testSystem.css">
+</head>
+<body>
+<div class="header clear">
+    <div class="fn-l">
+        <span>Part III 	Reading Comprehension </span>
+    </div>
+    <div class="fn-r">
+        <div class="timing-con">
+            <div class="surplus-time">剩余时间：<i>17:00</i>	</div>
+            <div class="count-time">总共时间：<i>25:00</i>	</div>
+        </div>
+    </div>
+</div>
+<div class="wrapper mgt-102">
+    <!-- 警告框 -->
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        开始演示模态框
+    </button>
+    <!-- 模态框（Modal） -->
+    <div class="modal fade warning-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        提示标题
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    这里是提示详细内容。<br/>
+                    这里是提示详细内容。（可以没有）
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sure">
+                        确定
+                    </button>
+                    <button type="button" class="btn btn-cancel" data-dismiss="modal">取消
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+
+
+
+
+
+    <div class="part-item src-ele" id="part-item-a">
+        <h2 class="part-section" data-section="section A"></h2>
+        <div class="part-item-con">
+            <div class="part-directions" data-dir="directions">
+                In this section,there is a passage with ten blanks.You are required to select one word for each blank from a list of choices given in a word bank following the passage.Read the passage through carefullu before making your choices. Each choice in the bank is identified by a letter.Please mark the corresponding letter for each item on Answer sheet 2 wirh a single line through the center. You may not use any of the words in the bank more than once.
+            </div>
+            <div class="banked-cloze-box">
+                <h6 class="questions-num">Questions&nbsp;36&nbsp;to&nbsp;45 are&nbsp;based&nbsp;on&nbsp;the&nbsp;passage&nbsp;you&nbsp;have&nbsp;just&nbsp;heard.&nbsp;&nbsp;</h6>
+                <div class="banked-cloze-con banked-selected">
+                    It‘s&nbsp;our&nbsp;guilty&nbsp;pleasure:&nbsp;Watching&nbsp;TV&nbsp;is&nbsp;the&nbsp;most&nbsp;common&nbsp;everyday&nbsp;activity,after&nbsp;work&nbsp;and&nbsp;sleep,&nbsp;in&nbsp;many&nbsp;parts&nbsp;of&nbsp;the&nbsp;world.Americans&nbsp;view&nbsp;five&nbsp;hours&nbsp;of&nbsp;TV&nbsp;each&nbsp;day,&nbsp;and&nbsp;while&nbsp;we&nbsp;know&nbsp;that&nbsp;spending&nbsp;so&nbsp;much&nbsp;time&nbsp;sitting <div><span class="bg-17b"  data-num="36">decade</span><i></i> </div>obesity(肥胖症)&nbsp;and&nbsp;other&nbsp;diseases,&nbsp;researchers&nbsp;have&nbsp;now quantified&nbsp;just how being&nbsp;a&nbsp;couch&nbsp;<div><span data-num="37"></span><i></i></div>potato&nbsp;can&nbsp;be.&nbsp;
+                    It‘s&nbsp;our&nbsp;guilty&nbsp;pleasure:&nbsp;Watching&nbsp;TV&nbsp;is&nbsp;the&nbsp;most&nbsp;common&nbsp;everyday&nbsp;activity,after&nbsp;work&nbsp;and&nbsp;sleep,&nbsp;in&nbsp;many&nbsp;parts&nbsp;of&nbsp;the&nbsp;world.Americans&nbsp;view&nbsp;five&nbsp;hours&nbsp;of&nbsp;TV&nbsp;each&nbsp;day,&nbsp;and&nbsp;while&nbsp;we&nbsp;know&nbsp;that&nbsp;spending&nbsp;so&nbsp;much&nbsp;time&nbsp;sitting <div><span   data-num="38"></span><i></i> </div>obesity(肥胖症)&nbsp;and&nbsp;other&nbsp;diseases,&nbsp;researchers&nbsp;have&nbsp;now quantified&nbsp;just how being&nbsp;a&nbsp;couch&nbsp;<div><span data-num="39"></span><i></i></div>potato&nbsp;can&nbsp;be.&nbsp;
+                    It‘s&nbsp;our&nbsp;guilty&nbsp;pleasure:&nbsp;Watching&nbsp;TV&nbsp;is&nbsp;the&nbsp;most&nbsp;common&nbsp;everyday&nbsp;activity,after&nbsp;work&nbsp;and&nbsp;sleep,&nbsp;in&nbsp;many&nbsp;parts&nbsp;of&nbsp;the&nbsp;world.Americans&nbsp;view&nbsp;five&nbsp;hours&nbsp;of&nbsp;TV&nbsp;each&nbsp;day,&nbsp;and&nbsp;while&nbsp;we&nbsp;know&nbsp;that&nbsp;spending&nbsp;so&nbsp;much&nbsp;time&nbsp;sitting <div><span   data-num="40"></span><i></i> </div>obesity(肥胖症)&nbsp;and&nbsp;other&nbsp;diseases,&nbsp;researchers&nbsp;have&nbsp;now quantified&nbsp;just how being&nbsp;a&nbsp;couch&nbsp;<div><span data-num="41"></span><i></i></div>potato&nbsp;can&nbsp;be.&nbsp;
+                </div>
+                <ul class="banked-cloze-list clear">
+                    <li>conseme</li>
+                    <li class="li-selected">decade</li>
+                    <li>determine</li>
+                    <li>harmful </li>
+                    <li>effectIve</li>
+                    <li>outcomes</li>
+                    <li>decade</li>
+                    <li>determine</li>
+                    <li>harmful </li>
+                    <li>effectIve</li>
+                    <li>outcomes</li>
+                    <li>conseme</li>
+                    <li>decade</li>
+                    <li>determine</li>
+                    <li>harmful </li>
+                </ul>
+                <div class="complete-status completed">Section A  全部完成</div>
+            </div>
+        </div>
+    </div>
+    <div class="part-item src-ele" id="part-item-b">
+        <h2 class="part-section" data-section="section B"></h2>
+        <div class="part-item-con">
+            <div class="part-directions" data-dir="directions">
+                In this section,you are going to read a passage with ten statements attavched to it. Each statement contains information given in one of the paragraphs. Identify the paragraph from which the information is derived. You may choose a paragraph more than once. Each paragraph is marked with a letter. Answer the question by marking the corresponding letter on Answer Sheet 2
+            </div>
+            <div>
+                <h6 class="questions-num">Questions&nbsp;1&nbsp;to&nbsp;2 are&nbsp;based&nbsp;on&nbsp;the&nbsp;passage&nbsp;you&nbsp;have&nbsp;just&nbsp;heard.&nbsp;</h6>
+                <div class="reading-com-box bg-f1f7 pag-20 mgb-30">
+                    <h1>&nbsp;Essay&nbsp;-granding&nbsp;Software&nbsp;Officers&nbsp;Professors&nbsp;a&nbsp;Break&nbsp;</h1>
+                    <ul class="reading-con-article data-arr">
+                        <li data-arr="[A]">
+                            Imagine&nbsp;taking&nbsp;a&nbsp;college&nbsp;exam,&nbsp;and&nbsp;instead&nbsp;of&nbsp;handing&nbsp;in&nbsp;a&nbsp;blue&nbsp;book&nbsp;and&nbsp;getting&nbsp;a&nbsp;grade&nbsp;from&nbsp;a&nbsp;professoer&nbsp;a&nbsp;few&nbsp;weeks&nbsp;later,&nbsp;clicking&nbsp;the&nbsp;“send”&nbsp;button&nbsp;when&nbsp;you&nbsp;are&nbsp;done&nbsp;and&nbsp;receiving&nbsp;a&nbsp;grade&nbsp;back&nbsp;instantly,your&nbsp;essay&nbsp;scored&nbsp;by&nbsp;a&nbsp;software&nbsp;program.&nbsp;And&nbsp;then,&nbsp;instead&nbsp;of&nbsp;being&nbsp;done&nbsp;with&nbsp;the&nbsp;exam,&nbsp;imagine&nbsp;that&nbsp;the&nbsp;system&nbsp;would&nbsp;immediately&nbsp;let&nbsp;you&nbsp;rewrite&nbsp;the&nbsp;test&nbsp;to&nbsp;try&nbsp;to&nbsp;improve&nbsp;your&nbsp;grade. <span class="reading-selected">48</span><i></i>
+                            &nbsp;</li>
+                        <li data-arr="[b]">
+                            Edx,the&nbsp;nonprofit&nbsp;enterprise&nbsp;founded&nbsp;by&nbsp;Harvard&nbsp;and&nbsp;the&nbsp;Massachusetts&nbsp;Institute&nbsp;of&nbsp;Thnology(MIT) to&nbsp;offer&nbsp;courses&nbsp;on&nbsp;the&nbsp;Internet,has&nbsp;just&nbsp;introduced&nbsp;such&nbsp;a&nbsp;system&nbsp;and&nbsp;will&nbsp;make&nbsp;its&nbsp;automated(自动的)software&nbsp;available&nbsp;free&nbsp;on&nbsp;the&nbsp;Web&nbsp;to&nbsp;any&nbsp;institutioons&nbsp;that&nbsp;wants&nbsp;to&nbsp;use&nbsp;it.&nbsp;The&nbsp;software&nbsp;uses&nbsp;artificial&nbsp;intelligence&nbsp;to&nbsp;grade&nbsp;student&nbsp;essays&nbsp;and&nbsp;short&nbsp;written&nbsp;answers,&nbsp;freeing&nbsp;professors&nbsp;for&nbsp;other&nbsp;tasks.&nbsp;<span ></span><i></i>
+                        </li>
+                        <li data-arr="[C]">
+                            The&nbsp;new&nbsp;service&nbsp;will&nbsp;bring&nbsp;the&nbsp;educational&nbsp;consortium(联盟)into&nbsp;a&nbsp;growing&nbsp;conflict&nbsp;over&nbsp;the&nbsp;role&nbsp;of&nbsp;the&nbsp;automation&nbsp;education.&nbsp;Altough&nbsp;automated&nbsp;grading&nbsp;systems&nbsp;for&nbsp;multiple-choice&nbsp;and&nbsp;true-false&nbsp;tests&nbsp;are&nbsp;now&nbsp;widespread,&nbsp;the&nbsp;use&nbsp;of&nbsp;artificial&nbsp;intelligence&nbsp;technology&nbsp;to&nbsp;grade&nbsp;essay&nbsp;answers has&nbsp;not&nbsp;yet&nbsp;provided&nbsp;widespread&nbsp;acceptance&nbsp;by&nbsp;educations&nbsp;and&nbsp;has&nbsp;many&nbsp;critics.&nbsp;<span ></span><i></i>
+                        </li>
+                        <li data-arr="[D]">
+                            Anant&nbsp;Agarwal,&nbsp;an&nbsp;electrical&nbsp;engineer&nbsp;who&nbsp;is&nbsp;president&nbsp;of&nbsp;Edx,&nbsp;predicted&nbsp;that&nbsp;the&nbsp;instant&nbsp;grading&nbsp;software&nbsp;would&nbsp;be&nbsp;a&nbsp;useful&nbsp;teachingmated&nbsp;system&nbsp;is&nbsp;no&nbsp;matter&nbsp;for&nbsp;live&nbsp;teachers.&nbsp;One&nbsp;longtime&nbsp;critic,&nbsp;Les&nbsp;Perelman，has&nbsp;drawn&nbsp;national&nbsp;attention&nbsp;several&nbsp;times&nbsp;for&nbsp;putting&nbsp;together&nbsp;nonsense&nbsp;essays&nbsp;that&nbsp;have&nbsp;fooled&nbsp;software&nbsp;grading&nbsp;programs&nbsp;into&nbsp;giving&nbsp;high&nbsp;marks.&nbsp;He&nbsp;has&nbsp;also&nbsp;been&nbsp;highly&nbsp;critical&nbsp;of&nbsp;studies&nbsp;claiming&nbsp;that&nbsp;the&nbsp;software&nbsp;compares&nbsp;well&nbsp;to&nbsp;human&nbsp;grades.&nbsp;<span ></span><i></i>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="reading-con-list data-arr mgb-30">
+                    <li data-arr="46">
+                        Some professors in education are collecting signatures to voice their opposition to automated essay grading.
+                        <div>
+                            <div class="click-ans-con">
+                                <span>[N]</span>
+                                Mark D.Shermis, a professor at the University of Akron in Ohio,supervised the Hewlett Foundation‟s contest on automated essay scoring and wrote a pape...
+                                Mark D.Shermis, a professor at the University of Akron in Ohio,supervised the Hewlett Foundation‟s contest on automated essay scoring and wrote a pape...
+                            </div>
+                        </div>
+                    </li>
+                    <li data-arr="47">
+                        using software to grade students essay saves teachers time for other work.
+                        <div>
+                            <span class="click-ans-btn">点击答案</span>
+                        </div>
+                    </li>
+                    <li data-arr="48">
+                        the Hewlett contests aim at improving essay grading software.
+                        <div>
+                            <span class="click-ans-btn">点击答案</span>
+                        </div>
+                    </li>
+                    <li data-arr="49">
+                        Though the automated grading system is widely used in multiple-choice tests, automated essay grading is still criticized by many educators.
+                        <div>
+                            <span class="click-ans-btn">点击答案</span>
+                        </div>
+                    </li>
+                    <li data-arr="50">
+                        Some people don’t believe the software grading system can do as
+                        <div>
+                            <span class="click-ans-btn">点击答案</span>
+                        </div>
+                    </li>
+                    <li data-arr="51">
+                        Critics&nbsp;of&nbsp;automated&nbsp;essay&nbsp;scoring&nbsp;do&nbsp;not&nbsp;seem&nbsp;to&nbsp;know&nbsp;the&nbsp;true&nbsp;realities&nbsp;in&nbsp;leses&nbsp;famous&nbsp;university.&nbsp;
+                        <div>
+                            <span class="click-ans-btn">点击答案</span>
+                        </div>
+                    </li>
+                    <li data-arr="52">
+                        Critics&nbsp;argue&nbsp;many&nbsp;important&nbsp;aspects&nbsp;of&nbsp;effective&nbsp;writing&nbsp;cannot&nbsp;measured&nbsp;by&nbsp;computer&nbsp;rating&nbsp;programs.&nbsp;
+                        <div>
+                            <span class="click-ans-btn">点击答案</span>
+                        </div>
+                    </li>
+                    <li data-arr="53">
+                        As&nbsp;class&nbsp;size&nbsp;grows,&nbsp;most&nbsp;teachers&nbsp;are&nbsp;unable&nbsp;to&nbsp;give&nbsp;student&nbsp;valuable&nbsp;comments&nbsp;as&nbsp;to&nbsp;how&nbsp;to&nbsp;improve&nbsp;their&nbsp;writing.&nbsp;
+                        <div>
+                            <span class="click-ans-btn">点击答案</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="complete-status uncomplete">Section B 有9题未完成</div>
+        </div>
+    </div>
+    <div class="part-item src-ele " id="part-item-c">
+        <h2 class="part-section" data-section="section C"></h2>
+        <div class="part-item-con">
+            <div class="part-directions" data-dir="directions">
+                There are 2 passages in this section. Each passage is followed by some questions or unfinished statements. For each of them there are four choices marked A), B),C) and D). You should decide on the best choice and mark the corresponding letter on Answer Sheet 2 with a single line through the center. 
+            </div>
+            <div class="passage-box">
+                <div class="passage-box-item mgb-30 src-ele" id="part-item-c-1">
+                    <div class="passage-icon">passage one</div>
+                    <h6 class="questions-num">Questions&nbsp;56&nbsp;to&nbsp;60 are&nbsp;based&nbsp;on&nbsp;the&nbsp;passage&nbsp;you&nbsp;have&nbsp;just&nbsp;heard.&nbsp;</h6>
+                    <div class="bg-f1f passage-con mgb-20">
+                        <p>
+                            Across the rich world, well-educated people increasingly work longer than the less-skilled. Some 65% of American men aged 62-74 with a professional degree are in the workforce, compared with 32% of men with only a high-school certificate. This gap is part of a deepening dividebetween the well-education well off and the unskilled poor. Rapid technological advance has raised the incomes of the highly skilled while squeezing those of the unskilled. The consequences, for individual and society, are profound. 
+                        </p>
+                        <p>
+                            The world is facing as astonishing rise in the number of old people, and they will live longer than ever before. Over the next 20 years the global population of those aged 65 or more will almost double, from 600 million to 1.1 billion. The experience of the 20th century, when greater longevity (长寿)translated into more years in retirement rather than more years at work, has persuaded many observers that this shift will lead to slower economic growth, while the swelling ranks of pensioners will create government budget problems. 
+                        </p>
+                        <p>
+                            But the notion of a sharp division between the working young and the idle old misses a new trend, the growing gap between the skilled and the unskilled. Employment rates are falling among younger unskilled people, whereas older skilled folk are working longer. The divide is most extreme in America, where well-educated baby-boomers (二战后生育高峰期出生的美国人) are putting off retirement while many less-skilled younger people have dropped out of the workforce. 
+                        </p>
+                        <p>
+                            That even the better-off must work longer to have a comfortable retirement. But the changing nature of work also plays a big role. Pay has risen sharply for the highly educated, and those people continue to reaprich rewards into old age because these days the educated elderly are more productive than the preceding generation. Technological change may well reinforce that shift: the skills that complement computers, from management knowhow to creativity. Do not necessarily decline with age. 
+                        </p>
+                    </div>
+                    <div class="choose-num-box choose-type data-arr">
+                        <div class="choose-num-item" data-arr="56">
+                            <ul>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="qus56" value=""><i></i>
+                                    </label>
+                                    <span>A.younger&nbsp;people&nbsp;are&nbsp;replacing&nbsp;the&nbsp;elderly&nbsp;</span>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="qus56" value=""><i></i>
+                                    </label>
+                                    <span>B.well-educated&nbsp;people&nbsp;tend&nbsp;to&nbsp;work&nbsp;longer&nbsp;</span>  </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="qus56"><i></i>
+                                    </label>
+                                    <span>C.unemployment&nbsp;rates&nbsp;are&nbsp;rising&nbsp;year&nbsp;after&nbsp;year </span>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="qus56"><i></i>
+                                    </label>
+                                    <span>D.people&nbsp;with&nbsp;no&nbsp;college&nbsp;degree&nbsp;do&nbsp;not&nbsp;easily&nbsp;find&nbsp;work &nbsp;</span> &nbsp;
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="choose-num-item" data-arr="57">
+                            <ul>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="qus57" value=""><i></i>
+                                    </label>
+                                    <span>A.younger&nbsp;people&nbsp;are&nbsp;replacing&nbsp;the&nbsp;elderly&nbsp;</span>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="qus57" value=""><i></i>
+                                    </label>
+                                    <span>B.well-educated&nbsp;people&nbsp;tend&nbsp;to&nbsp;work&nbsp;longer&nbsp;</span>  </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="qus57"><i></i>
+                                    </label>
+                                    <span>C.unemployment&nbsp;rates&nbsp;are&nbsp;rising&nbsp;year&nbsp;after&nbsp;year </span>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="qus57"><i></i>
+                                    </label>
+                                    <span>D.people&nbsp;with&nbsp;no&nbsp;college&nbsp;degree&nbsp;do&nbsp;not&nbsp;easily&nbsp;find&nbsp;work &nbsp;</span> &nbsp;
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="complete-status uncomplete">Section C 有9题未完成</div>
+                </div>
+                <div class="passage-box-item mgb-30 src-ele" id="part-item-c-2">
+                    <div class="passage-icon">passage Two</div>
+                    <h6 class="questions-num">Questions&nbsp;61&nbsp;to&nbsp;64 are&nbsp;based&nbsp;on&nbsp;the&nbsp;passage&nbsp;you&nbsp;have&nbsp;just&nbsp;heard.&nbsp;</h6>
+                    <div class="bg-f1f passage-con mgb-20">
+                        <p>
+                            Across the rich world, well-educated people increasingly work longer than the less-skilled. Some 65% of American men aged 62-74 with a professional degree are in the workforce, compared with 32% of men with only a high-school certificate. This gap is part of a deepening dividebetween the well-education well off and the unskilled poor. Rapid technological advance has raised the incomes of the highly skilled while squeezing those of the unskilled. The consequences, for individual and society, are profound. 
+                        </p>
+                        <p>
+                            The world is facing as astonishing rise in the number of old people, and they will live longer than ever before. Over the next 20 years the global population of those aged 65 or more will almost double, from 600 million to 1.1 billion. The experience of the 20th century, when greater longevity (长寿)translated into more years in retirement rather than more years at work, has persuaded many observers that this shift will lead to slower economic growth, while the swelling ranks of pensioners will create government budget problems. 
+                        </p>
+                        <p>
+                            But the notion of a sharp division between the working young and the idle old misses a new trend, the growing gap between the skilled and the unskilled. Employment rates are falling among younger unskilled people, whereas older skilled folk are working longer. The divide is most extreme in America, where well-educated baby-boomers (二战后生育高峰期出生的美国人) are putting off retirement while many less-skilled younger people have dropped out of the workforce. 
+                        </p>
+                        <p>
+                            That even the better-off must work longer to have a comfortable retirement. But the changing nature of work also plays a big role. Pay has risen sharply for the highly educated, and those people continue to reaprich rewards into old age because these days the educated elderly are more productive than the preceding generation. Technological change may well reinforce that shift: the skills that complement computers, from management knowhow to creativity. Do not necessarily decline with age. 
+                        </p>
+                    </div>
+                    <div class="choose-num-box choose-type data-arr">
+                        <div class="choose-num-item" data-arr="61">
+                            <ul>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="qus61" value=""><i></i>
+                                    </label>
+                                    <span>A.younger&nbsp;people&nbsp;are&nbsp;replacing&nbsp;the&nbsp;elderly&nbsp;</span>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="qus61" value=""><i></i>
+                                    </label>
+                                    <span>B.well-educated&nbsp;people&nbsp;tend&nbsp;to&nbsp;work&nbsp;longer&nbsp;</span>  </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="qus61"><i></i>
+                                    </label>
+                                    <span>C.unemployment&nbsp;rates&nbsp;are&nbsp;rising&nbsp;year&nbsp;after&nbsp;year </span>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="qus61"><i></i>
+                                    </label>
+                                    <span>D.people&nbsp;with&nbsp;no&nbsp;college&nbsp;degree&nbsp;do&nbsp;not&nbsp;easily&nbsp;find&nbsp;work &nbsp;</span> &nbsp;
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="choose-num-item" data-arr="62">
+                            <ul>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="qus62" value=""><i></i>
+                                    </label>
+                                    <span>A.younger&nbsp;people&nbsp;are&nbsp;replacing&nbsp;the&nbsp;elderly&nbsp;</span>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="qus62" value=""><i></i>
+                                    </label>
+                                    <span>B.well-educated&nbsp;people&nbsp;tend&nbsp;to&nbsp;work&nbsp;longer&nbsp;</span>  </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="qus62"><i></i>
+                                    </label>
+                                    <span>C.unemployment&nbsp;rates&nbsp;are&nbsp;rising&nbsp;year&nbsp;after&nbsp;year </span>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="qus62"><i></i>
+                                    </label>
+                                    <span>D.people&nbsp;with&nbsp;no&nbsp;college&nbsp;degree&nbsp;do&nbsp;not&nbsp;easily&nbsp;find&nbsp;work &nbsp;</span> &nbsp;
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="complete-status uncomplete">Section C 有9题未完成</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="part-itme src-ele" id="part-item-d">
+        <div class="part-item-con">
+            <div class="bor-bg"></div>
+            <div class="text-right finish-paper">
+                <span class="finish-error">题目全部回答完后方可交卷</span>
+                <button class="btn sub-btn bg-17b">提交</button>
+            </div>
+        </div>
+    </div>
+    <!-- 导航标签 -->
+    <ul class="nav-box">
+        <li href="#part-item-a " class="current">Section A</li>
+        <li href="#part-item-b">Section B</li>
+        <li href="#part-item-c">
+            Section C
+            <ul class="nav-box-el">
+                <li href="#part-item-c-1">Passage 1</li>
+                <li href="#part-item-c-2">Passage 2</li>
+            </ul>
+        </li>
+        <li href="#part-item-d">交卷</li>
+    </ul>
+    <!-- 答题卡 -->
+    <div class="scantron-box">
+        <div class="scantron-con">
+            <dl class="clear">
+                <dt>Section a</dt>
+                <dd class="has-ans">36</dd>
+                <dd class="has-ans">37</dd>
+                <dd class="has-ans">38</dd>
+                <dd class="has-ans">39</dd>
+                <dd>40</dd>
+                <dd class="has-ans">41</dd>
+                <dd class="has-ans">42</dd>
+                <dd>43</dd>
+                <dd class="has-ans">44</dd>
+                <dd class="has-ans">45</dd>
+            </dl>
+            <dl class="clear">
+                <dt>Section B</dt>
+                <dd>36</dd>
+                <dd>37</dd>
+                <dd>38</dd>
+                <dd>39</dd>
+                <dd>40</dd>
+                <dd>41</dd>
+                <dd>42</dd>
+                <dd>43</dd>
+                <dd>44</dd>
+                <dd>45</dd>
+            </dl>
+            <dl class="clear">
+                <dt>Section c</dt>
+                <dd>36</dd>
+                <dd>37</dd>
+                <dd>38</dd>
+                <dd>39</dd>
+                <dd>40</dd>
+                <dd>41</dd>
+                <dd>42</dd>
+                <dd>43</dd>
+                <dd>44</dd>
+                <dd>45</dd>
+                <dd>36</dd>
+                <dd>37</dd>
+                <dd>38</dd>
+                <dd>39</dd>
+                <dd>40</dd>
+                <dd>41</dd>
+                <dd>42</dd>
+                <dd>43</dd>
+                <dd>44</dd>
+                <dd>45</dd>
+            </dl>
+            <dl class="clear">
+                <dt>Section d</dt>
+                <dd>36</dd>
+                <dd>37</dd>
+                <dd>38</dd>
+                <dd>39</dd>
+                <dd>40</dd>
+                <dd>41</dd>
+                <dd>42</dd>
+                <dd>43</dd>
+                <dd>44</dd>
+                <dd>45</dd>
+                <dd>36</dd>
+                <dd>37</dd>
+                <dd>38</dd>
+                <dd>39</dd>
+                <dd>40</dd>
+                <dd>41</dd>
+                <dd>42</dd>
+                <dd>43</dd>
+                <dd>44</dd>
+                <dd>45</dd>
+            </dl>
+            <dl class="clear">
+                <dt>Section e</dt>
+                <dd>36</dd>
+                <dd>37</dd>
+                <dd>38</dd>
+                <dd>39</dd>
+                <dd>40</dd>
+                <dd>41</dd>
+                <dd>42</dd>
+                <dd>43</dd>
+                <dd>44</dd>
+                <dd>45</dd>
+                <dd>36</dd>
+                <dd>37</dd>
+                <dd>38</dd>
+                <dd>39</dd>
+                <dd>40</dd>
+                <dd>41</dd>
+                <dd>42</dd>
+                <dd>43</dd>
+                <dd>44</dd>
+                <dd>45</dd>
+            </dl>
+        </div>
+        <span class="scantron-btn">答<br/>题<br/>卡 <i></i></span>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="<?=base_url()?>media/exam/js/testSystem.js"></script>
+</body>
+</html>

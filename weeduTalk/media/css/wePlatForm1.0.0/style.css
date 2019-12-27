@@ -1,0 +1,2936 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #eee;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+}
+.hide {
+  display: none;
+}
+.header {
+  background-color: #fff;
+  text-align: center;
+  font-size: 0;
+  position: relative;
+  z-index: 11;
+}
+.header .header-container {
+  width: 1182px;
+  margin: 0 auto;
+}
+.header .header-container:after {
+  content: " ";
+  height: 0;
+  font-size: 0;
+  clear: both;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+}
+.header .header-container .header-container_left {
+  float: left;
+}
+.header .header-container .header-container_left h1 {
+  font-weight: lighter;
+}
+.header .header-container .header-container_left h1 .logo,
+.header .header-container .header-container_left h1 .txt {
+  display: inline-block;
+  vertical-align: middle;
+}
+.header .header-container .header-container_left h1 .logo {
+  width: 80px;
+  height: 40px;
+  margin: 20px 20px 20px 0;
+  background-image: url(../../images/sprite-icons.png);
+  background-position: 0 0;
+}
+.header .header-container .header-container_left h1 .txt {
+  font-family: PingFangSC-Medium;
+  font-size: 20px;
+  text-align: left;
+  color: #333;
+  margin: 27px 0;
+}
+.header .header-container .header-container_right {
+  float: right;
+}
+.header .header-container .header-container_right:after {
+  content: " ";
+  height: 0;
+  font-size: 0;
+  clear: both;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+}
+.header .header-container .header-container_right li {
+  float: left;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #333;
+  position: relative;
+}
+.header .header-container .header-container_right li:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 19px;
+  top: 50%;
+  margin-top: -10px;
+  left: 0;
+  background-color: #979797;
+}
+.header .header-container .header-container_right li:first-child:before {
+  background-color: #fff;
+}
+.header .header-container .header-container_right li .form-group {
+  position: relative;
+  padding: 28px 17px;
+}
+.header .header-container .header-container_right li .form-group .form-control {
+  width: 180px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  line-height: 23px;
+  padding: 0 10px;
+}
+.header .header-container .header-container_right li .form-group .form-control:focus {
+  outline: none;
+}
+.header .header-container .header-container_right li .form-group .btn-search {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  background-color: transparent;
+}
+.header .header-container .header-container_right li .form-group .btn-search .icon-search {
+  display: block;
+  background-image: url(../../images/sprite-icons.png);
+  background-position: -37px -41px;
+  width: 17px;
+  height: 17px;
+}
+.header .header-container .header-container_right li .form-group .btn-search:focus {
+  outline: none;
+}
+.header .header-container .header-container_right li a {
+  display: inline-block;
+  position: relative;
+  color: #333;
+  padding: 28px 17px;
+}
+.header .header-container .header-container_right li .txt {
+  font-size: 18px;
+}
+.header .header-container .header-container_right li .icon-arrow-down {
+  background-image: url(../../images/sprite-icons.png);
+  background-position: -55px -50px;
+  width: 16px;
+  height: 8px;
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transition: all 0.1s ease-in 0.2s;
+  -moz-transition: all 0.1s ease-in 0.2s;
+  -ms-transition: all 0.1s ease-in 0.2s;
+  -o-transition: all 0.1s ease-in 0.2s;
+  transition: all 0.1s ease-in 0.2s;
+}
+.header .header-container .header-container_right li:first-child + li + li + li:hover .icon-arrow-down {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.header .header-container .header-container_right li .dropdown-menu {
+  position: absolute;
+  top: 80px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  width: 100px;
+  min-height: 60px;
+}
+.header .header-container .header-container_right li .dropdown-menu ul li {
+  position: relative;
+}
+.header .header-container .header-container_right li .dropdown-menu ul li:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 19px;
+  top: 50%;
+  margin-top: -10px;
+  left: 0;
+  background-color: #fff;
+}
+.header .header-container .header-container_right li .dropdown-menu ul li .txt {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+  padding: 5px 18px;
+}
+.header .header-container .header-container_right li .dropdown-menu ul li:hover .txt {
+  color: #396;
+}
+.footer {
+  background-color: #333;
+}
+.footer .footer-container {
+  width: 1180px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.footer .footer-container:after {
+  content: '';
+  display: block;
+  clear: both;
+  width: 100%;
+  height: 0;
+}
+.footer .footer-container .footer-container__left {
+  float: left;
+}
+.footer .footer-container .footer-container__left .friend-link .txt,
+.footer .footer-container .footer-container__left .copyright .txt {
+  font-family: PingFangSC-Medium;
+  color: #fff;
+}
+.footer .footer-container .footer-container__left .friend-link {
+  margin-bottom: 30px;
+}
+.footer .footer-container .footer-container__left .friend-link .txt {
+  font-size: 16px;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 8px;
+}
+.footer .footer-container .footer-container__left .friend-link .txt:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 14px;
+  top: 50%;
+  margin-top: -7px;
+  left: 0;
+  background-color: #fff;
+}
+.footer .footer-container .footer-container__left .friend-link .txt:first-child {
+  padding-left: 0;
+}
+.footer .footer-container .footer-container__left .friend-link .txt:first-child:before {
+  width: 0;
+}
+.footer .footer-container .footer-container__left .copyright .txt {
+  font-size: 14px;
+  margin: 0;
+}
+.footer .footer-container .footer-container__right {
+  float: right;
+}
+.footer .footer-container .footer-container__right .friend-link {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 60px;
+}
+.footer .footer-container .footer-container__right .friend-link:before {
+  content: attr(data-before);
+  display: block;
+  font-family: PingFangSC-Medium;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.footer .footer-container .footer-container__right .friend-link .txt {
+  display: block;
+  font-family: PingFangSC-Light;
+  font-size: 14px;
+  color: #666;
+  text-align: left;
+}
+.breadcrumb-wrapper .breadcrumb-container {
+  margin: 0 auto;
+  border-radius: 3px;
+  width: 1000px;
+}
+.breadcrumb-wrapper .breadcrumb-container ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 15px 0;
+  padding-left: 17px;
+  position: relative;
+  padding-right: 7px;
+}
+.breadcrumb-wrapper .breadcrumb-container ul li:first-child {
+  padding-left: 0;
+}
+.breadcrumb-wrapper .breadcrumb-container ul li:first-child:after {
+  width: 0;
+}
+.breadcrumb-wrapper .breadcrumb-container ul li:after {
+  content: '';
+  position: absolute;
+  background-image: url(../../images/sprite-icons.png);
+  background-position: -37px -59px;
+  width: 7px;
+  height: 14px;
+  left: 0;
+  top: 50%;
+  margin-top: -6px;
+}
+.breadcrumb-wrapper .breadcrumb-container ul li a {
+  font-family: PingFangSC-Medium;
+  font-size: 16px;
+  color: #999;
+  text-align: left;
+}
+.banner-wrapper .banner-container {
+  width: 1180px;
+  margin: 30px auto 20px;
+}
+.banner-wrapper .banner-container .banner-module-01:after {
+  content: '';
+  display: table;
+  clear: both;
+  width: 100%;
+  height: 0;
+}
+.banner-wrapper .banner-container .banner-module-01 .banner-module__left {
+  float: left;
+  margin-right: 20px;
+}
+.banner-wrapper .banner-container .banner-module-01 .banner-module__left .img-wrapper {
+  width: 780px;
+  height: 452px;
+  overflow: hidden;
+}
+.banner-wrapper .banner-container .banner-module-01 .banner-module__left .mask {
+  top: 250px;
+  background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  /* 标准的语法 */
+}
+.banner-wrapper .banner-container .banner-module-01 .banner-module__left .mask .txt {
+  left: 40px;
+  bottom: 30px;
+  right: 40px;
+  font-size: 24px;
+}
+.banner-wrapper .banner-container .banner-module-01 .banner-module__right {
+  float: right;
+}
+.banner-wrapper .banner-container .banner-module-01 .banner-module__right .img-wrapper {
+  width: 380px;
+  height: 216px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.banner-wrapper .banner-container .banner-module-01 .banner-module__right .mask {
+  top: 108px;
+  background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  /* 标准的语法 */
+}
+.banner-wrapper .banner-container .banner-module-01 .banner-module__right .mask .txt {
+  left: 20px;
+  bottom: 15px;
+  right: 20px;
+  top: 0;
+  font-size: 16px;
+}
+.banner-wrapper .banner-container .banner-module-01 .banner-module__left,
+.banner-wrapper .banner-container .banner-module-01 .banner-module__right {
+  position: relative;
+}
+.banner-wrapper .banner-container .banner-module-01 .banner-module__left .img-wrapper,
+.banner-wrapper .banner-container .banner-module-01 .banner-module__right .img-wrapper {
+  overflow: hidden;
+}
+.banner-wrapper .banner-container .banner-module-01 .banner-module__left .img-wrapper:hover,
+.banner-wrapper .banner-container .banner-module-01 .banner-module__right .img-wrapper:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.banner-wrapper .banner-container .banner-module-01 .banner-module__left .img-wrapper .img img,
+.banner-wrapper .banner-container .banner-module-01 .banner-module__right .img-wrapper .img img {
+  max-width: 100%;
+}
+.banner-wrapper .banner-container .banner-module-01 .banner-module__left .mask,
+.banner-wrapper .banner-container .banner-module-01 .banner-module__right .mask {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+.banner-wrapper .banner-container .banner-module-01 .banner-module__left .mask .txt,
+.banner-wrapper .banner-container .banner-module-01 .banner-module__right .mask .txt {
+  position: absolute;
+  font-family: PingFangSC-Medium;
+  color: #ffffff;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+  word-break: break-word;
+  top: 0;
+  display: flex;
+  align-items: flex-end;
+}
+.banner-wrapper .banner-container .banner-module-02 {
+  position: relative;
+}
+.banner-wrapper .banner-container .banner-module-02:after {
+  content: '';
+  display: table;
+  clear: both;
+  width: 100%;
+  height: 0;
+}
+.banner-wrapper .banner-container .banner-module-02 .img-wrapper {
+  width: 580px;
+  height: 360px;
+  overflow: hidden;
+  float: left;
+  margin-left: 20px;
+  position: relative;
+}
+.banner-wrapper .banner-container .banner-module-02 .img-wrapper:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.banner-wrapper .banner-container .banner-module-02 .img-wrapper:first-child {
+  margin-left: 0;
+}
+.banner-wrapper .banner-container .banner-module-02 .img-wrapper .mask {
+  position: absolute;
+  width: 100%;
+  top: 180px;
+  left: 0;
+  bottom: 0;
+  background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  /* 标准的语法 */
+}
+.banner-wrapper .banner-container .banner-module-02 .img-wrapper .mask .txt {
+  position: absolute;
+  font-family: PingFangSC-Medium;
+  color: #ffffff;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  left: 40px;
+  right: 40px;
+  bottom: 30px;
+  word-break: break-word;
+  top: 0;
+  display: flex;
+  align-items: flex-end;
+}
+.news-wrapper .news-container.home-news-container {
+  width: 1180px;
+  margin: 0 auto;
+}
+.news-wrapper .news-container.home-news-container:after {
+  content: '';
+  display: table;
+  clear: both;
+  width: 100%;
+  height: 0;
+}
+.news-wrapper .news-container.home-news-container .news-left {
+  float: left;
+  width: 780px;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__nav {
+  background-color: #fff;
+  margin-bottom: 11px;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__nav:after {
+  content: '';
+  display: table;
+  clear: both;
+  width: 100%;
+  height: 0;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__nav .news-left__nav_left {
+  float: left;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__nav .news-left__nav_left ul:after {
+  content: '';
+  display: table;
+  clear: both;
+  width: 100%;
+  height: 0;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__nav .news-left__nav_left ul li {
+  float: left;
+  text-align: center;
+  position: relative;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__nav .news-left__nav_left ul li a {
+  display: block;
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  color: #333;
+  padding: 10px 21px;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__nav .news-left__nav_left ul li:hover a,
+.news-wrapper .news-container.home-news-container .news-left .news-left__nav .news-left__nav_left ul li.active a {
+  color: #396;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__nav .news-left__nav_left ul li:hover:after,
+.news-wrapper .news-container.home-news-container .news-left .news-left__nav .news-left__nav_left ul li.active:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #396;
+  left: 0;
+  bottom: 0;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__nav .news-left__nav_right {
+  float: right;
+  position: relative;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__nav .news-left__nav_right .txt {
+  position: relative;
+  padding: 10px 21px;
+  display: block;
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  color: #333;
+  margin-right: 10px;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__nav .news-left__nav_right .icon-arrow-down {
+  position: absolute;
+  background-image: url(../../images/sprite-icons.png);
+  background-position: -55px -50px;
+  width: 16px;
+  height: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transition: all 0.1s ease-in 0.2s;
+  -moz-transition: all 0.1s ease-in 0.2s;
+  -ms-transition: all 0.1s ease-in 0.2s;
+  -o-transition: all 0.1s ease-in 0.2s;
+  transition: all 0.1s ease-in 0.2s;
+  top: 50%;
+  margin-top: -4px;
+  right: 20px;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__nav .news-left__nav_right .dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: #ffffff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  width: 150px;
+  z-index: 1;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__nav .news-left__nav_right .dropdown-menu ul li {
+  text-align: center;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__nav .news-left__nav_right .dropdown-menu ul li a {
+  display: block;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  line-height: 40px;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__nav .news-left__nav_right .dropdown-menu ul li:hover,
+.news-wrapper .news-container.home-news-container .news-left .news-left__nav .news-left__nav_right .dropdown-menu ul li.active {
+  background-color: #eee;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__nav .news-left__nav_right .dropdown-menu ul li:hover a,
+.news-wrapper .news-container.home-news-container .news-left .news-left__nav .news-left__nav_right .dropdown-menu ul li.active a {
+  font-size: 16px;
+  color: #396;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__nav .news-left__nav_right:hover .icon-arrow-down {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__nav .news-left__nav_right:hover .dropdown-menu {
+  display: block;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module01 ul li,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module02 ul li,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module03 ul li,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module04 ul li {
+  background-color: #fff;
+  margin-bottom: 12px;
+  padding: 9px 12px;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module01 ul li:hover,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module02 ul li:hover,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module03 ul li:hover,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module04 ul li:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module01 ul li:after,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module02 ul li:after,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module03 ul li:after,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module04 ul li:after {
+  content: '';
+  display: table;
+  clear: both;
+  width: 100%;
+  height: 0;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module01 ul li .img-wrapper,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module02 ul li .img-wrapper,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module03 ul li .img-wrapper,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module04 ul li .img-wrapper {
+  float: left;
+  width: 240px;
+  height: 152px;
+  overflow: hidden;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module01 ul li .img-wrapper img,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module02 ul li .img-wrapper img,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module03 ul li .img-wrapper img,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module04 ul li .img-wrapper img {
+  max-width: 100%;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module01 ul li .txt-wrapper,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module02 ul li .txt-wrapper,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module03 ul li .txt-wrapper,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module04 ul li .txt-wrapper {
+  float: right;
+  width: 505px;
+  padding: 11px 0;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module01 ul li .txt-wrapper .txt-title,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module02 ul li .txt-wrapper .txt-title,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module03 ul li .txt-wrapper .txt-title,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module04 ul li .txt-wrapper .txt-title {
+  height: 54px;
+  overflow: hidden;
+  margin: 0;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module01 ul li .txt-wrapper .txt-title .txt,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module02 ul li .txt-wrapper .txt-title .txt,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module03 ul li .txt-wrapper .txt-title .txt,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module04 ul li .txt-wrapper .txt-title .txt {
+  font-family: PingFangSC-Semibold;
+  font-size: 18px;
+  color: #333;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module01 ul li .txt-wrapper .label-lists,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module02 ul li .txt-wrapper .label-lists,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module03 ul li .txt-wrapper .label-lists,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module04 ul li .txt-wrapper .label-lists {
+  padding: 4px 0;
+  font-size: 0;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module01 ul li .txt-wrapper .label-lists .txt,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module02 ul li .txt-wrapper .label-lists .txt,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module03 ul li .txt-wrapper .label-lists .txt,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module04 ul li .txt-wrapper .label-lists .txt {
+  cursor: default;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #fff;
+  margin-right: 10px;
+  height: 20px;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module01 ul li .txt-wrapper .txt-content,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module02 ul li .txt-wrapper .txt-content,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module03 ul li .txt-wrapper .txt-content,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module04 ul li .txt-wrapper .txt-content {
+  font-family: PingFangSC-Medium;
+  font-size: 14px;
+  color: #999;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module02,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module03,
+.news-wrapper .news-container.home-news-container .news-left .news-left__con .news-left__module04 {
+  display: none;
+}
+.news-wrapper .news-container.home-news-container .news-left .btn-group {
+  background-color: #fff;
+  overflow: hidden;
+}
+.news-wrapper .news-container.home-news-container .news-left .btn-group .btn-enter {
+  display: block;
+  background: #339966;
+  border-radius: 23px;
+  width: 300px;
+  height: 46px;
+  font-family: PingFangSC-Medium;
+  font-size: 20px;
+  line-height: 46px;
+  color: #ffffff;
+  letter-spacing: 10px;
+  text-align: center;
+  margin: 12px auto;
+}
+.news-wrapper .news-container.home-news-container .news-right {
+  float: right;
+  width: 380px;
+  padding: 18px 0;
+  background-color: #fff;
+}
+.news-wrapper .news-container.home-news-container .news-right:before {
+  content: attr(data-before);
+  display: block;
+  font-family: PingFangSC-Medium;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+  border-top: 4px solid #396;
+  border-bottom: 1px dotted #979797;
+  margin: 0 40px;
+  line-height: 40px;
+  letter-spacing: 10px;
+}
+.news-wrapper .news-container.home-news-container .news-right ul li {
+  position: relative;
+  padding: 28px 40px;
+}
+.news-wrapper .news-container.home-news-container .news-right ul li:after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  background-color: #eee;
+  left: 40px;
+  right: 40px;
+  bottom: 0;
+}
+.news-wrapper .news-container.home-news-container .news-right ul li .txt-title {
+  text-align: left;
+  height: 62px;
+  overflow: hidden;
+  margin: 0;
+  font-weight: lighter;
+  line-height: 20px;
+}
+.news-wrapper .news-container.home-news-container .news-right ul li .txt-title .txt {
+  font-family: PingFangSC-Medium;
+  font-size: 16px;
+  color: #666;
+  cursor: default;
+}
+.news-wrapper .news-container.home-news-container .news-right ul li .txt-time {
+  font-family: PingFangSC-Medium;
+  font-size: 12px;
+  color: #ccc;
+  text-align: left;
+  margin-bottom: 0;
+}
+.news-wrapper .news-container.home-news-container .news-right ul li .pop-tips {
+  display: none;
+  position: absolute;
+  left: -254px;
+  top: 0;
+  background-color: #fff;
+  border: 1px solid #396;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  width: 254px;
+}
+.news-wrapper .news-container.home-news-container .news-right ul li .pop-tips:after {
+  content: '';
+  position: absolute;
+  width: 36px;
+  height: 34px;
+  right: -36px;
+  top: 0;
+  background: url("../../images/sprite-icons.png") no-repeat;
+  background-position: 0px -41px;
+}
+.news-wrapper .news-container.home-news-container .news-right ul li .pop-tips .txt {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #666;
+  text-align: left;
+  padding: 14px;
+  margin: 0;
+}
+.news-wrapper .news-container.home-news-container .news-right ul li:hover .pop-tips {
+  display: block;
+}
+.news-wrapper .news-container.home-news-container .news-right .txt-more {
+  text-align: right;
+  padding: 0 40px;
+}
+.news-wrapper .news-container.home-news-container .news-right .txt-more .txt {
+  font-family: PingFangSC-Medium;
+  font-size: 14px;
+  color: #666;
+  position: relative;
+}
+.carousel-wrapper .carousel-container {
+  width: 1180px;
+  margin: 20px auto 30px;
+}
+.carousel-wrapper .carousel-container .carousel-lists ul:after {
+  content: '';
+  display: table;
+  clear: both;
+  width: 100%;
+  height: 0;
+}
+.carousel-wrapper .carousel-container .carousel-lists ul li {
+  float: left;
+  width: 380px;
+  height: 240px;
+  margin-left: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.carousel-wrapper .carousel-container .carousel-lists ul li:first-child {
+  margin-left: 0;
+}
+.carousel-wrapper .carousel-container .carousel-lists ul li:before,
+.carousel-wrapper .carousel-container .carousel-lists ul li:after {
+  position: absolute;
+  left: 0;
+  height: 60px;
+  right: 0;
+  bottom: 0;
+}
+.carousel-wrapper .carousel-container .carousel-lists ul li:before {
+  content: '';
+  background: rgba(51, 51, 51, 0.7);
+}
+.carousel-wrapper .carousel-container .carousel-lists ul li:after {
+  content: attr(data-after);
+  font-family: PingFangSC-Medium;
+  text-align: center;
+  font-size: 24px;
+  line-height: 60px;
+  color: #fff;
+  padding: 0 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  z-index: 1;
+}
+.carousel-wrapper .carousel-container .carousel-lists ul li img {
+  max-width: 100%;
+}
+.carousel-wrapper .carousel-container .carousel-lists ul li:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.search-wrapper .search-container {
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 3px;
+  width: 1000px;
+  height: 50px;
+}
+.search-wrapper .search-container .form-group {
+  position: relative;
+  padding: 14px 30px;
+}
+.search-wrapper .search-container .form-group .form-control {
+  padding-right: 30px;
+  width: 100%;
+  border: none;
+}
+.search-wrapper .search-container .form-group .form-control:focus {
+  outline: none;
+}
+.search-wrapper .search-container .form-group .btn-search {
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  margin-top: -12px;
+  border: none;
+  background-color: transparent;
+}
+.search-wrapper .search-container .form-group .btn-search:focus {
+  outline: none;
+}
+.search-wrapper .search-container .form-group .btn-search .icon-search {
+  display: block;
+  background-image: url(../../images/sprite-icons.png);
+  background-position: -37px -41px;
+  width: 17px;
+  height: 17px;
+}
+.news-wrapper .news-container.search-news-container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.news-wrapper .news-container.search-news-container .news-lists:before {
+  content: attr(data-before);
+  display: block;
+  font-family: PingFangSC-Medium;
+  font-size: 16px;
+  color: #396;
+  margin: 15px 0;
+}
+.news-wrapper .news-container.search-news-container .news-lists ul li {
+  background-color: #fff;
+  margin-bottom: 12px;
+  padding: 14px 40px;
+}
+.news-wrapper .news-container.search-news-container .news-lists ul li:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+.news-wrapper .news-container.search-news-container .news-lists ul li:after {
+  content: '';
+  display: table;
+  clear: both;
+  width: 100%;
+  height: 0;
+}
+.news-wrapper .news-container.search-news-container .news-lists ul li .img-wrapper {
+  float: left;
+  width: 240px;
+  height: 152px;
+  overflow: hidden;
+}
+.news-wrapper .news-container.search-news-container .news-lists ul li .img-wrapper img {
+  max-width: 100%;
+}
+.news-wrapper .news-container.search-news-container .news-lists ul li .txt-wrapper {
+  float: right;
+  width: 660px;
+  padding: 11px 0;
+}
+.news-wrapper .news-container.search-news-container .news-lists ul li .txt-wrapper .txt-title {
+  height: 54px;
+  overflow: hidden;
+  margin: 0;
+}
+.news-wrapper .news-container.search-news-container .news-lists ul li .txt-wrapper .txt-title .txt {
+  font-family: PingFangSC-Semibold;
+  font-size: 18px;
+  color: #333;
+}
+.news-wrapper .news-container.search-news-container .news-lists ul li .txt-wrapper .label-lists {
+  padding: 4px 0;
+  font-size: 0;
+}
+.news-wrapper .news-container.search-news-container .news-lists ul li .txt-wrapper .label-lists .txt {
+  cursor: default;
+  font-family: PingFangSC-Regular;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #fff;
+  margin-right: 10px;
+  height: 20px;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+.news-wrapper .news-container.search-news-container .news-lists ul li .txt-wrapper .txt-content {
+  font-family: PingFangSC-Medium;
+  font-size: 14px;
+  color: #999;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.synopsis-wrapper .synopsis-container {
+  width: 1180px;
+  margin: 0 auto;
+}
+.synopsis-wrapper .synopsis-container:after {
+  content: '';
+  display: table;
+  clear: both;
+  width: 100%;
+  height: 0;
+}
+.synopsis-wrapper .synopsis-container .synopsis {
+  background-color: #fff;
+}
+.synopsis-wrapper .synopsis-container .synopsis:after {
+  content: '';
+  display: table;
+  clear: both;
+  width: 100%;
+  height: 0;
+}
+.synopsis-wrapper .synopsis-container .synopsis .img-wrapper {
+  float: left;
+  overflow: hidden;
+}
+.synopsis-wrapper .synopsis-container .synopsis .img-wrapper img {
+  max-width: 100%;
+}
+.synopsis-wrapper .synopsis-container .synopsis .txt-wrapper {
+  float: right;
+}
+.synopsis-wrapper .synopsis-container .synopsis .txt-wrapper .txt-title {
+  font-family: PingFangSC-Medium;
+  color: #333;
+  text-align: left;
+}
+.synopsis-wrapper .synopsis-container .synopsis .txt-wrapper .txt-content {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #666;
+  text-align: left;
+  line-height: 24px;
+}
+.synopsis-wrapper .synopsis-container .synopsis.synopsis-lg {
+  padding: 37px 90px 39px;
+  margin-bottom: 20px;
+}
+.synopsis-wrapper .synopsis-container .synopsis.synopsis-lg .img-wrapper {
+  width: 420px;
+  height: 240px;
+  overflow: hidden;
+}
+.synopsis-wrapper .synopsis-container .synopsis.synopsis-lg .txt-wrapper {
+  width: 540px;
+}
+.synopsis-wrapper .synopsis-container .synopsis.synopsis-lg .txt-wrapper .txt-title {
+  font-size: 24px;
+}
+.synopsis-wrapper .synopsis-container .synopsis.synopsis-md {
+  padding: 35px 25px 30px 40px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  width: 580px;
+  height: 180px;
+  float: left;
+}
+.synopsis-wrapper .synopsis-container .synopsis.synopsis-md:first-child {
+  margin-left: 0;
+}
+.synopsis-wrapper .synopsis-container .synopsis.synopsis-md .img-wrapper {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+.synopsis-wrapper .synopsis-container .synopsis.synopsis-md .txt-wrapper {
+  width: 345px;
+}
+.synopsis-wrapper .synopsis-container .synopsis.synopsis-md .txt-wrapper .txt-title {
+  font-size: 18px;
+  margin: 0;
+}
+.news-wrapper .news-container.region-news-container {
+  width: 1180px;
+  margin: 0 auto 30px;
+}
+.news-wrapper .news-container.region-news-container:after {
+  content: '';
+  display: table;
+  clear: both;
+  width: 100%;
+  height: 0;
+}
+.news-wrapper .news-container.region-news-container .news-left {
+  float: left;
+  width: 780px;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__nav {
+  background-color: #fff;
+  margin-bottom: 11px;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__nav:after {
+  content: '';
+  display: table;
+  clear: both;
+  width: 100%;
+  height: 0;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__nav .news-left__nav_left {
+  float: left;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__nav .news-left__nav_left ul:after {
+  content: '';
+  display: table;
+  clear: both;
+  width: 100%;
+  height: 0;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__nav .news-left__nav_left ul li {
+  float: left;
+  text-align: center;
+  position: relative;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__nav .news-left__nav_left ul li a {
+  display: block;
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  color: #333;
+  padding: 10px 21px;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__nav .news-left__nav_left ul li:hover a,
+.news-wrapper .news-container.region-news-container .news-left .news-left__nav .news-left__nav_left ul li.active a {
+  color: #396;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__nav .news-left__nav_left ul li:hover:after,
+.news-wrapper .news-container.region-news-container .news-left .news-left__nav .news-left__nav_left ul li.active:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #396;
+  left: 0;
+  bottom: 0;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__nav .news-left__nav_right {
+  float: right;
+  position: relative;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__nav .news-left__nav_right .txt {
+  position: relative;
+  padding: 10px 21px;
+  display: block;
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  color: #333;
+  margin-right: 10px;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__nav .news-left__nav_right .icon-arrow-down {
+  position: absolute;
+  background-image: url(../../images/sprite-icons.png);
+  background-position: -55px -50px;
+  width: 16px;
+  height: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transition: all 0.1s ease-in 0.2s;
+  -moz-transition: all 0.1s ease-in 0.2s;
+  -ms-transition: all 0.1s ease-in 0.2s;
+  -o-transition: all 0.1s ease-in 0.2s;
+  transition: all 0.1s ease-in 0.2s;
+  top: 50%;
+  margin-top: -4px;
+  right: 20px;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__nav .news-left__nav_right .dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: #ffffff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  width: 250px;
+  z-index: 1;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__nav .news-left__nav_right .dropdown-menu ul {
+  padding: 15px 0;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__nav .news-left__nav_right .dropdown-menu ul li {
+  text-align: center;
+  padding: 0 10px;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__nav .news-left__nav_right .dropdown-menu ul li a {
+  display: block;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  line-height: 40px;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__nav .news-left__nav_right .dropdown-menu ul li:hover,
+.news-wrapper .news-container.region-news-container .news-left .news-left__nav .news-left__nav_right .dropdown-menu ul li.active {
+  background-color: #eee;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__nav .news-left__nav_right .dropdown-menu ul li:hover a,
+.news-wrapper .news-container.region-news-container .news-left .news-left__nav .news-left__nav_right .dropdown-menu ul li.active a {
+  font-size: 16px;
+  color: #396;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__nav .news-left__nav_right:hover .icon-arrow-down {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__nav .news-left__nav_right:hover .dropdown-menu {
+  display: block;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module01 ul li,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module02 ul li,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module03 ul li,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module04 ul li {
+  background-color: #fff;
+  margin-bottom: 12px;
+  padding: 9px 12px;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module01 ul li:hover,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module02 ul li:hover,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module03 ul li:hover,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module04 ul li:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module01 ul li:after,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module02 ul li:after,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module03 ul li:after,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module04 ul li:after {
+  content: '';
+  display: table;
+  clear: both;
+  width: 100%;
+  height: 0;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module01 ul li .img-wrapper,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module02 ul li .img-wrapper,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module03 ul li .img-wrapper,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module04 ul li .img-wrapper {
+  float: left;
+  width: 240px;
+  height: 152px;
+  overflow: hidden;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module01 ul li .img-wrapper img,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module02 ul li .img-wrapper img,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module03 ul li .img-wrapper img,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module04 ul li .img-wrapper img {
+  max-width: 100%;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module01 ul li .txt-wrapper,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module02 ul li .txt-wrapper,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module03 ul li .txt-wrapper,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module04 ul li .txt-wrapper {
+  float: right;
+  width: 505px;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module01 ul li .txt-wrapper .txt-title,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module02 ul li .txt-wrapper .txt-title,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module03 ul li .txt-wrapper .txt-title,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module04 ul li .txt-wrapper .txt-title {
+  height: 54px;
+  margin: 0;
+  overflow: hidden;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module01 ul li .txt-wrapper .txt-title .txt,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module02 ul li .txt-wrapper .txt-title .txt,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module03 ul li .txt-wrapper .txt-title .txt,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module04 ul li .txt-wrapper .txt-title .txt {
+  font-family: PingFangSC-Semibold;
+  font-size: 20px;
+  color: #333;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module01 ul li .txt-wrapper .label-lists,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module02 ul li .txt-wrapper .label-lists,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module03 ul li .txt-wrapper .label-lists,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module04 ul li .txt-wrapper .label-lists {
+  padding: 4px 0;
+  font-size: 0;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module01 ul li .txt-wrapper .label-lists .txt,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module02 ul li .txt-wrapper .label-lists .txt,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module03 ul li .txt-wrapper .label-lists .txt,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module04 ul li .txt-wrapper .label-lists .txt {
+  cursor: default;
+  font-family: PingFangSC-Regular;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #fff;
+  margin-right: 10px;
+  height: 20px;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module01 ul li .txt-wrapper .txt-content,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module02 ul li .txt-wrapper .txt-content,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module03 ul li .txt-wrapper .txt-content,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module04 ul li .txt-wrapper .txt-content {
+  font-family: PingFangSC-Medium;
+  font-size: 14px;
+  color: #999;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module02,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module03,
+.news-wrapper .news-container.region-news-container .news-left .news-left__con .news-left__module04 {
+  display: none;
+}
+.news-wrapper .news-container.region-news-container .news-left .btn-group {
+  background-color: #fff;
+  overflow: hidden;
+}
+.news-wrapper .news-container.region-news-container .news-left .btn-group .btn-enter {
+  display: block;
+  background: #339966;
+  border-radius: 23px;
+  width: 300px;
+  height: 46px;
+  font-family: PingFangSC-Medium;
+  font-size: 20px;
+  line-height: 46px;
+  color: #ffffff;
+  letter-spacing: 10px;
+  text-align: center;
+  margin: 12px auto;
+}
+.news-wrapper .news-container.region-news-container .news-right {
+  float: right;
+  width: 380px;
+  padding: 18px 0;
+  background-color: #fff;
+}
+.news-wrapper .news-container.region-news-container .news-right:before {
+  content: attr(data-before);
+  display: block;
+  font-family: PingFangSC-Medium;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+  border-top: 4px solid #396;
+  border-bottom: 1px dotted #979797;
+  margin: 0 40px;
+  line-height: 40px;
+  letter-spacing: 10px;
+}
+.news-wrapper .news-container.region-news-container .news-right ul li {
+  position: relative;
+  padding: 28px 40px;
+}
+.news-wrapper .news-container.region-news-container .news-right ul li:after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  background-color: #eee;
+  left: 40px;
+  right: 40px;
+  bottom: 0;
+}
+.news-wrapper .news-container.region-news-container .news-right ul li .txt-title {
+  text-align: left;
+  height: 62px;
+  overflow: hidden;
+  margin: 0;
+  font-weight: lighter;
+  line-height: 20px;
+}
+.news-wrapper .news-container.region-news-container .news-right ul li .txt-title .txt {
+  font-family: PingFangSC-Medium;
+  font-size: 16px;
+  color: #666;
+  cursor: default;
+}
+.news-wrapper .news-container.region-news-container .news-right ul li .txt-time {
+  font-family: PingFangSC-Medium;
+  font-size: 12px;
+  color: #ccc;
+  text-align: left;
+  margin-bottom: 0;
+}
+.news-wrapper .news-container.region-news-container .news-right ul li .pop-tips {
+  display: none;
+  position: absolute;
+  left: -254px;
+  top: 0;
+  background-color: #fff;
+  border: 1px solid #396;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  width: 254px;
+}
+.news-wrapper .news-container.region-news-container .news-right ul li .pop-tips:after {
+  content: '';
+  position: absolute;
+  width: 36px;
+  height: 34px;
+  right: -36px;
+  top: 0;
+  background: url("../../images/sprite-icons.png") no-repeat;
+  background-position: 0px -41px;
+}
+.news-wrapper .news-container.region-news-container .news-right ul li .pop-tips .txt {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #666;
+  text-align: left;
+  padding: 14px;
+  margin: 0;
+}
+.news-wrapper .news-container.region-news-container .news-right ul li:hover .pop-tips {
+  display: block;
+}
+.news-wrapper .news-container.region-news-container .news-right .txt-more {
+  text-align: right;
+  padding: 0 40px;
+}
+.news-wrapper .news-container.region-news-container .news-right .txt-more .txt {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: PingFangSC-Medium;
+  font-size: 14px;
+  color: #666;
+  position: relative;
+  padding-right: 15px;
+}
+.news-wrapper .news-container.region-news-container .news-right .txt-more .icon-arrow-right {
+  content: '';
+  position: absolute;
+  background-image: url(../../images/sprite-icons.png);
+  background-position: -37px -59px;
+  width: 7px;
+  height: 14px;
+  right: 0;
+  top: 50%;
+  margin-top: -7px;
+}
+.chart-wrapper .chart-container {
+  width: 1180px;
+  margin: 0 auto;
+}
+.chart-wrapper .chart-container .nav {
+  background-color: #fff;
+  margin-bottom: 9px;
+}
+.chart-wrapper .chart-container .nav ul:after {
+  content: '';
+  display: table;
+  clear: both;
+  width: 100%;
+  height: 0;
+}
+.chart-wrapper .chart-container .nav ul li {
+  float: left;
+  text-align: center;
+  position: relative;
+}
+.chart-wrapper .chart-container .nav ul li a {
+  display: block;
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  color: #333;
+  padding: 10px 21px;
+}
+.chart-wrapper .chart-container .nav ul li:hover a,
+.chart-wrapper .chart-container .nav ul li.active a {
+  color: #396;
+}
+.chart-wrapper .chart-container .nav ul li:hover:after,
+.chart-wrapper .chart-container .nav ul li.active:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #396;
+  left: 0;
+  bottom: 0;
+}
+.chart-wrapper .chart-container .chart {
+  width: 100%;
+  height: 382px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.chart-wrapper .chart-container .chart .chart-image {
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+.chart-wrapper .chart-container .chart .chart-image ul {
+  font-size: 0;
+  text-align: center;
+}
+.chart-wrapper .chart-container .chart .chart-image ul li {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  width: 372px;
+  margin: 0 10px;
+}
+.chart-wrapper .chart-container .chart .chart-image ul li:before {
+  content: attr(data-before);
+  display: block;
+  text-align: center;
+  font: 14px/30px 'PingFangSC-Regular';
+  color: #666;
+  padding: 10px 0;
+}
+.chart-wrapper .chart-container .chart .chart-image ul li img {
+  width: 372px;
+}
+.chart-wrapper .chart-container .chart .chart-login {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.chart-wrapper .chart-container .chart .chart-login .chart-login__txt {
+  position: absolute;
+  width: 283px;
+  height: 59px;
+  left: 50%;
+  top: 50%;
+  margin-top: -30px;
+  margin-left: -142px;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+.chart-wrapper .chart-container .chart .chart-login .chart-login__txt .txt-login,
+.chart-wrapper .chart-container .chart .chart-login .chart-login__txt .txt-view {
+  display: inline-block;
+  vertical-align: middle;
+  font: 20px/60px 'Microsoft YaHei';
+  position: relative;
+  z-index: 1;
+}
+.chart-wrapper .chart-container .chart .chart-login .chart-login__txt .txt-login {
+  color: #0080ff;
+}
+.chart-wrapper .chart-container .chart .chart-login .chart-login__txt .txt-view {
+  color: #666;
+}
+.item-wrapper .item-container {
+  width: 1180px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.item-wrapper .item-container .item-group {
+  width: 780px;
+  margin: 0 auto 30px;
+  overflow: hidden;
+  padding: 40px 0;
+}
+.item-wrapper .item-container .item-group .hgroup .txt-title {
+  font-family: PingFangSC-Medium;
+  font-size: 30px;
+  color: #333;
+  text-align: left;
+}
+.item-wrapper .item-container .item-group .hgroup .txt-subinfo .txt-source,
+.item-wrapper .item-container .item-group .hgroup .txt-subinfo .txt-time {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  text-align: left;
+}
+.item-wrapper .item-container .item-group .hgroup .txt-subinfo .txt-source:before,
+.item-wrapper .item-container .item-group .hgroup .txt-subinfo .txt-time:before {
+  content: attr(data-before);
+  color: #333;
+}
+.item-wrapper .item-container .item-group .hgroup .txt-subinfo .txt-source {
+  color: #333;
+}
+.item-wrapper .item-container .item-group .hgroup .txt-subinfo .txt-time {
+  color: #666;
+}
+.item-wrapper .item-container .item-group .article img {
+  max-width: 100%;
+}
+.item-wrapper .item-container .item-group .article .txt {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #333;
+  line-height: 24px;
+}
+.carousel-wrapper .carousel-container.item__carousel-container {
+  position: relative;
+  margin: 20px auto 30px;
+}
+.carousel-wrapper .carousel-container.item__carousel-container:before,
+.carousel-wrapper .carousel-container.item__carousel-container:after {
+  content: '';
+  position: absolute;
+  border-bottom: 1px dotted #333;
+  width: 430px;
+  height: 1px;
+  top: 46px;
+}
+.carousel-wrapper .carousel-container.item__carousel-container:before {
+  left: 90px;
+}
+.carousel-wrapper .carousel-container.item__carousel-container:after {
+  right: 90px;
+}
+.carousel-wrapper .carousel-container.item__carousel-container .carousel-lists {
+  padding: 30px 90px;
+  background-color: #fff;
+}
+.carousel-wrapper .carousel-container.item__carousel-container .carousel-lists:before {
+  content: attr(data-before);
+  display: block;
+  font-family: PingFangSC-Medium;
+  font-size: 24px;
+  color: #396;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.carousel-wrapper .carousel-container.item__carousel-container .carousel-lists ul:after {
+  content: '';
+  display: table;
+  clear: both;
+  width: 100%;
+  height: 0;
+}
+.carousel-wrapper .carousel-container.item__carousel-container .carousel-lists ul li {
+  float: left;
+  width: 320px;
+  height: 200px;
+  margin-left: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.carousel-wrapper .carousel-container.item__carousel-container .carousel-lists ul li:first-child {
+  margin-left: 0;
+}
+.carousel-wrapper .carousel-container.item__carousel-container .carousel-lists ul li:before,
+.carousel-wrapper .carousel-container.item__carousel-container .carousel-lists ul li:after {
+  position: absolute;
+  left: 0;
+  height: 50px;
+  right: 0;
+  bottom: 0;
+}
+.carousel-wrapper .carousel-container.item__carousel-container .carousel-lists ul li:before {
+  content: '';
+  background: rgba(51, 51, 51, 0.7);
+}
+.carousel-wrapper .carousel-container.item__carousel-container .carousel-lists ul li:after {
+  content: attr(data-after);
+  font-family: PingFangSC-Medium;
+  text-align: center;
+  font-size: 20px;
+  line-height: 50px;
+  color: #fff;
+  padding: 0 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  z-index: 1;
+}
+.carousel-wrapper .carousel-container.item__carousel-container .carousel-lists ul li img {
+  max-width: 100%;
+}
+.carousel-wrapper .carousel-container.item__carousel-container .carousel-lists ul li:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.news-wrapper .news-container.news-news-container {
+  width: 1180px;
+  margin: 0 auto 30px;
+  background-color: #fff;
+}
+.news-wrapper .news-container.news-news-container .news-module {
+  width: 778px;
+  margin: 0 auto;
+  padding: 75px 0;
+}
+.news-wrapper .news-container.news-news-container .news-module .txt-date {
+  font-family: PingFangSC-Medium;
+  font-size: 20px;
+  color: #333;
+  text-align: left;
+  border-left: 3px solid #396;
+  margin-bottom: 30px;
+  padding: 0 25px;
+}
+.news-wrapper .news-container.news-news-container .news-module .news-module__item {
+  border: 1px solid #396;
+  margin-bottom: 20px;
+  padding: 40px 35px;
+}
+.news-wrapper .news-container.news-news-container .news-module .news-module__item .txt-title {
+  font-family: PingFangSC-Medium;
+  font-size: 18px;
+  color: #333;
+}
+.news-wrapper .news-container.news-news-container .news-module .news-module__item .txt-time {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #666;
+}
+.news-wrapper .news-container.news-news-container .news-module .news-module__item .txt-content .txt {
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #666;
+  line-height: 28px;
+}
+.login-wrapper {
+  background: url("../../images/bg-login-wePlatform1.0.0.jpg") top center no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.login-wrapper .login-container {
+  width: 1180px;
+  min-height: 840px;
+  margin: 0 auto;
+  position: relative;
+}
+.login-wrapper .login-container .login-form {
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 3px;
+  width: 300px;
+  height: 294px;
+  right: 0;
+  top: 50%;
+  margin-top: -150px;
+}
+.login-wrapper .login-container .login-form:before {
+  content: attr(data-before);
+  display: block;
+  font-family: PingFangSC-Medium;
+  font-size: 14px;
+  color: #333;
+  padding: 12px 30px;
+  background-color: #eee;
+}
+.login-wrapper .login-container .login-form .form-group {
+  padding: 20px 30px;
+}
+.login-wrapper .login-container .login-form .form-group .input-group:after {
+  content: '';
+  display: table;
+  clear: both;
+  width: 100%;
+  height: 0;
+}
+.login-wrapper .login-container .login-form .form-group .input-group .form-control {
+  border: 1px solid rgba(104, 169, 35, 0.5);
+  border-radius: 3px;
+  width: 238px;
+  height: 28px;
+  padding: 5px 12px;
+  margin-bottom: 20px;
+}
+.login-wrapper .login-container .login-form .form-group .input-group .form-control:focus {
+  outline: none;
+}
+.login-wrapper .login-container .login-form .form-group .input-group.input-group-sm .form-control {
+  width: 138px;
+  height: 28px;
+  float: left;
+}
+.login-wrapper .login-container .login-form .form-group .input-group.input-group-sm .img-valid {
+  float: right;
+  width: 80px;
+  height: 30px;
+}
+.login-wrapper .login-container .login-form .form-group .btn-group .btn-login {
+  display: block;
+  background-color: #74a92d;
+  border-radius: 3px;
+  width: 240px;
+  height: 30px;
+  line-height: 30px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+}
+body {
+  margin: 0;
+}
+@media (min-width: 1000px) {
+  .evaluation-container {
+    padding: 40px 50px;
+    background-color: #fff;
+  }
+  .evaluation-container .header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #979797;
+  }
+  .evaluation-container .header .icon-logo,
+  .evaluation-container .header .txt {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .evaluation-container .header .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #000;
+    position: relative;
+    padding-left: 30px;
+  }
+  .evaluation-container .header .txt:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #999;
+    left: 0;
+    top: 0;
+  }
+  .evaluation-container .baseinfo {
+    margin: 100px 0 40px;
+    padding: 25px 50px 25px;
+    border: 2px dotted #979797;
+    display: flex;
+    position: relative;
+  }
+  .evaluation-container .baseinfo:before {
+    content: attr(data-before);
+    display: block;
+    text-align: center;
+    font-family: PingFangSC-Semibold;
+    font-size: 20px;
+    color: #333333;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    margin-left: -180px;
+  }
+  .evaluation-container .baseinfo .baseinfo__left,
+  .evaluation-container .baseinfo .baseinfo__right {
+    flex: 1;
+  }
+  .evaluation-container .baseinfo .baseinfo__left {
+    border-right: 1px solid #979797;
+  }
+  .evaluation-container .baseinfo .baseinfo__left .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #333333;
+    line-height: 32px;
+    text-align: left;
+    margin: 0;
+  }
+  .evaluation-container .baseinfo .baseinfo__left .txt:before {
+    content: attr(data-before);
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #333333;
+    line-height: 32px;
+    min-width: 90px;
+  }
+  .evaluation-container .baseinfo .baseinfo__right {
+    padding: 15px 0;
+  }
+  .evaluation-container .baseinfo .baseinfo__right .total-score,
+  .evaluation-container .baseinfo .baseinfo__right .txt-time {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .evaluation-container .baseinfo .baseinfo__right .total-score {
+    background: #17b6fe;
+    border: 1px solid #17b6fe;
+    border-radius: 2px;
+    width: 215px;
+    height: 38px;
+    font-family: PingFangSC-Regular;
+    line-height: 38px;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  .evaluation-container .baseinfo .baseinfo__right .total-score:before {
+    content: attr(data-before);
+  }
+  .evaluation-container .baseinfo .baseinfo__right .txt-time {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #999999;
+  }
+  .evaluation-container .comprehensive-analysis:before {
+    content: attr(data-before);
+    display: block;
+    background: #cccccc;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    padding: 18px 47px 14px;
+    margin-bottom: 30px;
+  }
+  .evaluation-container .comprehensive-analysis .comment {
+    padding: 0 50px;
+  }
+  .evaluation-container .comprehensive-analysis .comment .txt {
+    font-family: PingFangSC-Semibold;
+    font-size: 16px;
+    color: #000000;
+    line-height: 32px;
+    text-align: left;
+  }
+  .evaluation-container .comprehensive-analysis .chart-info {
+    padding: 0 50px;
+  }
+  .evaluation-container .comprehensive-analysis .chart-info .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #333333;
+    line-height: 32px;
+    text-align: left;
+    position: relative;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 45px;
+  }
+  .evaluation-container .comprehensive-analysis .chart-info .txt:before {
+    content: '';
+    width: 6px;
+    height: 100%;
+    background-color: #f0f;
+    position: absolute;
+    left: 0;
+  }
+  .evaluation-container .achievement-analysis:before {
+    content: attr(data-before);
+    display: block;
+    background: #cccccc;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    padding: 18px 47px 14px;
+    margin-bottom: 39px;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper {
+    margin: 0 50px;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper:before {
+    content: attr(data-before);
+    display: block;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    line-height: 32px;
+    margin-bottom: 34px;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table {
+    width: 100%;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody {
+    border-bottom: 1px solid #979797;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th {
+    background-color: #e8e7e7;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-module,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-classify {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    text-align: center;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-module {
+    color: #333333;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-classify {
+    color: #666;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 40px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__A1 {
+    background-color: #f44336;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__A2 {
+    background-color: #fb8c00;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__B1 {
+    background-color: #fdd835;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__B2 {
+    background-color: #c2e021;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__C1 {
+    background-color: #7cb342;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__C2 {
+    background-color: #029ae4;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td.first,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td.third {
+    background-color: #ccc;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td.second {
+    background-color: #e8e7e7;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td {
+    border-bottom: 1px dashed #eee;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__A1,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__A2,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__B1,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__B2,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__C1,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__C2 {
+    display: block;
+    font-size: 0;
+    height: 16px;
+    background-color: #f00;
+    margin: 12px 0;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__A1 {
+    background-color: #f44336;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__A2 {
+    background-color: #fb8c00;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__B1 {
+    background-color: #fdd835;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__B2 {
+    background-color: #c2e021;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__C1 {
+    background-color: #7cb342;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__C2 {
+    background-color: #029ae4;
+  }
+  .evaluation-container .achievement-analysis .analysis-result {
+    padding: 20px 50px;
+  }
+  .evaluation-container .achievement-analysis .analysis-result .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    line-height: 32px;
+    text-align: left;
+    margin: 0;
+  }
+  .evaluation-container .training-suggestions:before {
+    content: attr(data-before);
+    display: block;
+    background: #cccccc;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    padding: 18px 47px 14px;
+  }
+  .evaluation-container .training-suggestions .txt-wrapper {
+    padding: 30px 50px;
+  }
+  .evaluation-container .training-suggestions .txt-wrapper .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    line-height: 32px;
+    text-align: left;
+    margin: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .evaluation-container {
+    padding: 5px 10px;
+    background-color: #fff;
+  }
+  .evaluation-container .header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #979797;
+  }
+  .evaluation-container .header .icon-logo,
+  .evaluation-container .header .txt {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .evaluation-container .header .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #000;
+    position: relative;
+    padding-left: 30px;
+  }
+  .evaluation-container .header .txt:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #999;
+    left: 0;
+    top: 0;
+  }
+  .evaluation-container .baseinfo {
+    margin: 70px 0 20px;
+    padding: 10px 15px;
+    border: 2px dotted #979797;
+    position: relative;
+  }
+  .evaluation-container .baseinfo:before {
+    content: attr(data-before);
+    display: block;
+    text-align: center;
+    font-family: PingFangSC-Semibold;
+    font-size: 20px;
+    color: #333333;
+    position: absolute;
+    top: -60px;
+    left: 0;
+  }
+  .evaluation-container .baseinfo .baseinfo__left {
+    border-bottom: 1px solid #979797;
+    padding-bottom: 10px;
+  }
+  .evaluation-container .baseinfo .baseinfo__left .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #333333;
+    line-height: 32px;
+    text-align: left;
+    margin: 0;
+  }
+  .evaluation-container .baseinfo .baseinfo__left .txt:before {
+    content: attr(data-before);
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #333333;
+    line-height: 32px;
+    min-width: 90px;
+  }
+  .evaluation-container .baseinfo .baseinfo__right {
+    padding: 15px 0;
+  }
+  .evaluation-container .baseinfo .baseinfo__right .total-score,
+  .evaluation-container .baseinfo .baseinfo__right .txt-time {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .evaluation-container .baseinfo .baseinfo__right .total-score {
+    background: #17b6fe;
+    border: 1px solid #17b6fe;
+    border-radius: 2px;
+    width: 215px;
+    height: 38px;
+    font-family: PingFangSC-Regular;
+    line-height: 38px;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  .evaluation-container .baseinfo .baseinfo__right .total-score:before {
+    content: attr(data-before);
+  }
+  .evaluation-container .baseinfo .baseinfo__right .txt-time {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #999999;
+  }
+  .evaluation-container .comprehensive-analysis:before {
+    content: attr(data-before);
+    display: block;
+    background: #cccccc;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+  }
+  .evaluation-container .comprehensive-analysis .comment {
+    padding: 0 10px;
+  }
+  .evaluation-container .comprehensive-analysis .comment .txt {
+    font-family: PingFangSC-Semibold;
+    font-size: 16px;
+    color: #000000;
+    line-height: 32px;
+    text-align: left;
+  }
+  .evaluation-container .comprehensive-analysis .chart-info {
+    padding: 0 10px;
+  }
+  .evaluation-container .comprehensive-analysis .chart-info .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #333333;
+    line-height: 32px;
+    text-align: left;
+    position: relative;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .evaluation-container .comprehensive-analysis .chart-info .txt:before {
+    content: '';
+    width: 6px;
+    height: 100%;
+    background-color: #f0f;
+    position: absolute;
+    left: 0;
+  }
+  .evaluation-container .achievement-analysis:before {
+    content: attr(data-before);
+    display: block;
+    background: #cccccc;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper:before {
+    content: attr(data-before);
+    display: block;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    line-height: 32px;
+    margin-bottom: 34px;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table {
+    width: 100%;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody {
+    border-bottom: 1px solid #979797;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th {
+    background-color: #e8e7e7;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-module,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-classify {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    text-align: center;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-module {
+    color: #333333;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-classify {
+    color: #666;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 40px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__A1 {
+    background-color: #f44336;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__A2 {
+    background-color: #fb8c00;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__B1 {
+    background-color: #fdd835;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__B2 {
+    background-color: #c2e021;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__C1 {
+    background-color: #7cb342;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__C2 {
+    background-color: #029ae4;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td.first,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td.third {
+    background-color: #ccc;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td.second {
+    background-color: #e8e7e7;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td {
+    border-bottom: 1px dashed #eee;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+    padding: 2px;
+    margin: 0;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__A1,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__A2,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__B1,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__B2,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__C1,
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__C2 {
+    display: block;
+    font-size: 0;
+    height: 16px;
+    background-color: #f00;
+    margin: 12px 0;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__A1 {
+    background-color: #f44336;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__A2 {
+    background-color: #fb8c00;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__B1 {
+    background-color: #fdd835;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__B2 {
+    background-color: #c2e021;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__C1 {
+    background-color: #7cb342;
+  }
+  .evaluation-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__C2 {
+    background-color: #029ae4;
+  }
+  .evaluation-container .achievement-analysis .analysis-result {
+    padding: 10px 15px;
+  }
+  .evaluation-container .achievement-analysis .analysis-result .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    line-height: 32px;
+    text-align: left;
+    margin: 0;
+  }
+  .evaluation-container .training-suggestions:before {
+    content: attr(data-before);
+    display: block;
+    background: #cccccc;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    padding: 10px 12px;
+  }
+  .evaluation-container .training-suggestions .txt-wrapper {
+    padding: 10px 15px;
+  }
+  .evaluation-container .training-suggestions .txt-wrapper .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    line-height: 32px;
+    text-align: left;
+    margin: 0;
+  }
+}
+body {
+  margin: 0;
+}
+@media (min-width: 1000px) {
+  .evaluation2-container {
+    padding: 40px 50px;
+    background-color: #fff;
+  }
+  .evaluation2-container .header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #979797;
+  }
+  .evaluation2-container .header .icon-logo,
+  .evaluation2-container .header .txt {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .evaluation2-container .header .txt {
+    font: 16px/20px PingFangSC-Regular;
+    color: #000;
+    position: relative;
+    padding-left: 30px;
+    border-left: 1px solid #999;
+  }
+  .evaluation2-container .baseinfo {
+    margin: 100px 0 40px;
+    padding: 25px 50px 25px;
+    border: 2px dotted #979797;
+    display: table;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .evaluation2-container .baseinfo:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    top: 25px;
+    bottom: 25px;
+    background-color: #979797;
+    left: 50%;
+  }
+  .evaluation2-container .baseinfo .title {
+    display: block;
+    text-align: center;
+    font-family: PingFangSC-Semibold;
+    font-size: 20px;
+    color: #333333;
+    position: absolute;
+    top: -60px;
+    left: 0;
+    right: 0;
+  }
+  .evaluation2-container .baseinfo .baseinfo__left {
+    float: left;
+  }
+  .evaluation2-container .baseinfo .baseinfo__left .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #333333;
+    line-height: 32px;
+    text-align: left;
+    margin: 0;
+  }
+  .evaluation2-container .baseinfo .baseinfo__left .txt .txt-label,
+  .evaluation2-container .baseinfo .baseinfo__left .txt .txt-info {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #333333;
+    line-height: 32px;
+    min-width: 90px;
+  }
+  .evaluation2-container .baseinfo .baseinfo__right {
+    padding: 15px 0;
+    float: right;
+  }
+  .evaluation2-container .baseinfo .baseinfo__right .total-score,
+  .evaluation2-container .baseinfo .baseinfo__right .txt-time {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .evaluation2-container .baseinfo .baseinfo__right .total-score {
+    background: #17b6fe;
+    border: 1px solid #17b6fe;
+    border-radius: 2px;
+    width: 215px;
+    height: 38px;
+    font-family: PingFangSC-Regular;
+    line-height: 38px;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  .evaluation2-container .baseinfo .baseinfo__right .txt-time {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #999999;
+  }
+  .evaluation2-container .comprehensive-analysis .title {
+    display: block;
+    background: #cccccc;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    padding: 18px 47px 14px;
+    margin-bottom: 30px;
+  }
+  .evaluation2-container .comprehensive-analysis .comment {
+    padding: 0 50px;
+  }
+  .evaluation2-container .comprehensive-analysis .comment .txt {
+    font-family: PingFangSC-Semibold;
+    font-size: 16px;
+    color: #000000;
+    line-height: 32px;
+    text-align: left;
+  }
+  .evaluation2-container .comprehensive-analysis .chart-info {
+    padding: 0 50px;
+  }
+  .evaluation2-container .comprehensive-analysis .chart-info .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #333333;
+    line-height: 32px;
+    text-align: left;
+    position: relative;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 45px;
+  }
+  .evaluation2-container .comprehensive-analysis .chart-info .txt .line {
+    width: 6px;
+    height: 100%;
+    background-color: #f0f;
+    position: absolute;
+    left: 0;
+  }
+  .evaluation2-container .achievement-analysis .title {
+    display: block;
+    background: #cccccc;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    padding: 18px 47px 14px;
+    margin-bottom: 39px;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper {
+    margin: 0 50px;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .txt-analysis {
+    display: block;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    line-height: 32px;
+    margin-bottom: 34px;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table {
+    width: 100%;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead,
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody {
+    border-bottom: 1px solid #979797;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th {
+    background-color: #e8e7e7;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-module,
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-classify {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    text-align: center;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-module {
+    color: #333333;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-classify {
+    color: #666;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 40px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__A1 {
+    background-color: #f44336;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__A2 {
+    background-color: #fb8c00;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__B1 {
+    background-color: #fdd835;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__B2 {
+    background-color: #c2e021;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__C1 {
+    background-color: #7cb342;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__C2 {
+    background-color: #029ae4;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td.first,
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td.third {
+    background-color: #ccc;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td.second {
+    background-color: #e8e7e7;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td {
+    border-bottom: 1px dashed #eee;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__A1,
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__A2,
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__B1,
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__B2,
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__C1,
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__C2 {
+    display: block;
+    font-size: 0;
+    height: 16px;
+    background-color: #f00;
+    margin: 12px 0;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__A1 {
+    background-color: #f44336;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__A2 {
+    background-color: #fb8c00;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__B1 {
+    background-color: #fdd835;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__B2 {
+    background-color: #c2e021;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__C1 {
+    background-color: #7cb342;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__C2 {
+    background-color: #029ae4;
+  }
+  .evaluation2-container .achievement-analysis .analysis-result {
+    padding: 20px 50px;
+  }
+  .evaluation2-container .achievement-analysis .analysis-result .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    line-height: 32px;
+    text-align: left;
+    margin: 0;
+  }
+  .evaluation2-container .training-suggestions .title {
+    display: block;
+    background: #cccccc;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    padding: 18px 47px 14px;
+  }
+  .evaluation2-container .training-suggestions .txt-wrapper {
+    padding: 30px 50px;
+  }
+  .evaluation2-container .training-suggestions .txt-wrapper .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    line-height: 32px;
+    text-align: left;
+    margin: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .evaluation2-container {
+    padding: 5px 10px;
+    background-color: #fff;
+  }
+  .evaluation2-container .header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #979797;
+  }
+  .evaluation2-container .header .icon-logo,
+  .evaluation2-container .header .txt {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .evaluation2-container .header .txt {
+    font: 16px/20px PingFangSC-Regular;
+    color: #000;
+    position: relative;
+    padding-left: 30px;
+    border-left: 1px solid #999;
+  }
+  .evaluation2-container .baseinfo {
+    margin: 70px 0 20px;
+    padding: 10px 15px;
+    border: 2px dotted #979797;
+    position: relative;
+  }
+  .evaluation2-container .baseinfo:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    top: 25px;
+    bottom: 25px;
+    background-color: #979797;
+    left: 50%;
+  }
+  .evaluation2-container .baseinfo .title {
+    display: block;
+    text-align: center;
+    font-family: PingFangSC-Semibold;
+    font-size: 20px;
+    color: #333333;
+    position: absolute;
+    top: -60px;
+    left: 0;
+  }
+  .evaluation2-container .baseinfo .baseinfo__left {
+    float: left;
+    padding: 15px 0;
+  }
+  .evaluation2-container .baseinfo .baseinfo__left .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #333333;
+    line-height: 32px;
+    text-align: left;
+    margin: 0;
+  }
+  .evaluation2-container .baseinfo .baseinfo__left .txt .txt-label {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #333333;
+    line-height: 32px;
+    min-width: 90px;
+  }
+  .evaluation2-container .baseinfo .baseinfo__right {
+    float: right;
+    padding: 15px 0;
+  }
+  .evaluation2-container .baseinfo .baseinfo__right .total-score,
+  .evaluation2-container .baseinfo .baseinfo__right .txt-time {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .evaluation2-container .baseinfo .baseinfo__right .total-score {
+    background: #17b6fe;
+    border: 1px solid #17b6fe;
+    border-radius: 2px;
+    width: 215px;
+    height: 38px;
+    font-family: PingFangSC-Regular;
+    line-height: 38px;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  .evaluation2-container .baseinfo .baseinfo__right .txt-time {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #999999;
+  }
+  .evaluation2-container .comprehensive-analysis .title {
+    display: block;
+    background: #cccccc;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+  }
+  .evaluation2-container .comprehensive-analysis .comment {
+    padding: 0 10px;
+  }
+  .evaluation2-container .comprehensive-analysis .comment .txt {
+    font-family: PingFangSC-Semibold;
+    font-size: 16px;
+    color: #000000;
+    line-height: 32px;
+    text-align: left;
+  }
+  .evaluation2-container .comprehensive-analysis .chart-info {
+    padding: 0 10px;
+  }
+  .evaluation2-container .comprehensive-analysis .chart-info .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #333333;
+    line-height: 32px;
+    text-align: left;
+    position: relative;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .evaluation2-container .comprehensive-analysis .chart-info .txt .line {
+    width: 6px;
+    height: 100%;
+    background-color: #f0f;
+    position: absolute;
+    left: 0;
+  }
+  .evaluation2-container .achievement-analysis .title {
+    display: block;
+    background: #cccccc;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .txt-analysis {
+    display: block;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    line-height: 32px;
+    margin-bottom: 34px;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table {
+    width: 100%;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead,
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody {
+    border-bottom: 1px solid #979797;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th {
+    background-color: #e8e7e7;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-module,
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-classify {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    text-align: center;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-module {
+    color: #333333;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-classify {
+    color: #666;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 40px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__A1 {
+    background-color: #f44336;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__A2 {
+    background-color: #fb8c00;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__B1 {
+    background-color: #fdd835;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__B2 {
+    background-color: #c2e021;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__C1 {
+    background-color: #7cb342;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table thead tr th .txt-lavel.txt-lavel__C2 {
+    background-color: #029ae4;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td.first,
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td.third {
+    background-color: #ccc;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td.second {
+    background-color: #e8e7e7;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td {
+    border-bottom: 1px dashed #eee;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+    padding: 2px;
+    margin: 0;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__A1,
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__A2,
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__B1,
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__B2,
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__C1,
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__C2 {
+    display: block;
+    font-size: 0;
+    height: 16px;
+    background-color: #f00;
+    margin: 12px 0;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__A1 {
+    background-color: #f44336;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__A2 {
+    background-color: #fb8c00;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__B1 {
+    background-color: #fdd835;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__B2 {
+    background-color: #c2e021;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__C1 {
+    background-color: #7cb342;
+  }
+  .evaluation2-container .achievement-analysis .analysis-table-wrapper .analysis-table tbody tr td .progress-bar .progress-bar__C2 {
+    background-color: #029ae4;
+  }
+  .evaluation2-container .achievement-analysis .analysis-result {
+    padding: 10px 15px;
+  }
+  .evaluation2-container .achievement-analysis .analysis-result .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    line-height: 32px;
+    text-align: left;
+    margin: 0;
+  }
+  .evaluation2-container .training-suggestions .title {
+    display: block;
+    background: #cccccc;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    padding: 10px 12px;
+  }
+  .evaluation2-container .training-suggestions .txt-wrapper {
+    padding: 10px 15px;
+  }
+  .evaluation2-container .training-suggestions .txt-wrapper .txt {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+    line-height: 32px;
+    text-align: left;
+    margin: 0;
+  }
+}

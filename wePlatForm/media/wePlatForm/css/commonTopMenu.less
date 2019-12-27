@@ -1,0 +1,27 @@
+@import "variable";
+.common-top-menu {
+  background-color: @background-color;
+  border-bottom:1px solid @border-color7;
+  .navbar-nav__right {
+    padding-left:0;
+    margin-bottom:0;
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      list-style: none;
+      position: relative;
+      .nav-link {
+        color: @color6;
+      }
+      .avatar-wrapper {
+        width:48px;
+        height:48px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

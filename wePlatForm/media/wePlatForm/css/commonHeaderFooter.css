@@ -1,0 +1,95 @@
+/* background-color start */
+/* background-color end */
+/* border-color start */
+/* border-color end */
+/* button start */
+/* button end */
+/* color start */
+/* color end */
+/* font-family start */
+/* font-family end */
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.common-header {
+  border-top: 3px solid #65a9ff;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.common-header .header-container {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.common-header .header-container .header-container_left {
+  float: left;
+}
+.common-header .header-container .header-container_left .txt {
+  font-size: 24px;
+  color: #333;
+  display: block;
+  padding: 12px 0;
+}
+.common-header .header-container .header-container_left .txt > .txt {
+  padding: 0;
+}
+.common-header .header-container .header-container_left .txt > .txt:hover {
+  text-decoration: none;
+}
+.common-header .header-container .header-container_right {
+  float: right;
+  padding: 16px 0 14px;
+}
+.common-header .header-container .header-container_right .icon,
+.common-header .header-container .header-container_right .txt {
+  display: inline-block;
+  vertical-align: middle;
+}
+.common-header .header-container .header-container_right .icon {
+  font-size: 28px;
+  margin-right: 10px;
+}
+.common-header .header-container .header-container_right .txt {
+  font-size: 20px;
+  color: #666;
+}
+.common-footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #555;
+}
+.common-footer .footer-container {
+  width: auto;
+  margin: 0 auto;
+  padding: 20px 0 10px;
+  overflow: hidden;
+}
+.common-footer .footer-container .friend-link .txt {
+  display: inline-block;
+  padding: 0 10px;
+  border-left: 1px solid #fff;
+}
+.common-footer .footer-container .friend-link .txt:first-child {
+  border-left: 0;
+  padding-left: 0;
+}
+.common-footer .footer-container .copyright .txt {
+  padding: 5px 0;
+}
+.common-footer .footer-container .friend-link .txt,
+.common-footer .footer-container .copyright .txt {
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+}
+.common-footer .footer-container .friend-link .txt .link,
+.common-footer .footer-container .copyright .txt .link {
+  color: #65a9ff;
+}

@@ -1,0 +1,48 @@
+/* background-color start */
+/* background-color end */
+/* border-color start */
+/* border-color end */
+/* button start */
+/* button end */
+/* color start */
+/* color end */
+/* font-family start */
+/* font-family end */
+.ServiceCalendar {
+  width: auto;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.ServiceCalendar > .row {
+  min-height: 956px;
+}
+.ServiceCalendar .sc--main-wrapper {
+  padding: 0;
+  background-color: #eff3f8;
+}
+.ServiceCalendar .sc--main-wrapper .sc--main__content .sc-tabs {
+  background-color: #fff;
+}
+.ServiceCalendar .sc--main-wrapper .sc--main__content .sc-tabs ul {
+  display: flex;
+  border-bottom: 1px solid #b7b7b7;
+}
+.ServiceCalendar .sc--main-wrapper .sc--main__content .sc-tabs ul li {
+  flex: 1;
+  margin: 15px 0;
+  text-align: center;
+  border-bottom: 1px solid #9c192b;
+}
+.ServiceCalendar .sc--main-wrapper .sc--main__content .sc-tabs ul li a {
+  display: block;
+  position: relative;
+  font-size: 20px;
+  color: #000;
+  border-left: 1px solid #b7b7b7;
+}
+.ServiceCalendar .sc--main-wrapper .sc--main__content .sc-tabs ul li a:after {
+  content: '';
+  position: absolute;
+  border: 5px solid transparent;
+  border-top-color: #9c192b;
+}

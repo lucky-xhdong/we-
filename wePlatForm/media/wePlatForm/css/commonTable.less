@@ -1,0 +1,49 @@
+@import "variable";
+.common-table {
+  padding:0 20px;
+  .table, table {
+    text-align: center;
+    thead {
+      tr {
+        background-color: @background-color8;
+        th {
+          border-top-color: transparent;
+          color: @color8;
+          font-size: 14px;
+        }
+      }
+    }
+    tbody {
+      tr {
+        th {
+          font-weight: lighter;
+        }
+        th, td {
+          color: @color4;
+          font-size: 14px;
+          .btn-normal {
+            margin:0 10px;
+            color: @color2;
+            &:hover {
+              color: @color9;
+            }
+            &.btn-delete,
+            &.btn-freeze {
+              color: @color11;
+              &:hover {
+                color: @color12;
+              }
+            }
+            &.disabled {
+              color: @color4;
+              cursor: default;
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

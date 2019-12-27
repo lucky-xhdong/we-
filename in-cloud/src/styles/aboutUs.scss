@@ -1,0 +1,35 @@
+.about-us-wrapper {
+  .common-section {
+    &.first-section {
+      background: url("../assets/images/banner-aboutus.png") top center no-repeat;
+    }
+    .about-us-container {
+      width: 1200px;
+      margin: 0 auto;
+      .map-wrapper {
+        width: 1200px;
+        height: 272px;
+        margin: 0 auto;
+      }
+      .contact-wrapper {
+        text-align: center;
+        padding: 50px 0;
+        .txt-tel, .txt-address {
+          text-transform: capitalize;
+          font-size: 18px;
+          color: #000;
+          display: block;
+          padding: 25px 0;
+        }
+        .btn-view {
+          color: #FF1245;
+          display: inline-block;
+          vertical-align: middle;
+          padding: 25px 0;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1280px) {
+}

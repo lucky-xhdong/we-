@@ -1,0 +1,52 @@
+/* background-color start */
+/* background-color end */
+/* border-color start */
+/* border-color end */
+/* button start */
+/* button end */
+/* color start */
+/* color end */
+/* font-family start */
+/* font-family end */
+.FeatureManage {
+  width: 1200px;
+  margin: 0 auto;
+}
+.FeatureManage .fm--main-wrapper {
+  margin-left: -15px;
+  background-color: #f6f6f6;
+}
+.FeatureManage .fm--main-wrapper .fm--main__content {
+  margin: 15px;
+  background-color: #fff;
+}
+.FeatureManage .fm--main-wrapper .fm--main__content .fm--main__tabs .nav-item {
+  background-color: #dde1df;
+}
+.FeatureManage .fm--main-wrapper .fm--main__content .fm--main__tabs .nav-item .nav-link {
+  color: #666;
+}
+.FeatureManage .fm--main-wrapper .fm--main__content .fm--main__tabs .nav-item .nav-link.active {
+  border-color: transparent;
+  border-radius: 0;
+}
+.FeatureManage .fm--main-wrapper .fm--main__content .fm--main__cons .form-check-group {
+  display: block;
+  padding: 12px 18px;
+}
+.FeatureManage .fm--main-wrapper .fm--main__content .fm--main__cons .btn-group {
+  display: block;
+  text-align: right;
+  margin: 20px 0;
+}
+.FeatureManage .fm--main-wrapper .fm--main__content .fm--main__cons .btn-group .icon-add,
+.FeatureManage .fm--main-wrapper .fm--main__content .fm--main__cons .btn-group .path1,
+.FeatureManage .fm--main-wrapper .fm--main__content .fm--main__cons .btn-group .path2 {
+  font-style: normal;
+}
+.FeatureManage .fm--main-wrapper .fm--main__content .fm--main__cons .btn-group .icon-add {
+  margin-right: 5px;
+}
+.FeatureManage .fm--main-wrapper .fm--main__content .fm--main__cons .pagination {
+  justify-content: flex-end;
+}

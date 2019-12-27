@@ -1,0 +1,260 @@
+/* background-color start */
+/* background-color end */
+/* border-color start */
+/* border-color end */
+/* button start */
+/* button end */
+/* color start */
+/* color end */
+/* font-family start */
+/* font-family end */
+.TeachingProgram {
+  width: auto;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.TeachingProgram > .row {
+  min-height: 956px;
+}
+.TeachingProgram .tp--main-wrapper {
+  padding: 0;
+  background-color: #eff3f8;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content {
+  margin: 0 15px 10px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 {
+  display: flex;
+  margin-bottom: 15px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .create-wrapper {
+  background-color: #fff;
+  margin-right: 10px;
+  flex: 1;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .create-wrapper:before {
+  content: attr(data-before);
+  display: block;
+  background: #ddecff;
+  text-align: left;
+  padding: 12px 15px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .create-wrapper .input-group {
+  padding: 15px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .create-wrapper .input-group,
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .create-wrapper form,
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .create-wrapper .form-group {
+  width: 100%;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .create-wrapper .input-group .form-control,
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .create-wrapper form .form-control,
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .create-wrapper .form-group .form-control {
+  width: 100%;
+  font-size: 14px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .form-content {
+  background-color: #fff;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .form-content:before {
+  content: attr(data-before);
+  display: block;
+  background: #ddecff;
+  text-align: left;
+  padding: 12px 15px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .form-content > form {
+  padding: 15px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .form-content .form-row {
+  position: relative;
+  margin-bottom: 15px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .form-content .form-row:before {
+  content: attr(data-before);
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  text-align: right;
+  font-size: 14px;
+  line-height: 30px;
+  color: #666;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .form-content .form-row > .form-control {
+  width: 87%;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .form-content .form-row .form-row__item {
+  margin-right: 10px;
+  width: 240px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .form-content .btn-group {
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .form-content .btn-group .btn-save {
+  display: inline-block;
+  margin: 0 10px;
+  width: 100px;
+  text-align: center;
+  border-radius: 0;
+  padding: 5px 12px;
+  color: #fff;
+  border-color: #65a9ff;
+  background-color: #65a9ff;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .form-content .btn-group .btn-save:hover {
+  color: #65a9ff;
+  background-color: #fff;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper {
+  width: 300px;
+  background-color: #fff;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper:before {
+  content: attr(data-before);
+  display: block;
+  background: #ddecff;
+  text-align: left;
+  padding: 12px 15px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper .radio-group {
+  margin: 10px 0;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper .radio-group .custom-control {
+  display: block;
+  margin: 10px 20px;
+  text-align: left;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper .choose-handle,
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper .add-handle {
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 18px;
+  position: relative;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper .choose-handle:after,
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper .add-handle:after {
+  content: attr(data-after);
+  position: absolute;
+  color: #fff;
+  font-family: SimHei;
+  width: 8px;
+  height: 18px;
+  right: 10px;
+  top: 50%;
+  margin-top: -9px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper .choose-handle a,
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper .add-handle a {
+  display: block;
+  color: #fff;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper .choose-handle a:hover,
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper .add-handle a:hover {
+  text-decoration: none;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper .choose-handle {
+  background-color: #65a9ff;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper .add-handle {
+  background-color: #fb6767;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle2 .service-wrapper {
+  padding-bottom: 15px;
+  background-color: #fff;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle2 .service-wrapper:before {
+  content: attr(data-before);
+  display: block;
+  background: #ddecff;
+  text-align: left;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle2 .service-wrapper .form-row {
+  margin: 0 5px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle2 .service-wrapper .form-row .form-control-file {
+  margin: 0 5px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle2 .service-wrapper .btn-group {
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle2 .service-wrapper .btn-group .btn-save,
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle2 .service-wrapper .btn-group .btn-submit {
+  display: inline-block;
+  margin: 0 10px;
+  width: 100px;
+  text-align: center;
+  border-radius: 0;
+  padding: 5px 12px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle2 .service-wrapper .btn-group .btn-save {
+  color: #fff;
+  border-color: #65a9ff;
+  background-color: #65a9ff;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle2 .service-wrapper .btn-group .btn-submit {
+  color: #fff;
+  border-color: #fb6767;
+  background-color: #fb6767;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle2 .service-wrapper .reminder {
+  text-align: center;
+  margin: 200px 0;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .btn-group-upload {
+  display: block;
+  text-align: right;
+  margin: 0 6px;
+  width: 100%;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .btn-group-upload .btn-add {
+  position: relative;
+  overflow: hidden;
+  margin: 0 10px;
+  width: 100px;
+  text-align: center;
+  border-radius: 0;
+  padding: 5px 12px;
+  color: #fff;
+  border-color: #65a9ff;
+  background-color: #65a9ff;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .btn-group-upload .btn-add .upload-file {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+}
+.teaching-program__choose_date .modal-footer .btn-group {
+  padding: 0 15px;
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+.teaching-program__choose_date .modal-footer .btn-group .btn-save,
+.teaching-program__choose_date .modal-footer .btn-group .btn-confirm {
+  display: inline-block;
+  margin: 0 10px;
+  border-radius: 0;
+  width: 100px;
+  padding: 5px 12px;
+}
+.teaching-program__choose_date .modal-footer .btn-group .btn-confirm {
+  color: #fff;
+  border-color: #65a9ff;
+  background-color: #65a9ff;
+}
+.teaching-program__choose_date .modal-footer .btn-group .btn-save {
+  color: #fff;
+  border-color: #fb6767;
+  background-color: #fb6767;
+}

@@ -1,0 +1,137 @@
+@import "variable";
+.RegionalArchives {
+  width: auto;
+  margin: 0 auto;
+  font-size: 14px;
+  .row {
+    min-height: 956px;
+  }
+  .ra--main-wrapper {
+    padding-left:0;
+    padding-right:0;
+    padding-bottom: 10px;
+    background-color: @background-color7;
+    .ra--main__content {
+      margin: 0 15px 10px;
+      padding-bottom: 10px;
+      background-color: @background-color;
+      &:before {
+        content: attr(data-before);
+        display: block;
+        background-color: @background-color8;
+        color: @color4;
+        font-size: 14px;
+        padding:12px 10px;
+      }
+      .form-row {
+        margin: 15px;
+        .form-row__item {
+          position: relative;
+          white-space: nowrap;
+          &:before, .form-control {
+            display: inline-block;
+            vertical-align: middle;
+          }
+          &:before {
+            content: attr(data-before);
+            font-size: 14px;
+            color: #666;
+            width: 70px;
+            text-align: right;
+          }
+          .form-control {
+            width:125px;
+          }
+        }
+        .btn-oprate {
+          display: inline-block;
+          text-align: center;
+          border-radius: 0;
+          padding:4px 12px;
+          width: 80px;
+          position: relative;
+          margin:0 10px;
+          right: 0;
+          color: @color;
+          border-color: @button-color;
+          background-color: @button-color;
+          &:hover {
+            color: @color2;
+            background-color: @button-color2;
+          }
+        }
+        .form-row__search {
+          position: relative;
+          .form-control {
+            padding-right: 30px;
+          }
+          .btn-search {
+            background-color: transparent;
+            position: absolute;
+            padding: 1px 4px;
+            right:10px;
+            top: 1px;
+          }
+        }
+        &.form-row__wrap {
+          .form-row__item {
+            .form-control {
+              width:196px;
+            }
+          }
+          .form-row__search {
+            text-align: right;
+            .btn-search {
+              display: inline-block;
+              text-align: center;
+              border-radius: 0;
+              padding:5px 12px;
+              width: 83px;
+              position: relative;
+              right: 0;
+              color: @color;
+              border-color: @button-color;
+              background-color: @button-color;
+              &:hover {
+                color: @color2;
+                background-color: @button-color2;
+              }
+            }
+          }
+        }
+      }
+      .btn-group-end {
+        margin: 15px 0;
+        padding:0 20px;
+        text-align: right;
+        .btn-outline-primary {
+          display: inline-block;
+          text-align: center;
+          border-radius: 0;
+          padding:5px 12px;
+          color: @color;
+          border-color: @button-color;
+          background-color: @button-color;
+          &:hover {
+            color: @color2;
+            background-color: @button-color2;
+          }
+        }
+      }
+      .btn-group {
+        display: block;
+        text-align: right;
+        margin: 20px 0;
+        .icon-add, .path1, .path2 {
+          font-style: normal;
+        }
+        .icon-add {
+          margin-right: 5px;
+        }
+      }
+      .pagination {
+        justify-content: flex-end;
+      }
+    }
+  }
+}

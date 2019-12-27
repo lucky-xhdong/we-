@@ -1,0 +1,85 @@
+/* background-color start */
+/* background-color end */
+/* border-color start */
+/* border-color end */
+/* button start */
+/* button end */
+/* color start */
+/* color end */
+/* font-family start */
+/* font-family end */
+.FeatureManage {
+  width: auto;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.FeatureManage > .row {
+  min-height: 956px;
+}
+.FeatureManage .fm--main-wrapper {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 10px;
+  background-color: #eff3f8;
+}
+.FeatureManage .fm--main-wrapper .fm--main__content {
+  margin: 0 15px 10px;
+  background-color: #fff;
+}
+.FeatureManage .fm--main-wrapper .fm--main__content:before {
+  content: attr(data-before);
+  display: block;
+  background-color: #ddecff;
+  color: #666;
+  font-size: 14px;
+  padding: 12px 10px;
+}
+.FeatureManage .fm--main-wrapper .fm--main__content .fm--main__tabs .nav-item {
+  background-color: #dde1df;
+}
+.FeatureManage .fm--main-wrapper .fm--main__content .fm--main__tabs .nav-item .nav-link {
+  color: #666;
+}
+.FeatureManage .fm--main-wrapper .fm--main__content .fm--main__tabs .nav-item .nav-link.active {
+  border-color: transparent;
+  border-radius: 0;
+}
+.FeatureManage .fm--main-wrapper .fm--main__content .fm--main__cons {
+  padding-bottom: 10px;
+}
+.FeatureManage .fm--main-wrapper .fm--main__content .fm--main__cons .form-check-group {
+  display: block;
+  padding: 12px 18px;
+}
+.FeatureManage .fm--main-wrapper .fm--main__content .fm--main__cons .btn-group-upload {
+  display: block;
+  text-align: right;
+  margin: 20px 0;
+}
+.FeatureManage .fm--main-wrapper .fm--main__content .fm--main__cons .btn-group-upload .btn-add {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  border-radius: 0;
+  padding: 5px 12px;
+  color: #fff;
+  border-color: #65a9ff;
+  background-color: #65a9ff;
+}
+.FeatureManage .fm--main-wrapper .fm--main__content .fm--main__cons .btn-group-upload .btn-add:hover {
+  color: #65a9ff;
+  background-color: #fff;
+}
+.FeatureManage .fm--main-wrapper .fm--main__content .fm--main__cons .btn-group-upload .btn-add .upload-file {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+}
+.FeatureManage .fm--main-wrapper .fm--main__content .fm--main__cons .pagination {
+  justify-content: flex-end;
+}

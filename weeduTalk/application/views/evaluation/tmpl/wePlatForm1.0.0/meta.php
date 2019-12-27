@@ -1,0 +1,1 @@
+<link rel="stylesheet" href="<?=base_url()?>media/css/wePlatForm1.0.0/style.css">

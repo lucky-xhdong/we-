@@ -1,0 +1,110 @@
+@import "variable";
+.LearningSituation {
+  width: auto;
+  margin: 0 auto;
+  font-size: 14px;
+  > .row {
+    min-height: 956px;
+  }
+  .ls--main-wrapper {
+    padding:0;
+    background-color: @background-color7;
+    .ls--main__content {
+      margin: 0 15px 10px;
+      padding-bottom:15px;
+      background-color: @background-color;
+      &:before {
+        content: attr(data-before);
+        display: block;
+        background-color: #ddecff;
+        color: #666;
+        font-size: 14px;
+        padding: 12px 10px;
+      }
+      .select-group {
+        padding: 15px;
+        .form-row__item {
+          white-space: nowrap;
+          &:before {
+            content: attr(data-before);
+            width: 80px;
+            text-align: right;
+            font-size: 14px;
+            line-height:30px;
+            color: #666;
+          }
+          &:before,
+          .form-control {
+            display: inline-block;
+            vertical-align: middle;
+          }
+          .form-control {
+            width:190px;
+          }
+        }
+      }
+      .learn-behavior, .learn-result {
+        background-color: @background-color;
+        margin: 15px;
+        border: 1px solid @border-color10;
+        &:before {
+          content: attr(data-before);
+          display: block;
+          padding: 10px 15px;
+          font-size: 14px;
+          color: @color3;
+          margin: -1px;
+          background-color: @background-color7;
+        }
+        .form-row {
+          margin: 15px;
+          .form-row__item {
+            position: relative;
+            white-space: nowrap;
+            &:before,
+            .form-control {
+              display: inline-block;
+              vertical-align: middle;
+            }
+            &:before {
+              content: attr(data-before);
+              font-size: 14px;
+              color: #666;
+              width: 70px;
+              text-align: right;
+            }
+            .form-control {
+              width: 125px;
+            }
+            &:first-child {
+              .form-control {
+                width:175px;
+              }
+            }
+          }
+          .btn-oprate {
+            display: inline-block;
+            text-align: center;
+            border-radius: 0;
+            padding:4px 12px;
+            width: 80px;
+            position: relative;
+            margin:0 10px;
+            right: 0;
+            color: @color;
+            border-color: @button-color;
+            background-color: @button-color;
+            &:hover {
+              color: @color2;
+              background-color: @button-color2;
+            }
+          }
+        }
+        .chart-wrapper {
+          padding: 10px 15px;
+          min-height: 200px;
+        }
+      }
+    }
+  }
+}

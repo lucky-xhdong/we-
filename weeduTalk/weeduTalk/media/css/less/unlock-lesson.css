@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.unlock-lesson-container {
+  display: flex;
+  background-color: #f4f9fc;
+}
+.unlock-lesson-container .ulc-members {
+  flex: 0 0 352px;
+  min-height: 420px;
+  padding: 15px 22px;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.unlock-lesson-container .ulc-members .handle-group {
+  overflow: hidden;
+}
+.unlock-lesson-container .ulc-members .handle-group:before {
+  content: attr(data-before);
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #999;
+}
+.unlock-lesson-container .ulc-members .handle-group .checkbox-group {
+  float: left;
+  padding: 5px 10px;
+}
+.unlock-lesson-container .ulc-members .handle-group .checkbox-group .label-checkall .txt {
+  color: #333;
+}
+.unlock-lesson-container .ulc-members .handle-group .search-group {
+  float: right;
+  position: relative;
+}
+.unlock-lesson-container .ulc-members .handle-group .search-group .form-control {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 5px 25px 5px 10px;
+  height: 30px;
+  line-height: 30px;
+}
+.unlock-lesson-container .ulc-members .handle-group .search-group .btn-search {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  outline: none;
+  background: url("../../images/icon-search.png") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.unlock-lesson-container .ulc-members .ulc-members_list ul {
+  font-size: 0;
+  margin: 0;
+  padding: 15px 10px;
+}
+.unlock-lesson-container .ulc-members .ulc-members_list ul li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px 12px;
+  width: 48px;
+}
+.unlock-lesson-container .ulc-members .ulc-members_list ul li:after {
+  content: attr(data-after);
+  display: block;
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+  margin-top: 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.unlock-lesson-container .ulc-members .ulc-members_list ul li .link-avatar {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #eee;
+  -webkit-transition: all .1s ease .1s;
+  -moz-transition: all .1s ease .1s;
+  -ms-transition: all .1s ease .1s;
+  -o-transition: all .1s ease .1s;
+  transition: all .1s ease .1s;
+}
+.unlock-lesson-container .ulc-members .ulc-members_list ul li .avatar {
+  width: 44px;
+  height: 44px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.unlock-lesson-container .ulc-members .ulc-members_list ul li:hover:after,
+.unlock-lesson-container .ulc-members .ulc-members_list ul li.active:after {
+  color: #00b5ff;
+}
+.unlock-lesson-container .ulc-members .ulc-members_list ul li:hover .link-avatar,
+.unlock-lesson-container .ulc-members .ulc-members_list ul li.active .link-avatar {
+  border-color: #00b5ff;
+}
+.unlock-lesson-container .ulc-lessons {
+  flex: 1;
+  min-height: 420px;
+  margin-left: 15px;
+  background-color: #fff;
+  border-left: 1px solid #eee;
+}
+.unlock-lesson-container .ulc-lessons .form-group {
+  padding: 5px 4px 0;
+  border-bottom: 1px solid #d8d8d8;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.unlock-lesson-container .ulc-lessons .form-group .select-group {
+  display: inline-block;
+  vertical-align: top;
+  padding: 12px 20px;
+}
+.unlock-lesson-container .ulc-lessons .form-group .select-group .select {
+  width: 220px;
+  height: 40px;
+  outline: none;
+  padding: 0 18px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.unlock-lesson-container .ulc-lessons .ulc-lessons__list {
+  display: flex;
+}
+.unlock-lesson-container .ulc-lessons .ulc-lessons__list .ulc-lessons__list_left {
+  flex: 0 0 142px;
+}
+.unlock-lesson-container .ulc-lessons .ulc-lessons__list .ulc-lessons__list_left ul {
+  margin: 0;
+  padding: 0;
+}
+.unlock-lesson-container .ulc-lessons .ulc-lessons__list .ulc-lessons__list_left ul li {
+  list-style: none;
+  text-align: center;
+  border-bottom: 1px solid #d8d8d8;
+}
+.unlock-lesson-container .ulc-lessons .ulc-lessons__list .ulc-lessons__list_left ul li .txt {
+  display: block;
+  padding: 16px 30px 15px;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
+.unlock-lesson-container .ulc-lessons .ulc-lessons__list .ulc-lessons__list_left ul li:hover .txt,
+.unlock-lesson-container .ulc-lessons .ulc-lessons__list .ulc-lessons__list_left ul li.active .txt {
+  color: #63cbfc;
+}
+.unlock-lesson-container .ulc-lessons .ulc-lessons__list .ulc-lessons__list_right {
+  flex: 1;
+  min-height: 378px;
+  position: relative;
+}
+.unlock-lesson-container .ulc-lessons .ulc-lessons__list .ulc-lessons__list_right:before {
+  content: '';
+  position: fixed;
+  width: 1px;
+  background-color: #d8d8d8;
+  top: 0;
+  bottom: -1000px;
+}
+.unlock-lesson-container .ulc-lessons .ulc-lessons__list .ulc-lessons__list_right ul {
+  margin: 0;
+  padding: 0;
+  min-height: 300px;
+}
+.unlock-lesson-container .ulc-lessons .ulc-lessons__list .ulc-lessons__list_right ul li {
+  list-style: none;
+  display: flex;
+  padding: 14px 42px;
+}
+.unlock-lesson-container .ulc-lessons .ulc-lessons__list .ulc-lessons__list_right ul li .txt {
+  color: #000;
+  flex: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.unlock-lesson-container .ulc-lessons .ulc-lessons__list .ulc-lessons__list_right ul li .status {
+  color: #666;
+  padding: 0 10px;
+  flex: 0 0 80px;
+  text-align: center;
+}
+.unlock-lesson-container .ulc-lessons .ulc-lessons__list .ulc-lessons__list_right ul li .checkbox {
+  padding: 0 10px;
+}
+.unlock-lesson-container .ulc-lessons .ulc-lessons__list .ulc-lessons__list_right ul li:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+.unlock-lesson-container .ulc-lessons .ulc-lessons__list .ulc-lessons__list_right ul li:nth-child(even) {
+  background-color: #fff;
+}
+.unlock-lesson-container .ulc-lessons .ulc-lessons__list .ulc-lessons__list_right .checkall {
+  padding: 10px 20px;
+  text-align: right;
+}
+.unlock-lesson-container .ulc-lessons .btn-group {
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: -3px -6px 4px -5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.unlock-lesson-container .ulc-lessons .btn-group .btn {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  text-decoration: none;
+}
+.unlock-lesson-container .ulc-lessons .btn-group .btn.btn-unlock {
+  margin-right: 55px;
+  background-color: #17b6fe;
+}
+.unlock-lesson-container .ulc-lessons .btn-group .btn.btn-lock {
+  margin-left: 55px;
+  background-color: #e0615d;
+}
+@media (max-width: 812px) {
+  .unlock-lesson-container .ulc-lessons .form-group .select-group {
+    padding: 12px 10px;
+  }
+  .unlock-lesson-container .ulc-lessons .form-group .select-group .select {
+    width: 165px;
+  }
+}
+@media (max-width: 736px) {
+  .unlock-lesson-container .ulc-members {
+    flex: 0 0 280px;
+  }
+  .unlock-lesson-container .ulc-members .handle-group .checkbox-group,
+  .unlock-lesson-container .ulc-members .handle-group .search-group {
+    float: none;
+  }
+}
+@media (max-width: 667px) {
+  .unlock-lesson-container .ulc-members {
+    padding: 15px 10px;
+    flex: 0 0 256px;
+  }
+  .unlock-lesson-container .ulc-lessons .form-group .select-group .select {
+    width: 162px;
+    height: 30px;
+  }
+  .unlock-lesson-container .ulc-lessons .ulc-lessons__list .ulc-lessons__list_left {
+    flex: 0 0 110px;
+  }
+  .unlock-lesson-container .ulc-lessons .ulc-lessons__list .ulc-lessons__list_right ul li {
+    padding: 14px 12px;
+  }
+  .unlock-lesson-container .ulc-lessons .btn-group .btn {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+  .unlock-lesson-container .ulc-lessons .btn-group .btn.btn-unlock {
+    margin-right: 25px;
+  }
+  .unlock-lesson-container .ulc-lessons .btn-group .btn.btn-lock {
+    margin-left: 25px;
+    background-color: #e0615d;
+  }
+}
+@media (max-width: 640px) {
+  .unlock-lesson-container .ulc-lessons .form-group .select-group .select {
+    width: 128px;
+  }
+}
+@media (max-width: 600px) {
+  .unlock-lesson-container {
+    display: block;
+  }
+  .unlock-lesson-container .ulc-members .ulc-members_list ul {
+    padding: 10px 0;
+  }
+  .unlock-lesson-container .ulc-members .ulc-members_list ul li {
+    margin: 5px 7px;
+  }
+  .unlock-lesson-container .ulc-lessons {
+    margin-left: 0;
+    border-left: 0;
+    border-top: 1px solid #eee;
+  }
+}
+@media (max-width: 320px) {
+  .unlock-lesson-container .ulc-lessons .form-group .select-group .select {
+    width: 120px;
+    padding: 0 8px;
+  }
+}

@@ -1,0 +1,96 @@
+.mmPaginator {
+    white-space: nowrap;
+}
+
+.mmPaginator .totalCountLabel{
+    display: inline-block;
+    *zoom: 1;
+    margin-right: 10px;
+    line-height: 30px;
+    vertical-align: top;
+}
+.mmPaginator .totalCountLabel span{
+    color: #b00;
+    font-weight: bold;
+}
+
+.mmPaginator .pageList{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-right:10px;
+    padding: 0;
+    list-style: none;
+}
+
+.mmPaginator .pageList li{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width:30px;
+    height: 30px;
+    line-height: 30px;
+    margin:0 3px;
+    background: #fff;
+    border: 1px solid #eee;
+    vertical-align: top;
+    position: relative;
+}
+
+.mmPaginator .pageList li.active{
+    font-weight: bold;
+}
+.mmPaginator .pageList li.active a{
+    color: #b00;
+}
+
+.mmPaginator .pageList li.disable a{
+    cursor: default;
+}
+
+.mmPaginator .pageList li a{
+    color: #666;
+    padding: 0 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mmPaginator .pageList li.prev a,
+.mmPaginator .pageList li.next a{
+    position: absolute;
+    font: 22px/28px 'Arial';
+    color: #666;
+}
+.mmPaginator .pageList li.prev a {
+    left: 0
+}
+.mmPaginator .pageList li.next a {
+    right: 0
+}
+
+.mmPaginator .limit{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    line-height: 1.5;
+    vertical-align: top;
+}
+
+.mmPaginator .limit select{
+    border: 1px solid #eee;
+    padding: 1px;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+

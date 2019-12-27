@@ -1,0 +1,36 @@
+/* background-color start */
+/* background-color end */
+/* border-color start */
+/* border-color end */
+/* button start */
+/* button end */
+/* color start */
+/* color end */
+/* font-family start */
+/* font-family end */
+.common-top-menu {
+  background-color: #fff;
+  border-bottom: 1px solid #c6cbcf;
+}
+.common-top-menu .navbar-nav__right {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.common-top-menu .navbar-nav__right li {
+  display: inline-block;
+  vertical-align: middle;
+  list-style: none;
+  position: relative;
+}
+.common-top-menu .navbar-nav__right li .nav-link {
+  color: #636f68;
+}
+.common-top-menu .navbar-nav__right li .avatar-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.common-top-menu .navbar-nav__right li .avatar-wrapper img {
+  max-width: 100%;
+}

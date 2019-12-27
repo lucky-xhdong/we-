@@ -1,0 +1,178 @@
+.header {
+  background-color: #fff;
+  text-align: center;
+  font-size: 0;
+  position: relative;
+  z-index: 11;
+  .header-container {
+    width: 1182px;
+    margin: 0 auto;
+    &:after {
+      content: " ";
+      height: 0;
+      font-size: 0;
+      clear: both;
+      line-height: 0;
+      display: block;
+      visibility: hidden;
+    }
+    .header-container_left {
+      float: left;
+      h1 {
+        font-weight: lighter;
+        .logo, .txt {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .logo {
+          width: 80px;
+          height: 40px;
+          margin: 20px 20px 20px 0;
+          background-image: url(../../images/sprite-icons.png);
+          background-position: 0 0;
+        }
+        .txt {
+          font-family:PingFangSC-Medium;
+          font-size:20px;
+          text-align:left;
+          color: #333;
+          margin: 27px 0;
+        }
+      }
+    }
+    .header-container_right {
+      float: right;
+      &:after {
+        content: " ";
+        height: 0;
+        font-size: 0;
+        clear: both;
+        line-height: 0;
+        display: block;
+        visibility: hidden;
+      }
+      li {
+        float: left;
+        font-family:PingFangSC-Regular;
+        font-size:16px;
+        color:#333;
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          width: 1px;
+          height: 19px;
+          top: 50%;
+          margin-top: -10px;
+          left: 0;
+          background-color: #979797;
+        }
+        &:first-child {
+          &:before {
+            background-color: #fff;
+          }
+        }
+        .form-group {
+          position: relative;
+          padding: 28px 17px;
+          .form-control {
+            width: 180px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            line-height: 23px;
+            padding: 0 10px;
+            &:focus {
+              outline: none;
+            }
+          }
+          .btn-search {
+            cursor: pointer;
+            display: inline-block;
+            vertical-align: middle;
+            border: none;
+            background-color: transparent;
+            .icon-search {
+              display: block;
+              background-image: url(../../images/sprite-icons.png);
+              background-position: -37px -41px;
+              width: 17px;
+              height: 17px;
+            }
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+        a {
+          display: inline-block;
+          position: relative;
+          color: #333;
+          padding: 28px 17px;
+        }
+        .txt {
+          font-size: 18px;
+        }
+        .icon-arrow-down {
+          background-image: url(../../images/sprite-icons.png);
+          background-position: -55px -50px;
+          width: 16px;
+          height: 8px;
+          margin-left: 10px;
+          display: inline-block;
+          vertical-align: middle;
+          -webkit-transition: all .1s ease-in .2s;
+          -moz-transition: all .1s ease-in .2s;
+          -ms-transition: all .1s ease-in .2s;
+          -o-transition: all .1s ease-in .2s;
+          transition: all .1s ease-in .2s;
+        }
+        &:first-child + li + li + li {
+          &:hover {
+            .icon-arrow-down {
+              -webkit-transform: rotate(-180deg);
+              -moz-transform: rotate(-180deg);
+              -ms-transform: rotate(-180deg);
+              -o-transform: rotate(-180deg);
+              transform: rotate(-180deg);
+            }
+          }
+        }
+        .dropdown-menu {
+          position: absolute;
+          top: 80px;
+          background-color:#fff;
+          box-shadow:0 0 10px 0 rgba(0,0,0,0.50);
+          width:100px;
+          min-height:60px;
+          ul {
+            li {
+              position: relative;
+              &:before {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 19px;
+                top: 50%;
+                margin-top: -10px;
+                left: 0;
+                background-color: #fff;
+              }
+              .txt {
+                font-family:PingFangSC-Regular;
+                font-size:14px;
+                color:#333;
+                text-align:left;
+                padding: 5px 18px;
+              }
+              &:hover {
+                .txt {
+                  color: #396;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

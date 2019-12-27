@@ -1,0 +1,90 @@
+@import "variable";
+.CourseAppraise {
+  width: auto;
+  margin: 0 auto;
+  font-size: 14px;
+  .row {
+    min-height: 956px;
+  }
+  .ca--main-wrapper {
+    padding:0;
+    background-color: @background-color7;
+    .ca--main__content {
+      overflow: hidden;
+      background-color: @background-color;
+      margin: 0 15px 10px;
+      .table-group {
+        padding:0 15px;
+        margin-bottom: 15px;
+        &:before {
+          content: attr(data-before);
+          display: block;
+          padding: 16px 20px 14px;
+          margin-bottom:15px;
+          background-color: @background-color9;
+        }
+        .table {
+          position: relative;
+          margin-bottom:0;
+          &:before {
+            content: attr(data-before);
+            position: absolute;
+            width: 80px;
+            height:100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: @color;
+            left:0;
+            top:0;
+          }
+          &.table-teacher {
+            &:before {
+              background-color: @background-color5;
+            }
+          }
+          &.table-student {
+            &:before {
+              background-color: @background-color6;
+            }
+          }
+          tbody {
+            tr {
+              th {
+                text-align: right;
+                span {
+                  line-height: 30px;
+                  font-weight: lighter;
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .btn-group {
+        text-align: center;
+        display: block;
+        margin-bottom: 10px;
+        .btn-save, .btn-submit {
+          display: inline-block;
+          margin:0 10px;
+          width: 100px;
+          text-align: center;
+          border-radius: 0;
+          padding:5px 12px;
+        }
+        .btn-save {
+          color: @color;
+          border-color: @button-color;
+          background-color: @button-color;
+        }
+        .btn-submit {
+          color: @color;
+          border-color: @button-color1;
+          background-color: @button-color1;
+        }
+      }
+    }
+  }
+}

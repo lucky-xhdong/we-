@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-cn"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="origin">
+<title>vue.js 兄弟组件传值 - 小坦克-攻城狮 - 博客园</title>
+<link type="text/css" rel="stylesheet" href="vue.js%20%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC%20-%20%E5%B0%8F%E5%9D%A6%E5%85%8B-%E6%94%BB%E5%9F%8E%E7%8B%AE%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/blog-common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="vue.js%20%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC%20-%20%E5%B0%8F%E5%9D%A6%E5%85%8B-%E6%94%BB%E5%9F%8E%E7%8B%AE%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/bundle-nature.css">
+<link type="text/css" rel="stylesheet" href="vue.js%20%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC%20-%20%E5%B0%8F%E5%9D%A6%E5%85%8B-%E6%94%BB%E5%9F%8E%E7%8B%AE%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/241659.css">
+<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="vue.js%20%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC%20-%20%E5%B0%8F%E5%9D%A6%E5%85%8B-%E6%94%BB%E5%9F%8E%E7%8B%AE%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/bundle-nature-mobile.css">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/xiaotanke/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/xiaotanke/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/xiaotanke/wlwmanifest.xml">
+<script async="" src="vue.js%20%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC%20-%20%E5%B0%8F%E5%9D%A6%E5%85%8B-%E6%94%BB%E5%9F%8E%E7%8B%AE%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/analytics.js"></script><script type="text/javascript" src="vue.js%20%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC%20-%20%E5%B0%8F%E5%9D%A6%E5%85%8B-%E6%94%BB%E5%9F%8E%E7%8B%AE%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/encoder.js"></script><script src="vue.js%20%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC%20-%20%E5%B0%8F%E5%9D%A6%E5%85%8B-%E6%94%BB%E5%9F%8E%E7%8B%AE%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/jquery-2.js"></script>
+<script type="text/javascript">var currentBlogApp = 'xiaotanke', cb_enable_mathjax=false;var isLogined=false;</script>
+<script src="vue.js%20%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC%20-%20%E5%B0%8F%E5%9D%A6%E5%85%8B-%E6%94%BB%E5%9F%8E%E7%8B%AE%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/blog-common.js" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+<!--PageBeginHtml Block Begin-->
+<div id="myheader">
+		<ul id="mynavList">
+			<li><a class="menu" href="http://www.cnblogs.com/xiaotanke/">首页</a></li>
+			<li><a class="menu" rel="nofollow" href="http://www.cnblogs.com/xiaotanke/category/1032963.html">Vue</a></li>
+			<li><a class="menu" rel="nofollow" href="http://www.cnblogs.com/xiaotanke/category/1032967.html">JS</a></li>
+			<li><a class="menu" rel="nofollow" href="http://www.cnblogs.com/xiaotanke/category/1032964.html">Jquery</a></li>
+			<li><a class="menu" rel="nofollow" href="http://www.cnblogs.com/xiaotanke/category/1032966.html">CSS</a></li>
+<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="http://www.cnblogs.com/xiaotanke/category/1032969.html">生活随笔</a></li>
+			<li><a id="blog_nav_contact" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/%E5%B0%8F%E5%9D%A6%E5%85%8B-%E6%94%BB%E5%9F%8E%E7%8B%AE">联系我</a></li>
+			<li><a id="blog_nav_rss" class="menu" href="http://www.cnblogs.com/xiaotanke/rss">订阅</a>
+</li><li><a class="menu" rel="nofollow" href="https://i.cnblogs.com/EditArticles.aspx">管理</a></li>
+			
+			
+		</ul>
+</div>
+<div id="mytitle"><p>小坦克</p></div>
+<!--PageBeginHtml Block End-->
+
+<!--done-->
+<div id="banner"><div id="bnr_pic">
+<!--done-->
+<div class="header">
+	<div class="headerText">
+		<a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/xiaotanke/">小坦克-进攻者</a><br>
+	</div><br>
+	<div class="headerDis"></div>
+</div>
+</div></div>
+<div id="main">
+	<!-- left starts -->
+	<div id="left">
+		<div id="mystats">
+			<br>
+				<div id="blog_stats">
+<!--done-->
+<div class="blogStats">
+随笔 - 12&nbsp;
+文章 - 0&nbsp;
+评论 - 3&nbsp;
+
+</div></div>
+			
+		</div>
+		<div id="mylinks">
+<!--done-->
+<a id="blog_nav_sitehome" class="menu" href="http://www.cnblogs.com/">博客园</a>&nbsp;&nbsp;<a id="blog_nav_myhome" class="menu" href="http://www.cnblogs.com/xiaotanke/">首页</a>&nbsp;&nbsp;<a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a>&nbsp;&nbsp;<a id="blog_nav_contact" accesskey="9" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/%E5%B0%8F%E5%9D%A6%E5%85%8B-%E6%94%BB%E5%9F%8E%E7%8B%AE">联系</a>&nbsp;&nbsp;<a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a>&nbsp;&nbsp;<a id="blog_nav_rss" class="menu" href="http://www.cnblogs.com/xiaotanke/rss">订阅</a>&nbsp;<a id="blog_nav_rss_image" href="http://www.cnblogs.com/xiaotanke/rss"><img src="vue.js%20%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC%20-%20%E5%B0%8F%E5%9D%A6%E5%85%8B-%E6%94%BB%E5%9F%8E%E7%8B%AE%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/xml.gif" alt="订阅"></a></div>
+		<div id="topics">
+			
+<div id="post_detail">
+<div class="post">
+	<div class="postTitle">
+		<h1><a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/xiaotanke/p/7427636.html">vue.js 兄弟组件传值</a></h1>
+	</div>
+	<div id="cnblogs_post_body" class="blogpost-body"><p>1、兄弟之间传递数据需要借助于事件车，通过事件车的方式传递数据</p>
+<p>2、创建一个Vue的实例，让各个兄弟共用同一个事件机制。</p>
+<p>3、传递数据方，通过一个事件触发bus.$emit(方法名，传递的数据)。</p>
+<p>4、接收数据方，通过mounted(){}触发bus.$on(方法名，function(接收数据的参数){用该组件的数据接收传递过来的数据})，此时函数中的this已经发生了改变，可以使用箭头函数。</p>
+<p>实例如下：</p>
+<p>我们可以创建一个单独的js文件eventVue.js,内容如下<code> </code></p>
+<div class="cnblogs_code">
+<pre>import Vue from 'vue'<span style="color: #000000">
+
+export </span><span style="color: #0000ff">default</span> <span style="color: #0000ff">new</span> Vue</pre>
+</div>
+<p>假如父组件如下：<code> </code></p>
+<div class="cnblogs_code">
+<pre>&lt;template&gt;
+     &lt;components-a&gt;&lt;/components-a&gt;
+     &lt;components-b&gt;&lt;/components-b&gt;
+&lt;/template&gt;</pre>
+</div>
+<p>子组件a如下：<code> </code></p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="vue.js%20%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC%20-%20%E5%B0%8F%E5%9D%A6%E5%85%8B-%E6%94%BB%E5%9F%8E%E7%8B%AE%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre>&lt;template&gt;
+      &lt;div class="components-a"&gt;
+           &lt;button @click="abtn"&gt;A按钮&lt;/button&gt;
+      &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;<span style="color: #000000">
+import eventVue from </span>'../../js/event.js'<span style="color: #000000">
+export </span><span style="color: #0000ff">default</span><span style="color: #000000"> {
+      name: </span>'app'<span style="color: #000000">,
+      data () {
+        </span><span style="color: #0000ff">return</span><span style="color: #000000"> {
+                ‘msg</span>'<span style="color: #000000">:"我是组件A"
+        }
+      },
+      methods:{
+           abtn:function(){
+                   eventVue .$emit("myFun",this.msg)   //$emit这个方法会触发一个事件
+           }
+      }
+}
+&lt;/script&gt;</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="vue.js%20%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC%20-%20%E5%B0%8F%E5%9D%A6%E5%85%8B-%E6%94%BB%E5%9F%8E%E7%8B%AE%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>子组件b如下：<code> </code></p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="vue.js%20%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC%20-%20%E5%B0%8F%E5%9D%A6%E5%85%8B-%E6%94%BB%E5%9F%8E%E7%8B%AE%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre>&lt;template&gt;
+     &lt;div class="components-a"&gt;
+         &lt;div&gt;{{btext}}&lt;/div&gt;
+     &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;<span style="color: #000000">
+import eventVue from </span>'../../js/event.js'<span style="color: #000000">
+export </span><span style="color: #0000ff">default</span><span style="color: #000000"> {
+   name: </span>'app'<span style="color: #000000">,
+   data () {
+        </span><span style="color: #0000ff">return</span><span style="color: #000000"> {
+           </span>'btext':"我是B组件内容"<span style="color: #000000">
+        }
+   },
+   created:</span><span style="color: #0000ff">function</span><span style="color: #000000">(){
+       </span><span style="color: #0000ff">this</span><span style="color: #000000">.bbtn();
+   },
+   methods:{
+       bbtn:</span><span style="color: #0000ff">function</span><span style="color: #000000">(){
+            eventVue .$on(</span>"myFun",(message)=&gt;{   <span style="color: #008000">//</span><span style="color: #008000">这里最好用箭头函数，不然this指向有问题</span>
+                 <span style="color: #0000ff">this</span>.btext =<span style="color: #000000"> message      
+            })
+       }
+    }
+}
+</span>&lt;/script&gt;</pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="vue.js%20%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC%20-%20%E5%B0%8F%E5%9D%A6%E5%85%8B-%E6%94%BB%E5%9F%8E%E7%8B%AE%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>这样在子组件a里面点击函数就可以改变兄弟组件b里面的值了。</p></div><div id="MySignature" style="display: block;">一个人如果不想输，就要不断学好眼前的东西，它们将来都会大有用处…</div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory">分类: <a href="http://www.cnblogs.com/xiaotanke/category/1032963.html" target="_blank">vue.js</a></div>
+<div id="EntryTag">标签: <a href="http://www.cnblogs.com/xiaotanke/tag/vue/">vue</a></div>
+<div id="blog_post_info"><div id="green_channel">
+        <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(7427636,cb_blogId,1);green_channel_success(this,'谢谢推荐！');">好文要顶</a>
+            <a id="green_channel_follow" onclick="follow('ad6c9773-fb4a-e511-b908-9dcfd8948a71');" href="javascript:void(0);">关注我</a>
+    <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a>
+    <a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="vue.js%20%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC%20-%20%E5%B0%8F%E5%9D%A6%E5%85%8B-%E6%94%BB%E5%9F%8E%E7%8B%AE%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/icon_weibo_24.png" alt=""></a>
+    <a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="vue.js%20%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC%20-%20%E5%B0%8F%E5%9D%A6%E5%85%8B-%E6%94%BB%E5%9F%8E%E7%8B%AE%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+    <div id="author_profile_info" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/xiaotanke/" target="_blank"><img src="vue.js%20%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC%20-%20%E5%B0%8F%E5%9D%A6%E5%85%8B-%E6%94%BB%E5%9F%8E%E7%8B%AE%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/20170711161843.png" class="author_avatar" alt=""></a>
+        <div id="author_profile_detail" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/xiaotanke/">小坦克-攻城狮</a><br>
+            <a href="http://home.cnblogs.com/u/xiaotanke/followees">关注 - 0</a><br>
+            <a href="http://home.cnblogs.com/u/xiaotanke/followers">粉丝 - 7</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="author_profile_honor"></div>
+    <div id="author_profile_follow">
+                <a href="javascript:void(0);" onclick="follow('ad6c9773-fb4a-e511-b908-9dcfd8948a71');return false;">+加关注</a>
+    </div>
+</div>
+<div id="div_digg">
+    <div class="diggit" onclick="votePost(7427636,'Digg')">
+        <span class="diggnum" id="digg_count">1</span>
+    </div>
+    <div class="buryit" onclick="votePost(7427636,'Bury')">
+        <span class="burynum" id="bury_count">0</span>
+    </div>
+    <div class="clear"></div>
+    <div class="diggword" id="digg_tips">
+    </div>
+</div>
+<script type="text/javascript">
+    currentDiggType = 0;
+</script></div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="http://www.cnblogs.com/xiaotanke/p/7169096.html" class="p_n_p_prefix">« </a> 上一篇：<a href="http://www.cnblogs.com/xiaotanke/p/7169096.html" title="发布于2017-07-14 11:16">初识vuex vuex 的基本用法</a><br><a href="http://www.cnblogs.com/xiaotanke/p/7442543.html" class="p_n_p_prefix">» </a> 下一篇：<a href="http://www.cnblogs.com/xiaotanke/p/7442543.html" title="发布于2017-08-28 09:49">vue.js关于路由的跳转</a><br></div>
+</div>
+
+
+	<div class="postDesc">posted on <span id="post-date">2017-08-25 13:40</span> <a href="http://www.cnblogs.com/xiaotanke/">小坦克-攻城狮</a> 阅读(<span id="post_view_count">4332</span>) 评论(<span id="post_comment_count">0</span>)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=7427636" rel="nofollow">编辑</a> <a href="#" onclick="AddToWz(7427636);return false;">收藏</a></div>
+</div>
+<script type="text/javascript">var allowComments=true,cb_blogId=241659,cb_entryId=7427636,cb_blogApp=currentBlogApp,cb_blogUserGuid='ad6c9773-fb4a-e511-b908-9dcfd8948a71',cb_entryCreatedDate='2017/8/25 13:40:00';loadViewCount(cb_entryId);var cb_postType=1;</script>
+
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+<div id="comment_form_container"><div class="login_tips">注册用户登录后才能发表评论，请 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return login('commentform');">登录</a> 或 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return register();">注册</a>，<a href="http://www.cnblogs.com/">访问</a>网站首页。</div></div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="ad_t2"><a href="http://www.ucancode.com/index.htm" target="_blank">【推荐】超50万VC++源码: 大型组态工控、电力仿真CAD与GIS源码库！</a><br><a href="https://www.grapecity.com.cn/developer/spreadjs?utm_source=cnblogs&amp;utm_medium=blogpage&amp;utm_term=bottom&amp;utm_content=SpreadJS&amp;utm_campaign=community" target="_blank" onclick="ga('send', 'event', 'Link', 'click', 'T2-T2-Spread')">【前端】SpreadJS表格控件，可嵌入应用开发的在线Excel</a><br><a href="https://cloud.tencent.com/developer/labs?fromSource=gwzcw.1087957.1087957.1087957" target="_blank" onclick="ga('send', 'event', 'Link', 'click', 'T2-T2 - 腾讯云')">【推荐】如何快速搭建人工智能应用？</a><br></div>
+<div id="opt_under_post"></div>
+<div id="cnblogs_c1" class="c_ad_block"><a href="https://cloud.tencent.com/act/campus?fromSource=gwzcw.1087959.1087959.1087959" target="_blank"><img src="vue.js%20%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC%20-%20%E5%B0%8F%E5%9D%A6%E5%85%8B-%E6%94%BB%E5%9F%8E%E7%8B%AE%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/24442-20180803104321581-581345267.jpg" alt="qcloud" onclick="ga('send', 'event', 'Link', 'click', 'C1');" width="300" height="250"></a></div>
+<div id="under_post_news"><div class="itnews c_ad_block"><b>最新IT新闻</b>:<br> ·  <a href="https://news.cnblogs.com/n/603584/" target="_blank">Uber投资人的“警示信”：十年牛市或见顶，创业者准备提前过冬吧</a><br> ·  <a href="https://news.cnblogs.com/n/603583/" target="_blank">硅谷巨头纷纷推防手机上瘾功能 但被指力度不足</a><br> ·  <a href="https://news.cnblogs.com/n/603582/" target="_blank">微信“二次实名认证”实为骗局 警方：谨防上当</a><br> ·  <a href="https://news.cnblogs.com/n/603581/" target="_blank">老干爹、阿里爸爸...大企业为何要“山寨”自家商标</a><br> ·  <a href="https://news.cnblogs.com/n/603580/" target="_blank">夏普开始生产智能手机OLED显示屏 帮助苹果摆脱对三星的依赖</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div></div>
+<div id="cnblogs_c2" class="c_ad_block"><a href="http://click.aliyun.com/m/9667/" target="_blank"><img src="vue.js%20%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC%20-%20%E5%B0%8F%E5%9D%A6%E5%85%8B-%E6%94%BB%E5%9F%8E%E7%8B%AE%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/TB1iQKbhqmWBuNjy1XaXXXCbXXa-468-60.jpg" alt="" style="width: 468px; height: 60px;"></a></div>
+<div id="under_post_kb"><div class="itnews c_ad_block" id="kb_block"><b>最新知识库文章</b>:<br><div id="kb_recent"> ·  <a href="http://kb.cnblogs.com/page/603533/" target="_blank">如何提高一个研发团队的“代码速度”？</a><br> ·  <a href="http://kb.cnblogs.com/page/603279/" target="_blank">成为一个有目标的学习者</a><br> ·  <a href="http://kb.cnblogs.com/page/602903/" target="_blank">历史转折中的“杭派工程师”</a><br> ·  <a href="http://kb.cnblogs.com/page/602573/" target="_blank">如何提高代码质量？</a><br> ·  <a href="http://kb.cnblogs.com/page/602486/" target="_blank">在腾讯的八年，我的职业思考</a><br></div>» <a href="http://kb.cnblogs.com/" target="_blank">更多知识库文章...</a></div></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+		</div>
+	</div>
+	<!-- left ends -->
+	<!-- right starts -->
+	<div id="right">
+		<!-- 右侧工具部分 -->
+		<div id="right_content">
+	
+			
+<!--done-->
+<h2 class="listtitle">公告</h2>
+<div class="newsItem">
+	<div id="blog-news"><div id="blog-news"><a style="color: red" href="#" target="_blank" title="小坦克的日常">小坦克的日常</a><hr>
+
+
+
+<br>
+寂寞热线：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1058007757&amp;site=qq&amp;menu=yes"><img src="vue.js%20%E5%85%84%E5%BC%9F%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC%20-%20%E5%B0%8F%E5%9D%A6%E5%85%8B-%E6%94%BB%E5%9F%8E%E7%8B%AE%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/pa.gif" alt="若未及时回复，可能是我太忙，或消息太多回复不过来" title="若未及时回复，可能是我太忙，或消息太多回复不过来" border="0" align="absmiddle"></a><br><br>
+Email：1058007757@qq.com
+<p><b>做一个异类，异于常人，出类拔萃</b></p>
+
+<hr>
+</div><div id="profile_block">昵称：<a href="https://home.cnblogs.com/u/xiaotanke/">小坦克-攻城狮</a><br>园龄：<a href="https://home.cnblogs.com/u/xiaotanke/" title="入园时间：2015-08-25">2年11个月</a><br>粉丝：<a href="https://home.cnblogs.com/u/xiaotanke/followers/">7</a><br>关注：<a href="https://home.cnblogs.com/u/xiaotanke/followees/">0</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="follow('ad6c9773-fb4a-e511-b908-9dcfd8948a71')">+加关注</a></div><script>getFollowStatus('ad6c9773-fb4a-e511-b908-9dcfd8948a71')</script></div></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+	
+			<div id="calendar"><div id="blog-calendar" style=""><table id="blogCalendar" class="Cal" title="Calendar" cellspacing="0" cellpadding="0">
+	<tbody><tr><td colspan="7"><table class="CalTitle" cellspacing="0">
+		<tbody><tr><td class="CalNextPrev"><a href="javascript:void(0);" onclick="loadBlogCalendar('2018/07/01');return false;">&lt;</a></td><td align="center">2018年8月</td><td class="CalNextPrev" align="right"><a href="javascript:void(0);" onclick="loadBlogCalendar('2018/09/01');return false;">&gt;</a></td></tr>
+	</tbody></table></td></tr><tr><th class="CalDayHeader" abbr="日" scope="col" align="center">日</th><th class="CalDayHeader" abbr="一" scope="col" align="center">一</th><th class="CalDayHeader" abbr="二" scope="col" align="center">二</th><th class="CalDayHeader" abbr="三" scope="col" align="center">三</th><th class="CalDayHeader" abbr="四" scope="col" align="center">四</th><th class="CalDayHeader" abbr="五" scope="col" align="center">五</th><th class="CalDayHeader" abbr="六" scope="col" align="center">六</th></tr><tr><td class="CalOtherMonthDay" align="center">29</td><td class="CalOtherMonthDay" align="center">30</td><td class="CalOtherMonthDay" align="center">31</td><td align="center">1</td><td align="center">2</td><td align="center">3</td><td class="CalWeekendDay" align="center">4</td></tr><tr><td class="CalTodayDay" align="center">5</td><td align="center">6</td><td align="center">7</td><td align="center">8</td><td align="center">9</td><td align="center">10</td><td class="CalWeekendDay" align="center">11</td></tr><tr><td class="CalWeekendDay" align="center">12</td><td align="center">13</td><td align="center">14</td><td align="center">15</td><td align="center">16</td><td align="center">17</td><td class="CalWeekendDay" align="center">18</td></tr><tr><td class="CalWeekendDay" align="center">19</td><td align="center">20</td><td align="center">21</td><td align="center">22</td><td align="center">23</td><td align="center">24</td><td class="CalWeekendDay" align="center">25</td></tr><tr><td class="CalWeekendDay" align="center">26</td><td align="center">27</td><td align="center">28</td><td align="center">29</td><td align="center">30</td><td align="center">31</td><td class="CalOtherMonthDay" align="center">1</td></tr><tr><td class="CalOtherMonthDay" align="center">2</td><td class="CalOtherMonthDay" align="center">3</td><td class="CalOtherMonthDay" align="center">4</td><td class="CalOtherMonthDay" align="center">5</td><td class="CalOtherMonthDay" align="center">6</td><td class="CalOtherMonthDay" align="center">7</td><td class="CalOtherMonthDay" align="center">8</td></tr>
+</tbody></table></div><script type="text/javascript">loadBlogDefaultCalendar();</script></div>
+			
+				<div id="leftcontentcontainer">
+					<div id="blog-sidecolumn"><div id="sidebar_search" class="sidebar-block">
+<div id="sidebar_search" class="mySearch">
+<h3 class="catListTitle">搜索</h3>
+<div id="sidebar_search_box">
+<div id="widget_my_zzk" class="div_my_zzk"><input id="q" onkeydown="return zzk_go_enter(event);" class="input_my_zzk" type="text">&nbsp;<input onclick="zzk_go()" value="找找看" id="btnZzk" class="btn_my_zzk" type="button"></div>
+
+</div>
+</div>
+
+</div><div id="sidebar_shortcut" class="sidebar-block">
+<h3 class="catListTitle">常用链接</h3>
+<ul>
+<li><a href="http://www.cnblogs.com/xiaotanke/p/" title="我的博客的随笔列表">我的随笔</a></li><li><a href="http://www.cnblogs.com/xiaotanke/MyComments.html" title="我发表过的评论列表">我的评论</a></li><li><a href="http://www.cnblogs.com/xiaotanke/OtherPosts.html" title="我评论过的随笔列表">我的参与</a></li><li><a href="http://www.cnblogs.com/xiaotanke/RecentComments.html" title="我的博客的评论列表">最新评论</a></li><li><a href="http://www.cnblogs.com/xiaotanke/tag/" title="我的博客的标签列表">我的标签</a></li>
+</ul>
+<div id="itemListLin_con" style="display:none;">
+
+</div></div><div id="sidebar_toptags" class="sidebar-block">
+<h3 class="catListTitle">我的标签</h3>
+<div id="MyTag">
+<ul>
+<li><a href="http://www.cnblogs.com/xiaotanke/tag/export%20default%20import/">export default import</a>(1)</li><li><a href="http://www.cnblogs.com/xiaotanke/tag/hightcharts/">hightcharts</a>(1)</li><li><a href="http://www.cnblogs.com/xiaotanke/tag/hightcharts%20%20FastClick%20legend/">hightcharts  FastClick legend</a>(1)</li><li><a href="http://www.cnblogs.com/xiaotanke/tag/input/">input</a>(1)</li><li><a href="http://www.cnblogs.com/xiaotanke/tag/vue/">vue</a>(1)</li><li><a href="http://www.cnblogs.com/xiaotanke/tag/vue2.0%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC/">vue2.0组件传值</a>(1)</li><li><a href="http://www.cnblogs.com/xiaotanke/tag/vue%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E4%BB%A4/">vue自定义指令</a>(1)</li>
+</ul>
+</div></div><div id="sidebar_categories">
+<!--done-->
+
+		<h1 class="catListTitle">随笔分类</h1>
+		
+				<ul>
+			
+				<li class="catList">
+				 <a id="CatList_LinkList_0_Link_0" class="listitem" href="https://www.cnblogs.com/xiaotanke/category/1032966.html">css</a>
+				</li>
+			
+				<li class="catList">
+				 <a id="CatList_LinkList_0_Link_1" class="listitem" href="https://www.cnblogs.com/xiaotanke/category/1068352.html">ES6(1)</a>
+				</li>
+			
+				<li class="catList">
+				 <a id="CatList_LinkList_0_Link_2" class="listitem" href="https://www.cnblogs.com/xiaotanke/category/1032964.html">jquery</a>
+				</li>
+			
+				<li class="catList">
+				 <a id="CatList_LinkList_0_Link_3" class="listitem" href="https://www.cnblogs.com/xiaotanke/category/1032967.html">JS</a>
+				</li>
+			
+				<li class="catList">
+				 <a id="CatList_LinkList_0_Link_4" class="listitem" href="https://www.cnblogs.com/xiaotanke/category/1032963.html">vue.js(5)</a>
+				</li>
+			
+				<li class="catList">
+				 <a id="CatList_LinkList_0_Link_5" class="listitem" href="https://www.cnblogs.com/xiaotanke/category/1032969.html">生活随笔</a>
+				</li>
+			
+				</ul>
+			
+	
+		<h1 class="catListTitle">随笔档案</h1>
+		
+				<ul>
+			
+				<li class="catList">
+				 <a id="CatList_LinkList_1_Link_0" class="listitem" href="https://www.cnblogs.com/xiaotanke/archive/2018/04.html">2018年4月 (1)</a>
+				</li>
+			
+				<li class="catList">
+				 <a id="CatList_LinkList_1_Link_1" class="listitem" href="https://www.cnblogs.com/xiaotanke/archive/2017/09.html">2017年9月 (1)</a>
+				</li>
+			
+				<li class="catList">
+				 <a id="CatList_LinkList_1_Link_2" class="listitem" href="https://www.cnblogs.com/xiaotanke/archive/2017/08.html">2017年8月 (3)</a>
+				</li>
+			
+				<li class="catList">
+				 <a id="CatList_LinkList_1_Link_3" class="listitem" href="https://www.cnblogs.com/xiaotanke/archive/2017/07.html">2017年7月 (5)</a>
+				</li>
+			
+				<li class="catList">
+				 <a id="CatList_LinkList_1_Link_4" class="listitem" href="https://www.cnblogs.com/xiaotanke/archive/2016/01.html">2016年1月 (2)</a>
+				</li>
+			
+				</ul>
+			
+	
+</div><div id="sidebar_recentcomments" class="sidebar-block"><div id="recent_comments_wrap">
+<h3 class="catListTitle">最新评论</h3>
+<div class="RecentComment" id="RecentComments">
+	<div id="RecentCommentsBlock"><ul>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/xiaotanke/p/7448383.html#4012273">1. Re:export ，export default 和 import 区别 以及用法</a></li>
+        <li class="recent_comment_body">博主，我按照你的方法写了下代码，出现Unexpected reserved word错误了，不知道问题在哪里，我还导入外部文件了，还是报错 import { name } from ".........</li>
+        <li class="recent_comment_author">--凌凌依</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/xiaotanke/p/7448383.html#3924987">2. Re:export ，export default 和 import 区别 以及用法</a></li>
+        <li class="recent_comment_body">@牛魔王呀别处需要用的话，这里就需要导出...</li>
+        <li class="recent_comment_author">--小坦克-攻城狮</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/xiaotanke/p/7448383.html#3924970">3. Re:export ，export default 和 import 区别 以及用法</a></li>
+        <li class="recent_comment_body">为什么LZ每次引用之后import 下面都写了一个exoport default?</li>
+        <li class="recent_comment_author">--牛魔王呀</li>
+</ul>
+</div>
+</div>
+</div></div><div id="sidebar_topviewedposts" class="sidebar-block"><div id="topview_posts_wrap">
+<h3 class="catListTitle">阅读排行榜</h3>
+<div class="RecentComment" id="TopViewPosts"> 
+	<div id="TopViewPostsBlock"><ul><li><a href="https://www.cnblogs.com/xiaotanke/p/7448383.html">1. export ，export default 和 import 区别 以及用法(36750)</a></li><li><a href="https://www.cnblogs.com/xiaotanke/p/7427636.html">2. vue.js 兄弟组件传值(4331)</a></li><li><a href="https://www.cnblogs.com/xiaotanke/p/7160962.html">3. Vue修饰符(3705)</a></li><li><a href="https://www.cnblogs.com/xiaotanke/p/7159898.html">4. hightcharts 如何修改legend图例的样式(2144)</a></li><li><a href="https://www.cnblogs.com/xiaotanke/p/7484322.html">5. vue input输入框联想(1680)</a></li></ul></div>
+</div>
+</div></div><div id="sidebar_topcommentedposts" class="sidebar-block"><div id="topfeedback_posts_wrap">
+<h3 class="catListTitle">评论排行榜</h3>
+<div class="RecentComment" id="TopCommentsPosts">
+	<div id="TopFeedbackPostsBlock"><ul><li><a href="https://www.cnblogs.com/xiaotanke/p/7448383.html">1. export ，export default 和 import 区别 以及用法(3)</a></li></ul></div>
+</div></div></div><div id="sidebar_topdiggedposts" class="sidebar-block"><div id="topdigg_posts_wrap">
+<h3 class="catListTitle">推荐排行榜</h3>
+<div class="RecentComment">
+	<div id="TopDiggPostsBlock"><ul><li><a href="https://www.cnblogs.com/xiaotanke/p/7448383.html">1. export ，export default 和 import 区别 以及用法(1)</a></li><li><a href="https://www.cnblogs.com/xiaotanke/p/7427636.html">2. vue.js 兄弟组件传值(1)</a></li></ul></div>
+</div></div></div></div><script type="text/javascript">loadBlogSideColumn();</script>
+				</div>
+			
+		</div>
+		<!-- //右侧工具部分 -->
+		<div id="footer">
+			
+<!--done-->
+Copyright ©2018 小坦克-攻城狮
+		</div>
+	</div>
+	<!-- right ends -->
+	<div class="clear"></div>
+	
+</div>
+
+<!--PageEndHtml Block Begin-->
+<div id="mytop"><a href="#top">返回<br>顶部</a></div>
+<!--PageEndHtml Block End-->
+
+
+</body></html>

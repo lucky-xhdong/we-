@@ -1,0 +1,17 @@
+.common-top-menu .navbar-nav__right {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.common-top-menu .navbar-nav__right li {
+  display: inline-block;
+  list-style: none;
+  position: relative;
+}
+.common-top-menu .navbar-nav__right li .avatar-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.common-top-menu .navbar-nav__right li .avatar-wrapper img {
+  max-width: 100%;
+}

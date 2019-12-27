@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="fc379072-1c94-48d2-80b4-d799e82dffce" name="112.124.2.173" url="http://112.124.2.173">
+        <fileTransfer host="112.124.2.173" port="22" rootFolder="/var/www/weeduTalk" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

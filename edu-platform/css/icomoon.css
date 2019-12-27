@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?j652op');
+  src:  url('fonts/icomoon.eot?j652op#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?j652op') format('truetype'),
+    url('fonts/icomoon.woff?j652op') format('woff'),
+    url('fonts/icomoon.svg?j652op#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logo:before {
+  content: "\e900";
+  color: #5ab482;
+}
+.icon-username:before {
+  content: "\e901";
+  color: #666;
+}
+.icon-password:before {
+  content: "\e902";
+  color: #666;
+}
+.icon-feature-manager:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-regional-archive:before {
+  content: "\e904";
+  color: #fff;
+}
+.icon-school-manage:before {
+  content: "\e905";
+  color: #fff;
+}
+.icon-content-manage:before {
+  content: "\e906";
+  color: #fff;
+}
+.icon-teaching-resource:before {
+  content: "\e907";
+  color: #fff;
+}
+.icon-progress-manage:before {
+  content: "\e908";
+  color: #fff;
+}
+.icon-plan-audit:before {
+  content: "\e909";
+  color: #fff;
+}
+.icon-data-statistic:before {
+  content: "\e90a";
+  color: #fff;
+}
+.icon-report-import:before {
+  content: "\e90b";
+  color: #fff;
+}
+.icon-edit:before {
+  content: "\e90c";
+  color: #37bbf2;
+}
+.icon-add .path1:before {
+  content: "\e90d";
+  color: rgb(90, 180, 130);
+}
+.icon-add .path2:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-delete .path1:before {
+  content: "\e90f";
+  color: rgb(247, 72, 37);
+}
+.icon-delete .path2:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-upload .path1:before {
+  content: "\e911";
+  color: rgb(90, 180, 130);
+}
+.icon-upload .path2:before {
+  content: "\e912";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-view .path1:before {
+  content: "\e913";
+  color: rgb(54, 202, 142);
+}
+.icon-view .path2:before {
+  content: "\e914";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-view .path3:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-lock:before {
+  content: "\e916";
+  color: #f74825;
+}
+.icon-unlock:before {
+  content: "\e917";
+  color: #e0a855;
+}
+.icon-search:before {
+  content: "\e918";
+  color: #666;
+}
+.icon-close:before {
+  content: "\e919";
+  color: #666;
+}
+.icon-arrow-down:before {
+  content: "\e91a";
+  color: #ccc;
+}
+.icon-pack-up:before {
+  content: "\e91b";
+  color: #999;
+}
+.icon-open:before {
+  content: "\e91c";
+  color: #999;
+}

@@ -1,0 +1,615 @@
+body {
+  margin: 0;
+}
+@media (min-width: 1000px) {
+  .evaluation2-container {
+    padding: 40px 50px;
+    background-color: #fff;
+    .header {
+      padding-bottom: 10px;
+      border-bottom:1px solid #979797;
+      .icon-logo, .txt {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .txt {
+        font: 16px/20px PingFangSC-Regular;
+        color:#000;
+        position: relative;
+        padding-left: 30px;
+        border-left: 1px solid #999;
+      }
+    }
+    .baseinfo {
+      margin: 100px 0 40px;
+      padding: 25px 50px 25px;
+      border: 2px dotted #979797;
+      display: table;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        top: 25px;
+        bottom: 25px;
+        background-color: #979797;
+        left: 50%;
+      }
+      .title {
+        display: block;
+        text-align: center;
+        font-family: PingFangSC-Semibold;
+        font-size: 20px;
+        color: #333333;
+        position: absolute;
+        top: -60px;
+        left: 0;
+        right: 0;
+      }
+      .baseinfo__left {
+        float: left;
+        .txt {
+          font-family:PingFangSC-Regular;
+          font-size:16px;
+          color:#333333;
+          line-height:32px;
+          text-align:left;
+          margin: 0;
+          .txt-label, .txt-info {
+            font-family:PingFangSC-Regular;
+            font-size:16px;
+            display: inline-block;
+            vertical-align: middle;
+            color:#333333;
+            line-height:32px;
+            min-width: 90px;
+          }
+        }
+      }
+      .baseinfo__right {
+        padding: 15px 0;
+        float: right;
+        .total-score, .txt-time {
+          display: block;
+          text-align: center;
+          margin: 0 auto;
+        }
+        .total-score {
+          background:#17b6fe;
+          border:1px solid #17b6fe;
+          border-radius:2px;
+          width:215px;
+          height:38px;
+          font-family:PingFangSC-Regular;
+          line-height: 38px;
+          font-size:20px;
+          color:#ffffff;
+          margin-bottom: 10px;
+        }
+        .txt-time {
+          font-family:PingFangSC-Regular;
+          font-size:12px;
+          color:#999999;
+        }
+      }
+    }
+    .comprehensive-analysis {
+      .title {
+        display: block;
+        background:#cccccc;
+        font-family:PingFangSC-Medium;
+        font-size:20px;
+        color:#000000;
+        text-align:left;
+        padding: 18px 47px 14px;
+        margin-bottom: 30px;
+      }
+      .comment {
+        padding: 0 50px;
+        .txt {
+          font-family:PingFangSC-Semibold;
+          font-size:16px;
+          color:#000000;
+          line-height:32px;
+          text-align:left;
+        }
+      }
+      .chart {
+
+      }
+      .chart-info {
+        padding: 0 50px;
+        .txt {
+          font-family: PingFangSC-Regular;
+          font-size: 16px;
+          color: #333333;
+          line-height: 32px;
+          text-align: left;
+          position: relative;
+          padding-left: 20px;
+          margin-top: 0;
+          margin-bottom: 45px;
+          .line {
+            width: 6px;
+            height: 100%;
+            background-color: #f0f;
+            position: absolute;
+            left: 0;
+          }
+        }
+      }
+    }
+    .achievement-analysis {
+      .title {
+        display: block;
+        background:#cccccc;
+        font-family:PingFangSC-Medium;
+        font-size:20px;
+        color:#000000;
+        text-align:left;
+        padding: 18px 47px 14px;
+        margin-bottom: 39px;
+      }
+      .analysis-table-wrapper {
+        margin: 0 50px;
+        .txt-analysis {
+          display: block;
+          font-family:PingFangSC-Regular;
+          font-size:14px;
+          color:#333333;
+          line-height:32px;
+          margin-bottom: 34px;
+        }
+        .analysis-table {
+          width: 100%;
+          border: 1px solid #fff;
+          border-collapse: collapse;
+          thead, tbody {
+            border-bottom: 1px solid #979797;
+          }
+          thead {
+            tr {
+              th {
+                background-color: #e8e7e7;
+                .txt-module, .txt-classify {
+                  font-family:PingFangSC-Regular;
+                  font-size:14px;
+                  text-align:center;
+                }
+                .txt-module {
+                  color:#333333;
+                }
+                .txt-classify {
+                  color:#666;
+                }
+                .txt-lavel {
+                  display: inline-block;
+                  vertical-align: middle;
+                  width:100%;
+                  height:40px;
+                  font-family:PingFangSC-Regular;
+                  font-size:14px;
+                  color:#ffffff;
+                  text-align:center;
+                  line-height: 40px;
+                  &.txt-lavel__A1 {
+                    background-color: #f44336;
+                  }
+                  &.txt-lavel__A2 {
+                    background-color: #fb8c00;
+                  }
+                  &.txt-lavel__B1 {
+                    background-color: #fdd835;
+                  }
+                  &.txt-lavel__B2 {
+                    background-color: #c2e021;
+                  }
+                  &.txt-lavel__C1 {
+                    background-color: #7cb342;
+                  }
+                  &.txt-lavel__C2 {
+                    background-color: #029ae4;
+                  }
+                }
+              }
+            }
+          }
+          tbody {
+            tr {
+              td {
+                &.first, &.third {
+                  background-color: #ccc;
+                }
+                &.second {
+                  background-color: #e8e7e7;
+                }
+              }
+              td {
+                border-bottom: 1px dashed #eee;
+                .txt {
+                  font-family:PingFangSC-Regular;
+                  font-size:14px;
+                  color:#333333;
+                  text-align:center;
+                  padding: 10px;
+                  margin: 0;
+                }
+                .progress-bar {
+                  .progress-bar__A1,
+                  .progress-bar__A2,
+                  .progress-bar__B1,
+                  .progress-bar__B2,
+                  .progress-bar__C1,
+                  .progress-bar__C2 {
+                    display: block;
+                    font-size: 0;
+                    height: 16px;
+                    background-color: #f00;
+                    margin: 12px 0;
+                  }
+                  .progress-bar__A1 {
+                    background-color: #f44336;
+                  }
+                  .progress-bar__A2 {
+                    background-color: #fb8c00;
+                  }
+                  .progress-bar__B1 {
+                    background-color: #fdd835;
+                  }
+                  .progress-bar__B2 {
+                    background-color: #c2e021;
+                  }
+                  .progress-bar__C1 {
+                    background-color: #7cb342;
+                  }
+                  .progress-bar__C2 {
+                    background-color: #029ae4;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .analysis-result {
+        padding: 20px 50px;
+        .txt {
+          font-family:PingFangSC-Regular;
+          font-size:14px;
+          color:#333333;
+          line-height:32px;
+          text-align:left;
+          margin: 0;
+        }
+      }
+    }
+    .training-suggestions {
+      .title {
+        display: block;
+        background:#cccccc;
+        font-family:PingFangSC-Medium;
+        font-size:20px;
+        color:#000000;
+        text-align:left;
+        padding: 18px 47px 14px;
+      }
+      .txt-wrapper {
+        padding: 30px 50px;
+        .txt {
+          font-family:PingFangSC-Regular;
+          font-size:14px;
+          color:#333333;
+          line-height:32px;
+          text-align:left;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .evaluation2-container {
+    padding: 5px 10px;
+    background-color: #fff;
+    .header {
+      padding-bottom: 10px;
+      border-bottom:1px solid #979797;
+      .icon-logo, .txt {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .txt {
+        font: 16px/20px PingFangSC-Regular;
+        color:#000;
+        position: relative;
+        padding-left: 30px;
+        border-left: 1px solid #999;
+      }
+    }
+    .baseinfo {
+      margin: 70px 0 20px;
+      padding: 10px 15px;
+      border: 2px dotted #979797;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        top: 25px;
+        bottom: 25px;
+        background-color: #979797;
+        left: 50%;
+      }
+      .title {
+        display: block;
+        text-align: center;
+        font-family: PingFangSC-Semibold;
+        font-size: 20px;
+        color: #333333;
+        position: absolute;
+        top: -60px;
+        left: 0;
+      }
+      .baseinfo__left {
+        float: left;
+        padding: 15px 0;
+        .txt {
+          font-family:PingFangSC-Regular;
+          font-size:16px;
+          color:#333333;
+          line-height:32px;
+          text-align:left;
+          margin: 0;
+          .txt-label {
+            font-family:PingFangSC-Regular;
+            font-size:16px;
+            display: inline-block;
+            vertical-align: middle;
+            color:#333333;
+            line-height:32px;
+            min-width: 90px;
+          }
+        }
+      }
+      .baseinfo__right {
+        float: right;
+        padding: 15px 0;
+        .total-score, .txt-time {
+          display: block;
+          text-align: center;
+          margin: 0 auto;
+        }
+        .total-score {
+          background:#17b6fe;
+          border:1px solid #17b6fe;
+          border-radius:2px;
+          width:215px;
+          height:38px;
+          font-family:PingFangSC-Regular;
+          line-height: 38px;
+          font-size:20px;
+          color:#ffffff;
+          margin-bottom: 10px;
+        }
+        .txt-time {
+          font-family:PingFangSC-Regular;
+          font-size:12px;
+          color:#999999;
+        }
+      }
+    }
+    .comprehensive-analysis {
+      .title {
+        display: block;
+        background:#cccccc;
+        font-family:PingFangSC-Medium;
+        font-size:20px;
+        color:#000000;
+        text-align:left;
+        padding: 10px 12px;
+        margin-bottom: 15px;
+      }
+      .comment {
+        padding: 0 10px;
+        .txt {
+          font-family:PingFangSC-Semibold;
+          font-size:16px;
+          color:#000000;
+          line-height:32px;
+          text-align:left;
+        }
+      }
+      .chart {
+
+      }
+      .chart-info {
+        padding: 0 10px;
+        .txt {
+          font-family: PingFangSC-Regular;
+          font-size: 16px;
+          color: #333333;
+          line-height: 32px;
+          text-align: left;
+          position: relative;
+          padding-left: 20px;
+          margin-top: 0;
+          margin-bottom: 15px;
+          .line {
+            width: 6px;
+            height: 100%;
+            background-color: #f0f;
+            position: absolute;
+            left: 0;
+          }
+        }
+      }
+    }
+    .achievement-analysis {
+      .title {
+        display: block;
+        background:#cccccc;
+        font-family:PingFangSC-Medium;
+        font-size:20px;
+        color:#000000;
+        text-align:left;
+        padding: 10px 12px;
+        margin-bottom: 15px;
+      }
+      .analysis-table-wrapper {
+        .txt-analysis {
+          display: block;
+          font-family:PingFangSC-Regular;
+          font-size:14px;
+          color:#333333;
+          line-height:32px;
+          margin-bottom: 34px;
+        }
+        .analysis-table {
+          width: 100%;
+          border: 1px solid #fff;
+          border-collapse: collapse;
+          thead, tbody {
+            border-bottom: 1px solid #979797;
+          }
+          thead {
+            tr {
+              th {
+                background-color: #e8e7e7;
+                .txt-module, .txt-classify {
+                  font-family:PingFangSC-Regular;
+                  font-size:14px;
+                  text-align:center;
+                }
+                .txt-module {
+                  color:#333333;
+                }
+                .txt-classify {
+                  color:#666;
+                }
+                .txt-lavel {
+                  display: inline-block;
+                  vertical-align: middle;
+                  width:100%;
+                  height:40px;
+                  font-family:PingFangSC-Regular;
+                  font-size:14px;
+                  color:#ffffff;
+                  text-align:center;
+                  line-height: 40px;
+                  &.txt-lavel__A1 {
+                    background-color: #f44336;
+                  }
+                  &.txt-lavel__A2 {
+                    background-color: #fb8c00;
+                  }
+                  &.txt-lavel__B1 {
+                    background-color: #fdd835;
+                  }
+                  &.txt-lavel__B2 {
+                    background-color: #c2e021;
+                  }
+                  &.txt-lavel__C1 {
+                    background-color: #7cb342;
+                  }
+                  &.txt-lavel__C2 {
+                    background-color: #029ae4;
+                  }
+                }
+              }
+            }
+          }
+          tbody {
+            tr {
+              td {
+                &.first, &.third {
+                  background-color: #ccc;
+                }
+                &.second {
+                  background-color: #e8e7e7;
+                }
+              }
+              td {
+                border-bottom: 1px dashed #eee;
+                .txt {
+                  font-family:PingFangSC-Regular;
+                  font-size:14px;
+                  color:#333333;
+                  text-align:center;
+                  padding: 2px;
+                  margin: 0;
+                }
+                .progress-bar {
+                  .progress-bar__A1,
+                  .progress-bar__A2,
+                  .progress-bar__B1,
+                  .progress-bar__B2,
+                  .progress-bar__C1,
+                  .progress-bar__C2 {
+                    display: block;
+                    font-size: 0;
+                    height: 16px;
+                    background-color: #f00;
+                    margin: 12px 0;
+                  }
+                  .progress-bar__A1 {
+                    background-color: #f44336;
+                  }
+                  .progress-bar__A2 {
+                    background-color: #fb8c00;
+                  }
+                  .progress-bar__B1 {
+                    background-color: #fdd835;
+                  }
+                  .progress-bar__B2 {
+                    background-color: #c2e021;
+                  }
+                  .progress-bar__C1 {
+                    background-color: #7cb342;
+                  }
+                  .progress-bar__C2 {
+                    background-color: #029ae4;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .analysis-result {
+        padding: 10px 15px;
+        .txt {
+          font-family:PingFangSC-Regular;
+          font-size:14px;
+          color:#333333;
+          line-height:32px;
+          text-align:left;
+          margin: 0;
+        }
+      }
+    }
+    .training-suggestions {
+      .title {
+        display: block;
+        background:#cccccc;
+        font-family:PingFangSC-Medium;
+        font-size:20px;
+        color:#000000;
+        text-align:left;
+        padding: 10px 12px;
+      }
+      .txt-wrapper {
+        padding: 10px 15px;
+        .txt {
+          font-family:PingFangSC-Regular;
+          font-size:14px;
+          color:#333333;
+          line-height:32px;
+          text-align:left;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

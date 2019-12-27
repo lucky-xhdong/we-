@@ -1,0 +1,73 @@
+/* background-color start */
+/* background-color end */
+/* border-color start */
+/* border-color end */
+/* button start */
+/* button end */
+/* color start */
+/* color end */
+/* font-family start */
+/* font-family end */
+.common-error-wrapper {
+  background: #344a60 url("../images/bg-common-error.png") no-repeat;
+  height: 900px;
+}
+.common-error-wrapper .common-error-container {
+  position: relative;
+  width: auto;
+  margin: 0 auto;
+}
+.common-error-wrapper .common-error-container .common-error__tip {
+  background: #efefef;
+  border-radius: 7px;
+  width: 365px;
+  height: 76px;
+  position: absolute;
+  top: 240px;
+  left: 170px;
+}
+.common-error-wrapper .common-error-container .common-error__tip:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: -30px;
+  top: 50%;
+  margin-top: -15px;
+  background: url("../images/common-error-arrow.png") no-repeat;
+}
+.common-error-wrapper .common-error-container .common-error__tip .tip-txt {
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  color: #999;
+  text-align: left;
+  padding: 0 20px;
+}
+.common-error-wrapper .common-error-container .common-error__tip .tip-txt .tip-link {
+  color: #dd4320;
+  padding: 0 5px;
+}
+.common-error-wrapper .common-error-container .common-error__tip .tip-txt .tip-link:hover {
+  text-decoration: underline;
+}
+.common-error-wrapper .common-error-container .common-error__img {
+  width: 400px;
+  height: 115px;
+  position: absolute;
+  top: 440px;
+  right: 280px;
+}
+.common-error-wrapper .common-error-container .common-error__img img {
+  max-width: 100%;
+}
+.common-error-wrapper .common-error-container .common-error__txt {
+  position: absolute;
+  top: 600px;
+  right: 190px;
+}
+.common-error-wrapper .common-error-container .common-error__txt .txt {
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  color: #c2c2c1;
+  text-align: center;
+}

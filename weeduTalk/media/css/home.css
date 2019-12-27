@@ -1,0 +1,217 @@
+
+/*main Start*/
+h1.text-tit{
+    font-size:16px;
+    color:#3c3c3c;
+    height:40px;
+    line-height:40px;
+    background: #f3f3f3;
+    border-top:3px solid #e3211c;
+    padding:0 15px;
+    position:relative;
+    top:0;
+    left:0;
+    margin:0;
+}
+.more-icon{
+    display: block;
+    position:absolute;
+    top:0;
+    right:10px;
+    height:40px;
+    line-height:40px;
+    background: url(../images/more-icon.png) no-repeat right center;
+    font-size:12px;
+    color:#3c3c3c;
+    padding-right:10px;
+}
+.more-icon:hover,.news-ul li a:hover,.news-ul li a:active{
+    color:#e21510;
+}
+.news-ul{
+    padding:15px;
+    background:#fff;
+    height:290px;
+    overflow: hidden;
+}
+.news-ul li{
+    padding-left:13px;
+    background: url(../images/list-icon.jpg) no-repeat left center;
+    line-height:30px;
+}
+.news-ul li a{
+    text-decoration: none;
+    color:#5c5c5c;
+    display: block;
+    width:100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.mb-30>div{
+    margin-bottom:30px;
+
+}
+.row-main{
+    box-shadow:0 0 5px #ededed;
+
+}
+.row-main.main-height{
+    height:365px;
+    overflow: hidden;
+}
+.row-main.main-height ul{
+    height:100%;
+}
+.fri-link{
+    overflow: hidden;
+    border-top:2px solid #d3d2d2;
+    margin-bottom:10px;
+}
+.fri-link h2{
+    font-size:16px;
+    color:#3c3c3c;
+    padding:15px 10px 20px;
+
+}
+.fri-link a{
+    float: left;
+    display: block;
+    width:97px;
+    margin-left:10px;
+    text-align: center;
+    height:56px;
+    margin-bottom:5px;
+    overflow: hidden;
+}
+.fri-link a img{
+    width:100%;
+    height:auto;
+    max-height:100%;
+    display: block;
+}
+
+.carousel-control.left{background-image:none;}
+.carousel-control.right{background-image: none;}
+.glyphicon-chevron-left{
+    background: url(../images/left.png);
+
+}
+.carousel-control{
+    width:7%;
+}
+.glyphicon-chevron-right{
+    background: url(../images/right.png);
+    margin-right:-23px;
+
+}
+.glyphicon-chevron-left:before,.glyphicon-chevron-right:before{
+    content:'';
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next{
+    display: block;
+    width:45px;
+    height:45px;
+    margin-top:-23px;
+    margin-left:-23px;
+    background-size: 45px 45px;
+    background-repeat: no-repeat;
+}
+.carousel-indicators{display: none;}
+.carousel-caption{
+    width:100%;
+    padding:10px 0 10px 10px;
+    left:0;
+    bottom:0;
+    text-align: left;
+    background: url(../images/pic-bg1.png);
+    background-repeat: repeat;
+    /*background: rgba(0,0,0,.5);*/
+}
+.carousel-caption h3{
+    font-size:16px;
+    width:100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+}
+#carousel-example-captions .carousel-inner .item>a{
+    display: block;
+    height:365px;
+    width:100%;
+}
+.index-ban{
+    display: block;
+    max-width:100%;
+    margin:0 auto 30px;
+    height:105px;
+    overflow: hidden;
+
+}
+.index-ban img{
+    width:100%;
+    height:100%;
+}
+
+/*main End */
+
+@media (max-width: 768px) {
+    .mt-30{
+        margin-top:0;
+    }
+    .mt-30>div{
+        margin-bottom:15px;
+    }
+    /*.navbar-collapse.collapse{*/
+        /*margin-left:-5px;*/
+    /*}*/
+    .carousel-control{
+        width:11%;
+    }
+
+    #carousel-example-captions .carousel-inner .item a{
+        height:200px;
+    }
+    .two-code{
+        position: relative;
+        bottom:0;
+        left:0;
+        padding-bottom:14px;
+        z-index: 9;
+
+    }
+    .two-code h2{display:block;}
+    h1.text-tit{
+        color:#e3211c;
+        background: #fff;
+        font-weight: 700;
+    }
+    .news-ul{
+        background: transparent;
+    }
+
+    .logo-search{
+        padding-top: 28px;
+        padding-bottom: 11px;
+    }
+    .fri-link a{
+        width:33%;
+        margin-left:0;
+        height:36px;
+        margin-bottom:5px;
+
+    }
+    .fri-link a img{
+        width:50px;
+    }
+    .row-main.main-height{
+        height:auto;
+    }
+    .row-main .news-ul li a:active{
+        color:#e3211c;
+    }
+    .index-ban{
+        margin:0 auto 15px;
+    }
+
+}

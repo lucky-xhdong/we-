@@ -1,0 +1,60 @@
+
+.video-topheader {
+    height: 80px;
+}
+.video-content {
+    margin: 15px;
+}
+.video-content hgroup {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+.video-content hgroup h2 {
+    color: #333;
+}
+.video-content hgroup span {
+    color: #646464;
+    margin-right: 20px;
+}
+.video-content hgroup span em {
+    font-style: normal;
+    color: #a3a3a3;
+}
+.video-content article {
+
+}
+.video-content article video {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+@media (max-width: 768px) {
+    .topheader {
+        padding: 12px 15px;
+    }
+    .toplogo h2 {
+        font-size: 18px;
+        border-right: 0px;
+    }
+    .toplogo span {
+        display: block;
+        padding-left: 0px;
+        padding-top: 5px;
+    }
+
+
+    .video-content {
+        margin: 8px;
+    }
+    .video-content hgroup {
+        padding: 8px;
+        margin-bottom: 8px;
+    }
+    .video-content hgroup h2 {
+        font-size: 18px;
+    }
+    .video-content hgroup span {
+        margin-right: 10px;
+    }
+}

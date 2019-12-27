@@ -1,0 +1,18 @@
+/*容器区域*/
+.media_box{width: 300px; height: 42px;  border-radius: 10px; position: relative;
+    -webkit-box-shadow: 0 0 3px #43d5ca;
+    -moz-box-shadow: 0 0 3px #43d5ca;
+    box-shadow: 0 0 3px #43d5ca;}
+/*播放按钮*/
+.media_box .media_play{width: 32px; height: 32px; background: url(../images/play.svg); position: relative; top: 6px; left: 8px; cursor: pointer; float: left;}
+/*暂停按钮*/
+.media_box .media_pause{width: 32px; height: 32px; background: url(../images/pause.svg); position: relative; top: 6px; left: 8px; cursor: pointer; float: left;}
+/*进度条*/
+.media_progress{float: left; width: 78%; height: 3px; background: #ccc; position: relative; top: 20px; left: 20px;text-align:left;}
+/*进度加载*/
+.media_bar{width: 0%; height: 100%; background: #43d5ca; display: inline-block; position: relative; top: -15.8px; left:0}
+/*控制点*/
+.media_control{width: 10px; height: 10px; background: #fff; position: relative; top: -32px; left:-1px; border-radius: 100%; border:3px solid #43d5ca; cursor: pointer;}
+
+.updated-list .nowrap{position:relative;}
+audio, canvas, progress, video{vertical-align: middle;}

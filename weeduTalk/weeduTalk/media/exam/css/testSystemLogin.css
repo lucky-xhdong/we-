@@ -1,0 +1,13 @@
+body,html,.wrapper{height:100%;}
+.wrapper{min-height: 100%;height:auto;padding-top:60px;}
+.main{padding-bottom:52px;}
+.footer{height:52px;position: relative;top:0;margin-top:-52px;text-align: center;color:#666;line-height: 52px;background: #ccc;}
+.header{font-size:24px;color:#666;line-height: 40px;padding:88px 0 0;text-align: center;background: url(../images/we-logo.png);background-repeat: no-repeat;background-position: center top;margin-bottom:80px;position: relative;border:none;}
+.con-box{text-align: center;}
+.con-box>div{display: inline-block;vertical-align: top;}
+.login-box{padding-left:40px;border-left:1px solid #ccc;margin-left:100px;padding-bottom:50px;}
+.login-box>label,.login-box button{display: block;width:443px;height:54px;margin-bottom:40px;}
+.login-box>label>input{display: block;width: 403px;border:1px solid #ccc;height:100%;padding:0 20px;outline: none;font-size:16px;}
+.login-box button{background: #17b6fe;border:1px solid #17b6fe;;line-height: 52px;color:#fff;cursor: pointer;font-size:18px;}
+.forget-pass{text-align: left;color:#666;}
+.forget-pass a{color:#666;}

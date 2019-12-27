@@ -1,0 +1,125 @@
+.item-wrapper .item-container {
+  width: 1180px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.item-wrapper .item-container .item-group {
+  width: 780px;
+  margin: 0 auto 30px;
+  overflow: hidden;
+  padding: 40px 0;
+}
+.item-wrapper .item-container .item-group .hgroup .txt-title {
+  font-family: PingFangSC-Medium;
+  font-size: 30px;
+  color: #333;
+  text-align: left;
+}
+.item-wrapper .item-container .item-group .hgroup .txt-subinfo .txt-source,
+.item-wrapper .item-container .item-group .hgroup .txt-subinfo .txt-time {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  text-align: left;
+}
+.item-wrapper .item-container .item-group .hgroup .txt-subinfo .txt-source:before,
+.item-wrapper .item-container .item-group .hgroup .txt-subinfo .txt-time:before {
+  content: attr(data-before);
+  color: #333;
+}
+.item-wrapper .item-container .item-group .hgroup .txt-subinfo .txt-source {
+  color: #333;
+}
+.item-wrapper .item-container .item-group .hgroup .txt-subinfo .txt-time {
+  color: #666;
+}
+.item-wrapper .item-container .item-group .article img {
+  max-width: 100%;
+}
+.item-wrapper .item-container .item-group .article .txt {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #333;
+  line-height: 24px;
+}
+.carousel-wrapper .carousel-container.item__carousel-container {
+  position: relative;
+  margin: 20px auto 30px;
+}
+.carousel-wrapper .carousel-container.item__carousel-container:before,
+.carousel-wrapper .carousel-container.item__carousel-container:after {
+  content: '';
+  position: absolute;
+  border-bottom: 1px dotted #333;
+  width: 430px;
+  height: 1px;
+  top: 46px;
+}
+.carousel-wrapper .carousel-container.item__carousel-container:before {
+  left: 90px;
+}
+.carousel-wrapper .carousel-container.item__carousel-container:after {
+  right: 90px;
+}
+.carousel-wrapper .carousel-container.item__carousel-container .carousel-lists {
+  padding: 30px 90px;
+  background-color: #fff;
+}
+.carousel-wrapper .carousel-container.item__carousel-container .carousel-lists:before {
+  content: attr(data-before);
+  display: block;
+  font-family: PingFangSC-Medium;
+  font-size: 24px;
+  color: #396;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.carousel-wrapper .carousel-container.item__carousel-container .carousel-lists ul:after {
+  content: '';
+  display: table;
+  clear: both;
+  width: 100%;
+  height: 0;
+}
+.carousel-wrapper .carousel-container.item__carousel-container .carousel-lists ul li {
+  float: left;
+  width: 320px;
+  height: 200px;
+  margin-left: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.carousel-wrapper .carousel-container.item__carousel-container .carousel-lists ul li:first-child {
+  margin-left: 0;
+}
+.carousel-wrapper .carousel-container.item__carousel-container .carousel-lists ul li:before,
+.carousel-wrapper .carousel-container.item__carousel-container .carousel-lists ul li:after {
+  position: absolute;
+  left: 0;
+  height: 50px;
+  right: 0;
+  bottom: 0;
+}
+.carousel-wrapper .carousel-container.item__carousel-container .carousel-lists ul li:before {
+  content: '';
+  background: rgba(51, 51, 51, 0.7);
+}
+.carousel-wrapper .carousel-container.item__carousel-container .carousel-lists ul li:after {
+  content: attr(data-after);
+  font-family: PingFangSC-Medium;
+  text-align: center;
+  font-size: 20px;
+  line-height: 50px;
+  color: #fff;
+  padding: 0 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  z-index: 1;
+}
+.carousel-wrapper .carousel-container.item__carousel-container .carousel-lists ul li img {
+  max-width: 100%;
+}
+.carousel-wrapper .carousel-container.item__carousel-container .carousel-lists ul li:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}

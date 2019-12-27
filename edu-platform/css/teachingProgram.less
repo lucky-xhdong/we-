@@ -1,0 +1,263 @@
+@import "variable";
+.TeachingProgram {
+  width: 1200px;
+  margin: 0 auto;
+  .tp--main-wrapper {
+    .common-breadcrumb {
+      margin-bottom: 10px;
+    }
+    .tp--main__content {
+      .content__moudle1 {
+        display: flex;
+        .create-wrapper {
+          margin-right: 10px;
+          flex: 1;
+          &:before {
+            content: attr(data-before);
+            display: block;
+            background: @background-color8;
+            text-align: left;
+            padding: 10px 15px;
+          }
+          .input-group {
+            padding: 10px;
+          }
+          .input-group, form, .form-group {
+            width:100%;
+            .form-control {
+              width:100%;
+            }
+          }
+        }
+        .choosedate-wrapper {
+          width: 300px;
+          &:before {
+            content: attr(data-before);
+            display: block;
+            background: @background-color8;
+            text-align: left;
+            padding: 10px 15px;
+          }
+          .radio-group {
+            margin: 10px 0;
+            .custom-radio {
+              display: block;
+              margin: 10px 20px;
+              text-align: left;
+            }
+          }
+          .choose-handle, .add-handle {
+            text-align: left;
+            padding: 10px;
+            margin-bottom: 18px;
+            position: relative;
+            &:after {
+              content: attr(data-after);
+              position: absolute;
+              color: @color;
+              font-family: @font-family1;
+              width: 8px;
+              height: 18px;
+              right: 10px;
+              top:50%;
+              margin-top: -9px;
+            }
+            a {
+              display: block;
+              color: @color;
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+          .choose-handle {
+            background-color: @background-color3;
+          }
+          .add-handle {
+            background-color: @background-color10;
+          }
+        }
+      }
+      .content__moudle2 {
+        .service-wrapper {
+          &:before {
+            content: attr(data-before);
+            display: block;
+            background: @background-color8;
+            text-align: left;
+            padding: 10px 15px;
+            margin-bottom: 15px;
+          }
+        }
+        .btn-group {
+          text-align: center;
+          display: block;
+          margin-bottom: 10px;
+          .btn-save, .btn-submit {
+            display: inline-block;
+            margin:0 10px;
+            border-radius: 4px;
+            padding:2px 12px;
+          }
+          .btn-save {
+            color: @color;
+            border-color: @button-color1;
+            background-color: @background-color15;
+          }
+          .btn-submit {
+            color: @color;
+            border-color: @border-color1;
+            background-color: @background-color3;
+          }
+        }
+      }
+    }
+  }
+}
+
+.teaching-program__create {
+  .modal-body {
+    padding:0;
+    .basic-progress {
+      &:before {
+        content: attr(data-before);
+        display: block;
+        padding: 16px 20px 14px;
+        margin-bottom:15px;
+        background-color: @background-color9;
+      }
+      .select-group,
+      ._input-group,
+      .radio-group,
+      .checkbox-group {
+        padding:0 15px;
+      }
+      .radio-group,
+      .checkbox-group {
+        margin:0 5px 15px;
+        .form-row {
+          font-size: 14px;
+          padding:5px 0;
+          &:before {
+            content: attr(data-before);
+            display: inline-block;
+            min-width: 120px;
+            padding-right: 10px;
+            text-align: right;
+          }
+        }
+      }
+      ._input-group {
+        .form-control {
+          font-size: 14px;
+        }
+      }
+    }
+    .course-appraise {
+      &:before {
+        content: attr(data-before);
+        display: block;
+        padding: 16px 20px 14px;
+        margin-bottom:15px;
+        background-color: @background-color9;
+      }
+      .table-group {
+        padding:0 15px;
+        margin-bottom: 15px;
+        .table {
+          position: relative;
+          margin-bottom:0;
+          &:before {
+            content: attr(data-before);
+            position: absolute;
+            width: 80px;
+            height:100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: @color;
+            left:0;
+            top:0;
+          }
+          &.table-teacher {
+            &:before {
+              background-color: @background-color16;
+            }
+          }
+          &.table-student {
+            &:before {
+              background-color: @background-color17;
+            }
+          }
+          tbody {
+            tr {
+              th {
+                text-align: right;
+                span {
+                  line-height: 30px;
+                  font-weight: lighter;
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .input-group {
+        textarea {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .modal-footer {
+    .btn-group {
+      padding:0 15px;
+      text-align: center;
+      display: block;
+      margin-bottom: 10px;
+      .btn-save, .btn-submit {
+        display: inline-block;
+        margin:0 10px;
+        border-radius: 4px;
+        padding:2px 12px;
+      }
+      .btn-save {
+        color: @color;
+        border-color: @button-color1;
+        background-color: @background-color15;
+      }
+      .btn-submit {
+        color: @color;
+        border-color: @border-color1;
+        background-color: @background-color3;
+      }
+    }
+  }
+}
+.teaching-program__choose_date {
+  .modal-footer {
+    .btn-group {
+      padding:0 15px;
+      text-align: center;
+      display: block;
+      margin-bottom: 10px;
+      .btn-save, .btn-submit {
+        display: inline-block;
+        margin:0 10px;
+        border-radius: 4px;
+        padding:2px 12px;
+      }
+      .btn-save {
+        color: @color;
+        border-color: @button-color1;
+        background-color: @background-color15;
+      }
+      .btn-submit {
+        color: @color;
+        border-color: @border-color1;
+        background-color: @background-color3;
+      }
+    }
+  }
+}

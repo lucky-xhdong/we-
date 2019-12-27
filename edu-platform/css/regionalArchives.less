@@ -1,0 +1,56 @@
+@import "variable";
+.RegionalArchives {
+  width: 1200px;
+  margin: 0 auto;
+  .ra--main-wrapper {
+    margin-left: -15px;
+    background-color: @background-color7;
+    .ra--main__content {
+      .form-row {
+        padding: 15px;
+        .form-row__item {
+          &:before {
+            content: attr(data-before);
+            color: @color4;
+            font-size: 14px;
+            margin-right: 12px;
+          }
+          .form-control {
+            width:200px;
+          }
+          &:before, .form-control {
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+        .form-row__search {
+          position: relative;
+          .form-control {
+            padding-right: 30px;
+          }
+          .btn-search {
+            background-color: transparent;
+            position: absolute;
+            padding: 1px 4px;
+            left: 192px;
+            top: 1px;
+          }
+        }
+      }
+      .btn-group {
+        display: block;
+        text-align: right;
+        margin: 20px 0;
+        .icon-add, .path1, .path2 {
+          font-style: normal;
+        }
+        .icon-add {
+          margin-right: 5px;
+        }
+      }
+      .pagination {
+        justify-content: flex-end;
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a ,a:hover{
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  border: none;
+}
+input {
+  padding: 1px;
+  vertical-align: middle;
+  line-height: normal;
+}
+body {
+
+  font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+  font-size: 14px;color: #000;line-height: 24px;}
+.fn-l{float: left;}
+.fn-r{float: right;}
+.clear{zoom:1;}
+.clear:after{content: "";display: block;visibility: hidden;height: 0;clear: both;}
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+.onelimt{overflow: hidden; white-space: nowrap;text-overflow: ellipsis;}
+.bg-f1f7{background: #f1f7ff;}
+.bg-ed{background: #ededed;}
+.bg-5a5{background: #5a5959;}
+.pag-20{padding:20px;}
+.mgt-20{margin-top: 20px;}
+.mgb-20{margin-bottom: 20px;}
+.mgb-30{margin-bottom: 30px;}
+.mgt-102{margin-top:102px;}
+.mgt-130{margin-top:130px;}
+.w-per85{width:85%;}
+.directions-type.pag-l-115{padding-left:115px;}
+.hide-ele{display: none;}
+.show-ele{display: inline-block;}
+.bor-bg{border:1px solid #ccc;}
+.bg-f1f{background: #f1f7ff;}
+html,body{height:100%;}
+.wrapper{min-height:100%;padding:73px 0 77px;}
+.footer{margin-top:-77px;}
+.header{padding:10px 55px;border-bottom:2px solid #d1d1d1;font-size:16px;color:#666;line-height: 34px;position: fixed;top:0;left:0;right:0;z-index: 99;background: #17b6fe;}
+.header>span{float:left;height:34px;}
+.login-username{display: inline-block;vertical-align: middle;margin:0 15px;line-height: 34px;color:#fff;}
+.header .dropdown-menu{left:-5px;top:48px;padding:3px 5px;min-width:100px;}
+.header .dropdown-menu:before{content:'';border-bottom:10px solid #fff;border-left:15px solid transparent;border-right:15px solid transparent;position: absolute;top:-10px;left:50%;margin-left:-15px;}
+.header .dropdown-menu:after{content:'';border-bottom:12px solid #ddd;border-left:17px solid transparent;border-right:17px solid transparent;position: absolute;top:-12px;left:50%;margin-left:-17px;z-index: -1;}
+.header .dropdown-menu li{border-bottom:1px solid #ddd;text-align: center;}
+.header .dropdown-menu li:nth-last-of-type(1){border:none;}
+
+.part-item-con{width:1110px;margin:0 auto; word-break: break-all; word-wrap: break-word;}
+.part-directions{padding:20px 12px 20px 86px;position: relative;font-size: 14px;color:#e15594;line-height: 20px;background: #ededed;margin-bottom:20px;min-height:70px;}
+.part-directions:after{content:attr(data-dir);position: absolute;left:-5px;top:20px;background:#e15594; padding:5px 10px;font-size:14px;line-height: 20px;color: #fff;text-transform: capitalize; box-shadow: -2px 3px 5px #bfbfbf;-ms-box-shadow:-2px 3px 5px #bfbfbf;max-width:65px;overflow: hidden;white-space:nowrap;text-overflow:ellipsis;}
+.write-box{padding:15px 15px 30px;border:2px solid #ccc;position: relative;min-height:200px;}
+.write-word-num{font-size:14px;color:#999;position: absolute;bottom: 10px;right:20px;}
+.write-assess{font-size:14px;font-weight: bold;color:#ce0101;padding-left:40px;position: relative;}
+.write-btn button{display: inline-block;width:120px;color:#fff;outline: none;float: none;margin:10px 15px;}
+.change-btn{background: #fe9b00;}
+.change-btn:hover{background: #e69517}
+.sub-btn{background: #4bda77;}
+.bg-fe9{background:#fe9b00;}
+button.bg-fe9:hover,a.bg-fe9:hover{background:#ec9307;color:#fff;}
+.col-4ba{color:#4bda77;}
+.bg-4ba{background:#4bda77;}
+button.bg-4ba:hover,a.bg-4ba:hover{background: #44bd69;color:#fff;}
+.col-ec5{color:#ec5844;}
+.bg-ec5{background:#ec5844;}
+button.bg-ec5:hover,a.bg-ec5:hover{background:#ca6456;color:#fff;}
+.bg-17b{background: #17b6fe}
+.bg-17b:hover{background: #11a4e6;color:#fff;}
+.bg-77b{background: #77b337;}
+.bg-77b:hover{background: #629629;color:#fff;}
+
+/*2017-10-21 导航栏样式*/
+.nav-con ul{text-align: center}
+.nav-con{margin:0 300px 0 120px;}
+.nav-con li{display: inline-block;font-size:16px;height:36px;line-height: 36px;padding:0 10px;margin:0 8px; border-bottom:2px solid transparent;}
+.nav-con li a{display: block;color:#fff;}
+.nav-con li a:hover{color:#ebebeb;}
+.pos-abs{position: absolute;}
+.djs-con.pos-abs{position:absolute;top:50%;left:50%;margin-top:-20px; margin-left:-180px;width:360px;}
+.djs-con .countdown {font: 16px 'px MicroSoft YaHei';color: #df1910; display: block;text-align: center;margin:10px auto 30px;}
+.djs-con .countdown:before {display: block;margin-bottom: 30px;content: attr(data-before);font: 20px 'px MicroSoft YaHei';color: #df1910; }
+
+.djs-con .countdown span{height:35px;line-height: 35px;display: inline-block;vertical-align: middle;overflow: auto;}
+.countdown i {display: block;float: left; font-style: normal;color: #fff;font-size: 16px;width: 35px;height: 35px;line-height: 35px;background: #df1910;border-radius: 5px;margin-right:5px;}
+
+.djs-btn a{width: 100px;height: 32px;line-height: 32px;text-align: center;padding: 0; color: #fff;display: inline-block;margin:0 10px;border-radius: 5px;-webkit-border-radius:5px;font-size:16px;}
+.djs-btn .btn-sure{background: #e15594;}
+.djs-btn .btn-cancel{background: #17b6fe;}
+.djs-btn .btn-sure:hover{background: #c84882;}
+.djs-btn .btn-cancel:hover{background: #11a9ee;}
+
+.btn-group .btn-default,.dropdown-menu > li > a,.btn-group  .btn-default:hover,.btn-group  .btn-default:focus, .btn-group  .btn-default.focus, .btn-group .btn-default:active, .btn-group  .btn-default.active, .open >.btn-group  .dropdown-toggle.btn-default{color:#17b6fe;}
+
+.btn-group .dropdown-menu > li > a:hover, .btn-group .dropdown-menu > li > a:focus{color:#3190bb;}

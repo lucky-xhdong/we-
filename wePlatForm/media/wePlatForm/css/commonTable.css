@@ -1,0 +1,84 @@
+/* background-color start */
+/* background-color end */
+/* border-color start */
+/* border-color end */
+/* button start */
+/* button end */
+/* color start */
+/* color end */
+/* font-family start */
+/* font-family end */
+.common-table {
+  padding: 0 20px;
+}
+.common-table .table,
+.common-table table {
+  text-align: center;
+}
+.common-table .table thead tr,
+.common-table table thead tr {
+  background-color: #ddecff;
+}
+.common-table .table thead tr th,
+.common-table table thead tr th {
+  border-top-color: transparent;
+  color: #909399;
+  font-size: 14px;
+}
+.common-table .table tbody tr th,
+.common-table table tbody tr th {
+  font-weight: lighter;
+}
+.common-table .table tbody tr th,
+.common-table table tbody tr th,
+.common-table .table tbody tr td,
+.common-table table tbody tr td {
+  color: #666;
+  font-size: 14px;
+}
+.common-table .table tbody tr th .btn-normal,
+.common-table table tbody tr th .btn-normal,
+.common-table .table tbody tr td .btn-normal,
+.common-table table tbody tr td .btn-normal {
+  margin: 0 10px;
+  color: #65a9ff;
+}
+.common-table .table tbody tr th .btn-normal:hover,
+.common-table table tbody tr th .btn-normal:hover,
+.common-table .table tbody tr td .btn-normal:hover,
+.common-table table tbody tr td .btn-normal:hover {
+  color: #409eff;
+}
+.common-table .table tbody tr th .btn-normal.btn-delete,
+.common-table table tbody tr th .btn-normal.btn-delete,
+.common-table .table tbody tr td .btn-normal.btn-delete,
+.common-table table tbody tr td .btn-normal.btn-delete,
+.common-table .table tbody tr th .btn-normal.btn-freeze,
+.common-table table tbody tr th .btn-normal.btn-freeze,
+.common-table .table tbody tr td .btn-normal.btn-freeze,
+.common-table table tbody tr td .btn-normal.btn-freeze {
+  color: #fb6767;
+}
+.common-table .table tbody tr th .btn-normal.btn-delete:hover,
+.common-table table tbody tr th .btn-normal.btn-delete:hover,
+.common-table .table tbody tr td .btn-normal.btn-delete:hover,
+.common-table table tbody tr td .btn-normal.btn-delete:hover,
+.common-table .table tbody tr th .btn-normal.btn-freeze:hover,
+.common-table table tbody tr th .btn-normal.btn-freeze:hover,
+.common-table .table tbody tr td .btn-normal.btn-freeze:hover,
+.common-table table tbody tr td .btn-normal.btn-freeze:hover {
+  color: #fd4d4d;
+}
+.common-table .table tbody tr th .btn-normal.disabled,
+.common-table table tbody tr th .btn-normal.disabled,
+.common-table .table tbody tr td .btn-normal.disabled,
+.common-table table tbody tr td .btn-normal.disabled {
+  color: #666;
+  cursor: default;
+}
+.common-table .table tbody tr th .btn-normal.disabled:hover,
+.common-table table tbody tr th .btn-normal.disabled:hover,
+.common-table .table tbody tr td .btn-normal.disabled:hover,
+.common-table table tbody tr td .btn-normal.disabled:hover {
+  text-decoration: none;
+}

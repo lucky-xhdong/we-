@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>区域档案</title>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container-fluid RegionalArchives">
+    <div class="row">
+        <!-- 左侧菜单 start -->
+        <div class="col-md-3">
+            <div class="common-left-menu">
+                <!-- logo start -->
+                <div class="logo-wrapper">
+                    <i class="icon-logo"></i>
+                    <span class="txt-logo">唯佳教育平台</span>
+                </div>
+                <!-- logo end -->
+                <!-- menu start -->
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <div class="nav-item__main">
+                            <i class="icon-menu icon-feature-manager"></i>
+                            <a class="nav-link active" href="feature_manage.html">特征管理</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item__main">
+                            <i class="icon-menu icon-regional-archive"></i>
+                            <a class="nav-link active" href="regional_archives.html">区域档案</a>
+                        </div>
+                        <ul class="nav-item__sub hide">
+                            <li class="nav-item__sub_item"><a href="javascript:;" class="nav-link__sub">选项1</a></li>
+                            <li class="nav-item__sub_item"><a href="javascript:;" class="nav-link__sub">选项2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item__main">
+                            <i class="icon-menu icon-regional-archive"></i>
+                            <a class="nav-link active" href="javascript:;">区域档案</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item__main">
+                            <i class="icon-menu icon-school-manage"></i>
+                            <a class="nav-link active" href="javascript:;">学校管理</a>
+                        </div>
+                        <ul class="nav-item__sub hide">
+                            <li class="nav-item__sub_item"><a href="javascript:;" class="nav-link__sub">学校</a></li>
+                            <li class="nav-item__sub_item"><a href="javascript:;" class="nav-link__sub">老师</a></li>
+                            <li class="nav-item__sub_item"><a href="javascript:;" class="nav-link__sub">学生</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item__main">
+                            <i class="icon-menu icon-content-manage"></i>
+                            <a class="nav-link active" href="javascript:;">内容管理</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item__main">
+                            <i class="icon-menu icon-teaching-resource"></i>
+                            <a class="nav-link active" href="teaching_program.html">教学资源</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item__main">
+                            <i class="icon-menu icon-progress-manage"></i>
+                            <a class="nav-link active" href="javascript:;">进度管理</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item__main">
+                            <i class="icon-menu icon-plan-audit"></i>
+                            <a class="nav-link active" href="javascript:;">计划审核</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item__main">
+                            <i class="icon-menu icon-data-statistic"></i>
+                            <a class="nav-link active" href="javascript:;">数据统计</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item__main">
+                            <i class="icon-menu icon-report-import"></i>
+                            <a class="nav-link active" href="javascript:;">成绩导入</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- menu end -->
+            </div>
+        </div>
+        <!-- 左侧菜单 end -->
+        <div class="col-md-9">
+            <div class="ra--main-wrapper">
+                <!--菜单切换 start-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light common-top-menu">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="javascript:;">素材库</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:;">消息管理</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav__right">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="javascript:;" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">我的工作台</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="javascript:;">选项1</a>
+                                    <a class="dropdown-item" href="javascript:;">选项2</a>
+                                    <a class="dropdown-item" href="javascript:;">选项3</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="avatar-wrapper">
+                                    <a href="javascript:;">
+                                        <img src="images/logo.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!--菜单切换 end-->
+                <!--面包屑 start-->
+                <nav class="common-breadcrumb" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:;">首页</a></li>
+                        <li class="breadcrumb-item"><a href="javascript:;">学校管理</a></li>
+                        <li class="breadcrumb-item"><a href="javascript:;">学校管理</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">教研员</li>
+                    </ol>
+                </nav>
+                <!--面包屑 end-->
+                <!--主体内容 start-->
+                <div class="ra--main__content">
+                    <div class="form-row">
+                        <div class="col-4 form-row__item" data-before="选择省份">
+                            <select class="form-control form-control-sm">
+                                <option>选择省份</option>
+                            </select>
+                        </div>
+                        <div class="col-4 form-row__item" data-before="选择城市">
+                            <select class="form-control form-control-sm">
+                                <option>选择城市</option>
+                            </select>
+                        </div>
+                        <div class="col-4 form-row__item form-row__search">
+                            <input type="text" class="form-control form-control-sm"  placeholder="请输入内容">
+                            <button type="button" class="btn btn-light btn-search">
+                                <i class="icon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="common-table">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">领导特征</th>
+                                <th scope="col">创建人</th>
+                                <th scope="col">创建时间</th>
+                                <th scope="col">操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th>校长</th>
+                                <td>文武贝</td>
+                                <td>2018-2-3</td>
+                                <td>
+                                    <a href="/feature_manage" class="btn-normal">
+                                        <i class="icon-view"><i class="path1"></i> <i class="path2"></i> <i class="path3"></i></i>查看
+                                    </a>
+                                    <a href="/feature_manage" class="btn-normal"><i class="icon-lock"></i>冻结</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>校长</th>
+                                <td>文武贝</td>
+                                <td>2018-2-3</td>
+                                <td>
+                                    <a href="/feature_manage" class="btn-normal">
+                                        <i class="icon-view"><i class="path1"></i> <i class="path2"></i> <i class="path3"></i></i>查看
+                                    </a>
+                                    <a href="/feature_manage" class="btn-normal"><i class="icon-lock"></i>冻结</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>校长</th>
+                                <td>文武贝</td>
+                                <td>2018-2-3</td>
+                                <td>
+                                    <a href="/feature_manage" class="btn-normal">
+                                        <i class="icon-view"><i class="path1"></i> <i class="path2"></i> <i class="path3"></i></i>查看
+                                    </a>
+                                    <a href="/feature_manage" class="btn-normal"><i class="icon-lock"></i>冻结</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>校长</th>
+                                <td>文武贝</td>
+                                <td>2018-2-3</td>
+                                <td>
+                                    <a href="/feature_manage" class="btn-normal">
+                                        <i class="icon-view"><i class="path1"></i> <i class="path2"></i> <i class="path3"></i></i>查看
+                                    </a>
+                                    <a href="/feature_manage" class="btn-normal"><i class="icon-lock"></i>冻结</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="javascript:;">Previous</a></li>
+                                <li class="page-item"><a class="page-link" href="javascript:;">1</a></li>
+                                <li class="page-item"><a class="page-link" href="javascript:;">2</a></li>
+                                <li class="page-item"><a class="page-link" href="javascript:;">3</a></li>
+                                <li class="page-item"><a class="page-link" href="javascript:;">Next</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!--主体内容 end-->
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#myTab a').on('click', function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+        })
+    })
+</script>
+</body>
+</html>

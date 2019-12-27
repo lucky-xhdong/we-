@@ -1,0 +1,121 @@
+/* background-color start */
+/* background-color end */
+/* border-color start */
+/* border-color end */
+/* button start */
+/* button end */
+/* color start */
+/* color end */
+/* font-family start */
+/* font-family end */
+.commonModal .form-group .modal-body {
+  font-size: 14px;
+}
+.commonModal .form-group .modal-body .radio-group .form-row:before,
+.commonModal .form-group .modal-body ._input-group .form-row:before {
+  content: attr(data-before);
+  display: inline-block;
+  vertical-align: middle;
+  width: 120px;
+  text-align: right;
+  font-size: 14px;
+}
+.commonModal .form-group .modal-body .radio-group {
+  margin-bottom: 10px;
+}
+.commonModal .form-group .modal-body .radio-group .form-row:before {
+  line-height: 1.5em;
+  font-size: 14px;
+}
+.commonModal .form-group .modal-body ._input-group .form-row:before {
+  line-height: 30px;
+  font-size: 14px;
+}
+.commonModal .form-group .modal-body ._input-group .form-row .int-userimg {
+  max-width: 100px;
+  max-height: 100px;
+}
+.commonModal .form-group .modal-body ._input-group .form-row .custom-file-control {
+  margin: 0 4px;
+  height: 30px;
+  position: relative;
+}
+.commonModal .form-group .modal-body ._input-group .form-row .custom-file-control .btn-file,
+.commonModal .form-group .modal-body ._input-group .form-row .custom-file-control .btn-choose {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.commonModal .form-group .modal-body ._input-group .form-row .custom-file-control .btn-file {
+  width: 100px;
+  height: 30px;
+  opacity: 0;
+  z-index: 1;
+}
+.commonModal .form-group .modal-body ._input-group .form-row .custom-file-control .btn-choose {
+  width: 100px;
+  text-align: center;
+  border-radius: 0;
+  padding: 5px 12px;
+  color: #fff;
+  border-color: #65a9ff;
+  background-color: #65a9ff;
+}
+.commonModal .form-group .modal-body ._input-group .form-row .custom-file-list ul {
+  font-size: 0;
+}
+.commonModal .form-group .modal-body ._input-group .form-row .custom-file-list ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.commonModal .form-group .modal-body ._input-group .form-row .custom-file-list ul li .icon {
+  display: block;
+  font-size: 32px;
+  color: #666;
+}
+.commonModal .form-group .modal-body ._input-date-group .col-md-4:first-child {
+  max-width: 33%;
+}
+.commonModal .form-group .modal-body ._input-date-group .col-md-4:first-child + .col-md-4 {
+  max-width: 32%;
+}
+.commonModal .form-group .modal-body .basic-box img {
+  max-width: 100%;
+}
+.commonModal .form-group .modal-footer .btn-group {
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+.commonModal .form-group .modal-footer .btn-group .btn-save,
+.commonModal .form-group .modal-footer .btn-group .btn-cancel {
+  display: inline-block;
+  margin: 0 10px;
+  width: 100px;
+  text-align: center;
+  border-radius: 0;
+  padding: 5px 12px;
+}
+.commonModal .form-group .modal-footer .btn-group .btn-save {
+  color: #fff;
+  border-color: #65a9ff;
+  background-color: #65a9ff;
+}
+.commonModal .form-group .modal-footer .btn-group .btn-save:hover {
+  color: #65a9ff;
+  background-color: #fff;
+}
+.commonModal .form-group .modal-footer .btn-group .btn-cancel {
+  color: #fff;
+  border-color: #fb6767;
+  background-color: #fb6767;
+}
+.commonModal .form-group .modal-footer .btn-group .btn-cancel:hover {
+  color: #fb6767;
+  background-color: #fff;
+}
+.datepicker-dropdown {
+  font-size: 14px;
+}

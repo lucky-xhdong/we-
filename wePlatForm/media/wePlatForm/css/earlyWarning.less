@@ -1,0 +1,224 @@
+@import "variable";
+.EarlyWarning {
+  width: auto;
+  margin: 0 auto;
+  font-size: 14px;
+  > .row {
+    min-height: 956px;
+  }
+  .ew--main-wrapper {
+    padding:0;
+    background-color: @background-color7;
+    .ew--main__content {
+      margin: 0 15px 10px;
+      background-color: @background-color;
+      &:before {
+        content: attr(data-before);
+        display: block;
+        background-color: #ddecff;
+        color: #666;
+        font-size: 14px;
+        padding: 12px 10px;
+      }
+      .select-group {
+        margin:15px 0;
+        .form-row {
+          margin-bottom: 15px;
+          .form-row__item {
+            white-space: nowrap;
+            &:before {
+              content: attr(data-before);
+              display: inline-block;
+              vertical-align: middle;
+              width: 75px;
+              text-align: right;
+              font-size: 14px;
+              color: @color3;
+            }
+            .form-control {
+              display: inline-block;
+              vertical-align: middle;
+              width: 200px;
+              height: 30px;
+              line-height: 30px;
+              font-size: 14px;
+              color: @color3;
+            }
+          }
+        }
+      }
+      .demonstration-manage {
+        padding: 15px;
+        &:before {
+          content: attr(data-before);
+          display: block;
+          padding: 10px 15px;
+          font-size: 14px;
+          color: @color3;
+          background-color: @background-color7;
+        }
+        ul {
+          font-size: 0;
+          padding: 15px 0;
+          li {
+            &.moudle {
+              display: inline-block;
+              vertical-align: middle;
+              border-radius: 6px;
+              width: 260px;
+              margin: 0 10px;
+              height: 140px;
+              overflow: hidden;
+              .moudle-top {
+                overflow: hidden;
+                padding: 10px;
+                .moudle-top_txt, .moudle-top_link {
+                  color: @color;
+                }
+                .moudle-top_txt {
+                  float: left;
+                  font-size: 14px;
+                }
+                .moudle-top_link {
+                  float: right;
+                  font-size: 12px;
+                  -webkit-border-radius: 4px;
+                  -moz-border-radius: 4px;
+                  border-radius: 4px;
+                  padding: 0 5px;
+                  border: 1px solid @border-color12;
+                }
+              }
+              .moudle-bottom {
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .moudle-bottom_txt {
+                  font-size: 28px;
+                  color: @color;
+                  margin: 10px 0;
+                }
+              }
+            }
+            &.moudle1 {
+              background-color: @background-color5;
+              .moudle-top {
+                background-color: @background-color15;
+              }
+            }
+            &.moudle2 {
+              background-color: @background-color17;
+              .moudle-top {
+                background-color: @background-color16;
+              }
+            }
+            &.moudle3 {
+              background-color: @background-color19;
+              .moudle-top {
+                background-color: @background-color18;
+              }
+            }
+          }
+        }
+      }
+      .waining-manage {
+        padding: 15px;
+        &:before {
+          content: attr(data-before);
+          display: block;
+          padding: 10px 15px;
+          font-size: 14px;
+          color: @color3;
+          background-color: @background-color7;
+        }
+        ul {
+          font-size: 0;
+          padding: 20px 0;
+          overflow: hidden;
+          li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 210px;
+            height: 170px;
+            float: left;
+            text-align: center;
+            border-right: 1px solid @border-color13;
+            -webkit-transition: all .2s ease .2s;
+            -moz-transition: all .2s ease .2s;
+            -ms-transition: all .2s ease .2s;
+            -o-transition: all .2s ease .2s;
+            transition: all .2s ease .2s;
+            &:nth-child(4), &:nth-child(8) {
+              border-right: 0;
+            }
+            &:first-child,
+            &:first-child + li,
+            &:first-child + li + li,
+            &:first-child + li + li + li {
+              border-bottom: 1px solid @border-color13;
+            }
+            .btn-download {
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              top: 8px;
+              right: 10px;
+              -webkit-transition: all .2s ease .2s;
+              -moz-transition: all .2s ease .2s;
+              -ms-transition: all .2s ease .2s;
+              -o-transition: all .2s ease .2s;
+              transition: all .2s ease .2s;
+              .icon {
+                font-size: 18px;
+                color: @color2;
+                -webkit-transition: all .2s ease .2s;
+                -moz-transition: all .2s ease .2s;
+                -ms-transition: all .2s ease .2s;
+                -o-transition: all .2s ease .2s;
+                transition: all .2s ease .2s;
+              }
+            }
+            .txt {
+              font-size: 28px;
+              color: @color4;
+              -webkit-transition: all .2s ease .2s;
+              -moz-transition: all .2s ease .2s;
+              -ms-transition: all .2s ease .2s;
+              -o-transition: all .2s ease .2s;
+              transition: all .2s ease .2s;
+              &:after {
+                content: attr(data-after);
+                display: block;
+                font-size: 14px;
+                color: @color3;
+                -webkit-transition: all .2s ease .2s;
+                -moz-transition: all .2s ease .2s;
+                -ms-transition: all .2s ease .2s;
+                -o-transition: all .2s ease .2s;
+                transition: all .2s ease .2s;
+              }
+            }
+            &:hover {
+              background-color: @background-color5;
+              .btn-download {
+                .icon {
+                  color: @color;
+                }
+              }
+              .txt {
+                color: @color;
+                &:after {
+                  color: @color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

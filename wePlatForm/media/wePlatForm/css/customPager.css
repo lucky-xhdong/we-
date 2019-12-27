@@ -1,0 +1,41 @@
+/* background-color start */
+/* background-color end */
+/* border-color start */
+/* border-color end */
+/* button start */
+/* button end */
+/* color start */
+/* color end */
+/* font-family start */
+/* font-family end */
+.custom-pager ul {
+  padding: 20px 0;
+  justify-content: center;
+}
+.custom-pager ul li {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 28px !important;
+  margin: 0 3px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  vertical-align: top;
+  position: relative;
+  white-space: normal;
+  text-overflow: inherit;
+}
+.custom-pager ul li a {
+  color: #666;
+  padding: 0 10px;
+  text-align: center;
+  cursor: pointer;
+  font-family: SimHei;
+}
+.custom-pager ul li a:hover {
+  text-decoration: none;
+}
+.custom-pager ul li.active a {
+  color: #f00 !important;
+  font-weight: bold;
+}

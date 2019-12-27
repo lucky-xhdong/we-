@@ -1,0 +1,103 @@
+@import "variable";
+.ServicePlan {
+  width: auto;
+  margin: 0 auto;
+  font-size: 14px;
+  > .row {
+    min-height: 956px;
+  }
+  .sp--main-wrapper {
+    padding:0;
+    background-color: @background-color7;
+    .sp--main__content {
+      margin: 0 15px 10px;
+      .choose-date {
+        margin-bottom: 15px;
+        background-color: @background-color;
+        &:before {
+          content: attr(data-before);
+          display: block;
+          font-size: 14px;
+          color: @color3;
+          padding: 10px 15px;
+          background-color: @background-color8;
+        }
+        .form-row {
+          margin: 10px 15px;
+          position: relative;
+          white-space: nowrap;
+          &:before {
+            content: attr(data-before);
+            font-size: 14px;
+            color: #666;
+            width: 70px;
+            line-height:30px;
+            text-align: right;
+            display: inline-block;
+            vertical-align: middle;
+          }
+          ._input-date-group {
+            display: flex;
+            line-height:30px;
+          }
+          .form-control {
+          }
+        }
+        .btn-group {
+          text-align: center;
+          display: block;
+          padding-bottom: 10px;
+          .btn-confirm {
+            display: inline-block;
+            margin:0 10px;
+            width: 100px;
+            text-align: center;
+            border-radius: 0;
+            padding:5px 12px;
+            color: @color;
+            border: 1px solid @button-color;
+            background-color: @button-color;
+            &:hover {
+              text-decoration: none;
+              color: @color2;
+              background-color: @button-color2;
+            }
+          }
+        }
+      }
+      .service-plan {
+        margin-bottom: 15px;
+        background-color: @background-color;
+        &:before {
+          content: attr(data-before);
+          display: block;
+          font-size: 14px;
+          color: @color3;
+          padding: 10px 15px;
+          background-color: @background-color8;
+        }
+        .sp_content {
+          padding: 10px 15px;
+          .title, .content {
+            font-size: 14px;
+          }
+          .title {
+            color: @color2;
+            padding: 10px 0;
+          }
+          .content {
+            color: @color4;
+          }
+          .link-group {
+            .btn-download {
+              display: inline-block;
+              vertical-align: middle;
+              font-size: 14px;
+              color: @color7;
+            }
+          }
+        }
+      }
+    }
+  }
+}

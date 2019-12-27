@@ -1,0 +1,129 @@
+/* background-color start */
+/* background-color end */
+/* border-color start */
+/* border-color end */
+/* button start */
+/* button end */
+/* color start */
+/* color end */
+/* font-family start */
+/* font-family end */
+.LearningSituation {
+  width: auto;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.LearningSituation > .row {
+  min-height: 956px;
+}
+.LearningSituation .ls--main-wrapper {
+  padding: 0;
+  background-color: #eff3f8;
+}
+.LearningSituation .ls--main-wrapper .ls--main__content {
+  margin: 0 15px 10px;
+  padding-bottom: 15px;
+  background-color: #fff;
+}
+.LearningSituation .ls--main-wrapper .ls--main__content:before {
+  content: attr(data-before);
+  display: block;
+  background-color: #ddecff;
+  color: #666;
+  font-size: 14px;
+  padding: 12px 10px;
+}
+.LearningSituation .ls--main-wrapper .ls--main__content .select-group {
+  padding: 15px;
+}
+.LearningSituation .ls--main-wrapper .ls--main__content .select-group .form-row__item {
+  white-space: nowrap;
+}
+.LearningSituation .ls--main-wrapper .ls--main__content .select-group .form-row__item:before {
+  content: attr(data-before);
+  width: 80px;
+  text-align: right;
+  font-size: 14px;
+  line-height: 30px;
+  color: #666;
+}
+.LearningSituation .ls--main-wrapper .ls--main__content .select-group .form-row__item:before,
+.LearningSituation .ls--main-wrapper .ls--main__content .select-group .form-row__item .form-control {
+  display: inline-block;
+  vertical-align: middle;
+}
+.LearningSituation .ls--main-wrapper .ls--main__content .select-group .form-row__item .form-control {
+  width: 190px;
+}
+.LearningSituation .ls--main-wrapper .ls--main__content .learn-behavior,
+.LearningSituation .ls--main-wrapper .ls--main__content .learn-result {
+  background-color: #fff;
+  margin: 15px;
+  border: 1px solid #efefef;
+}
+.LearningSituation .ls--main-wrapper .ls--main__content .learn-behavior:before,
+.LearningSituation .ls--main-wrapper .ls--main__content .learn-result:before {
+  content: attr(data-before);
+  display: block;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #333;
+  margin: -1px;
+  background-color: #eff3f8;
+}
+.LearningSituation .ls--main-wrapper .ls--main__content .learn-behavior .form-row,
+.LearningSituation .ls--main-wrapper .ls--main__content .learn-result .form-row {
+  margin: 15px;
+}
+.LearningSituation .ls--main-wrapper .ls--main__content .learn-behavior .form-row .form-row__item,
+.LearningSituation .ls--main-wrapper .ls--main__content .learn-result .form-row .form-row__item {
+  position: relative;
+  white-space: nowrap;
+}
+.LearningSituation .ls--main-wrapper .ls--main__content .learn-behavior .form-row .form-row__item:before,
+.LearningSituation .ls--main-wrapper .ls--main__content .learn-result .form-row .form-row__item:before,
+.LearningSituation .ls--main-wrapper .ls--main__content .learn-behavior .form-row .form-row__item .form-control,
+.LearningSituation .ls--main-wrapper .ls--main__content .learn-result .form-row .form-row__item .form-control {
+  display: inline-block;
+  vertical-align: middle;
+}
+.LearningSituation .ls--main-wrapper .ls--main__content .learn-behavior .form-row .form-row__item:before,
+.LearningSituation .ls--main-wrapper .ls--main__content .learn-result .form-row .form-row__item:before {
+  content: attr(data-before);
+  font-size: 14px;
+  color: #666;
+  width: 70px;
+  text-align: right;
+}
+.LearningSituation .ls--main-wrapper .ls--main__content .learn-behavior .form-row .form-row__item .form-control,
+.LearningSituation .ls--main-wrapper .ls--main__content .learn-result .form-row .form-row__item .form-control {
+  width: 125px;
+}
+.LearningSituation .ls--main-wrapper .ls--main__content .learn-behavior .form-row .form-row__item:first-child .form-control,
+.LearningSituation .ls--main-wrapper .ls--main__content .learn-result .form-row .form-row__item:first-child .form-control {
+  width: 175px;
+}
+.LearningSituation .ls--main-wrapper .ls--main__content .learn-behavior .form-row .btn-oprate,
+.LearningSituation .ls--main-wrapper .ls--main__content .learn-result .form-row .btn-oprate {
+  display: inline-block;
+  text-align: center;
+  border-radius: 0;
+  padding: 4px 12px;
+  width: 80px;
+  position: relative;
+  margin: 0 10px;
+  right: 0;
+  color: #fff;
+  border-color: #65a9ff;
+  background-color: #65a9ff;
+}
+.LearningSituation .ls--main-wrapper .ls--main__content .learn-behavior .form-row .btn-oprate:hover,
+.LearningSituation .ls--main-wrapper .ls--main__content .learn-result .form-row .btn-oprate:hover {
+  color: #65a9ff;
+  background-color: #fff;
+}
+.LearningSituation .ls--main-wrapper .ls--main__content .learn-behavior .chart-wrapper,
+.LearningSituation .ls--main-wrapper .ls--main__content .learn-result .chart-wrapper {
+  padding: 10px 15px;
+  min-height: 200px;
+}

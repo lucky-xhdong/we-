@@ -1,0 +1,173 @@
+/* background-color start */
+/* background-color end */
+/* border-color start */
+/* border-color end */
+/* button start */
+/* button end */
+/* color start */
+/* color end */
+/* font-family start */
+/* font-family end */
+.TeachingProgram {
+  width: 1200px;
+  margin: 0 auto;
+}
+.TeachingProgram .tp--main-wrapper .common-breadcrumb {
+  margin-bottom: 10px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 {
+  display: flex;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .create-wrapper {
+  margin-right: 10px;
+  flex: 1;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .create-wrapper:before {
+  content: attr(data-before);
+  display: block;
+  background: #e3ece7;
+  text-align: left;
+  padding: 10px 15px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .create-wrapper .input-group {
+  padding: 10px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .create-wrapper .input-group,
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .create-wrapper form,
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .create-wrapper .form-group {
+  width: 100%;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .create-wrapper .input-group .form-control,
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .create-wrapper form .form-control,
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .create-wrapper .form-group .form-control {
+  width: 100%;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper {
+  width: 300px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper:before {
+  content: attr(data-before);
+  display: block;
+  background: #e3ece7;
+  text-align: left;
+  padding: 10px 15px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper .radio-group {
+  margin: 10px 0;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper .radio-group .form-check {
+  display: block;
+  margin: 10px 20px;
+  text-align: left;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper .choose-handle,
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper .add-handle {
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 18px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper .choose-handle a,
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper .add-handle a {
+  display: block;
+  color: #fff;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper .choose-handle a:hover,
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper .add-handle a:hover {
+  text-decoration: none;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper .choose-handle {
+  background-color: #5ab482;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle1 .choosedate-wrapper .add-handle {
+  background-color: #2d9aa9;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle2 .service-wrapper:before {
+  content: attr(data-before);
+  display: block;
+  background: #e3ece7;
+  text-align: left;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle2 .btn-group {
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle2 .btn-group .btn-save,
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle2 .btn-group .btn-submit {
+  display: inline-block;
+  margin: 0 10px;
+  border-radius: 4px;
+  padding: 2px 12px;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle2 .btn-group .btn-save {
+  color: #fff;
+  border-color: #e0a855;
+  background-color: #e0a855;
+}
+.TeachingProgram .tp--main-wrapper .tp--main__content .content__moudle2 .btn-group .btn-submit {
+  color: #fff;
+  border-color: #5ab482;
+  background-color: #5ab482;
+}
+.teaching-program__create .basic-progress:before {
+  content: attr(data-before);
+  display: block;
+  padding: 16px 20px 14px;
+  margin-bottom: 15px;
+  background-color: #dde1df;
+}
+.teaching-program__create .basic-progress .select-group,
+.teaching-program__create .basic-progress ._input-group,
+.teaching-program__create .basic-progress .radio-group,
+.teaching-program__create .basic-progress .checkbox-group {
+  padding: 0 15px;
+}
+.teaching-program__create .basic-progress .radio-group,
+.teaching-program__create .basic-progress .checkbox-group {
+  margin: 0 5px 15px;
+}
+.teaching-program__create .basic-progress .radio-group .form-row,
+.teaching-program__create .basic-progress .checkbox-group .form-row {
+  font-size: 14px;
+  padding: 5px 0;
+}
+.teaching-program__create .basic-progress .radio-group .form-row:before,
+.teaching-program__create .basic-progress .checkbox-group .form-row:before {
+  content: attr(data-before);
+  display: inline-block;
+}
+.teaching-program__create .course-appraise:before {
+  content: attr(data-before);
+  display: block;
+  padding: 16px 20px 14px;
+  margin-bottom: 15px;
+  background-color: #dde1df;
+}
+.teaching-program__create .course-appraise .table-group,
+.teaching-program__create .course-appraise .btn-group {
+  padding: 0 15px;
+}
+.teaching-program__create .course-appraise .btn-group {
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+.teaching-program__create .course-appraise .btn-group .btn-save,
+.teaching-program__create .course-appraise .btn-group .btn-submit {
+  display: inline-block;
+  margin: 0 10px;
+  border-radius: 4px;
+  padding: 2px 12px;
+}
+.teaching-program__create .course-appraise .btn-group .btn-save {
+  color: #fff;
+  border-color: #e0a855;
+  background-color: #e0a855;
+}
+.teaching-program__create .course-appraise .btn-group .btn-submit {
+  color: #fff;
+  border-color: #5ab482;
+  background-color: #5ab482;
+}

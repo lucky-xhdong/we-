@@ -1,0 +1,296 @@
+/* background-color start */
+/* background-color end */
+/* border-color start */
+/* border-color end */
+/* button start */
+/* button end */
+/* color start */
+/* color end */
+/* font-family start */
+/* font-family end */
+.BusinessArchives {
+  width: auto;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.BusinessArchives > .row {
+  min-height: 956px;
+}
+.BusinessArchives .ba--main-wrapper {
+  padding: 0;
+  background-color: #eff3f8;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content {
+  margin: 0 15px 10px;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic,
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__archives,
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__teachingservice,
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__business {
+  border-radius: 0;
+  margin-bottom: 15px;
+  border-color: #eee;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-header,
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__archives .card-header,
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__teachingservice .card-header,
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__business .card-header {
+  margin: -1px;
+  padding: 0;
+  border-radius: 0;
+  border-bottom: 0;
+  background-color: #ddecff;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-header h5 .btn-link,
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__archives .card-header h5 .btn-link,
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__teachingservice .card-header h5 .btn-link,
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__business .card-header h5 .btn-link {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  color: #666;
+  padding: 11px 10px;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-header h5 .btn-link:hover,
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__archives .card-header h5 .btn-link:hover,
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__teachingservice .card-header h5 .btn-link:hover,
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__business .card-header h5 .btn-link:hover {
+  text-decoration: none;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-header h5 .btn-link .icon,
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__archives .card-header h5 .btn-link .icon,
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__teachingservice .card-header h5 .btn-link .icon,
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__business .card-header h5 .btn-link .icon {
+  float: right;
+  font-size: 12px;
+  color: #86b0e3;
+  margin: 4px 0;
+  -webkit-transition: all 0.2s ease-in 0.1s;
+  -moz-transition: all 0.2s ease-in 0.1s;
+  -ms-transition: all 0.2s ease-in 0.1s;
+  -o-transition: all 0.2s ease-in 0.1s;
+  transition: all 0.2s ease-in 0.1s;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-header:hover h5 .btn-link .icon,
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__archives .card-header:hover h5 .btn-link .icon,
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__teachingservice .card-header:hover h5 .btn-link .icon,
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__business .card-header:hover h5 .btn-link .icon {
+  -webkit-transform: rotate(180deg) scale(0.5);
+  -moz-transform: rotate(180deg) scale(0.5);
+  -ms-transform: rotate(180deg) scale(0.5);
+  -o-transform: rotate(180deg) scale(0.5);
+  transform: rotate(180deg) scale(0.5);
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .form-row ._input-group,
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .form-row .select-group {
+  white-space: nowrap;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .form-row ._input-group:before,
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .form-row .select-group:before {
+  content: attr(data-before);
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #666;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .form-row ._input-group .form-control,
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .form-row .select-group .form-control {
+  display: inline-block;
+  vertical-align: middle;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .form-row .select-group .form-control {
+  width: 199px;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .tags-group {
+  margin-bottom: 10px;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .tags-group ul {
+  font-size: 0;
+  padding: 0 5px;
+  margin-bottom: 0;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .tags-group ul:before {
+  content: attr(data-before);
+  display: block;
+  font-family: PingFangSC-Regular;
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .tags-group ul li {
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .tags-group ul li .tags-group__span {
+  display: inline-block;
+  vertical-align: top;
+  background-color: rgba(64, 158, 255, 0.1);
+  padding: 0 10px;
+  height: 28px;
+  line-height: 26px;
+  font-size: 14px;
+  color: #409eff;
+  border-radius: 4px;
+  border: 1px solid rgba(64, 158, 255, 0.2);
+  white-space: nowrap;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .tags-group ul li .tags-group__new {
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  padding: 6px 20px;
+  font-size: 14px;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .tags-group ul li .tags-group__new:hover {
+  color: #409eff;
+  border-color: #c6e2ff;
+  background-color: #ecf5ff;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .tags-group ul li .tags-group__input,
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .tags-group ul li .tags-group__new {
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .tags-group ul li .tags-group__input:focus,
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .tags-group ul li .tags-group__new:focus {
+  outline: none;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .tags-group ul li .tags-group__input {
+  width: 80px;
+  height: 28px;
+  display: none;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .tags-group ul li .tags-group__input:focus {
+  outline: none;
+  border-color: #409eff;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .tags-group ul li .tags-group__delete {
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  font-size: 12px;
+  height: 16px;
+  width: 16px;
+  line-height: 14px;
+  top: -1px;
+  right: -5px;
+  color: #409eff;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .tags-group ul li .tags-group__delete:hover {
+  text-decoration: none;
+  background-color: #409eff;
+  color: #fff;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .btn-group {
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .btn-group .btn-save,
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .btn-group .btn-cancel {
+  display: inline-block;
+  margin: 0 10px;
+  width: 100px;
+  text-align: center;
+  border-radius: 0;
+  padding: 5px 12px;
+  font-size: 14px;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .btn-group .btn-save {
+  color: #fff;
+  border-color: #65a9ff;
+  background-color: #65a9ff;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .btn-group .btn-save:hover {
+  color: #65a9ff;
+  background-color: #fff;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .btn-group .btn-cancel {
+  color: #fff;
+  border-color: #fb6767;
+  background-color: #fb6767;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__basic .card-body .btn-group .btn-cancel:hover {
+  color: #fb6767;
+  background-color: #fff;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__archives .card-body .ba--main__tabs .nav-item {
+  background-color: #dde1df;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__archives .card-body .ba--main__tabs .nav-item .nav-link {
+  color: #666;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__archives .card-body .ba--main__tabs .nav-item .nav-link.active {
+  border-color: transparent;
+  color: #fff;
+  background-color: #252d37;
+  border-radius: 0;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__archives .card-body .ba--main__cons .common-table {
+  padding: 0;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__archives .card-body .ba--main__cons .form-check-group {
+  display: block;
+  padding: 12px 18px;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__archives .card-body .ba--main__cons .pagination {
+  justify-content: flex-end;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__business .ba--main__business_item {
+  text-align: left;
+  min-height: 30px;
+  line-height: 30px;
+  color: #333;
+  font-size: 14px;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .ba--main__business .ba--main__business_item:before {
+  content: attr(data-before);
+  display: inline-block;
+  width: 200px;
+  text-align: right;
+  color: #666;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .btn-group-upload {
+  display: block;
+  text-align: right;
+  margin: 20px 0;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .btn-group-upload .btn-add {
+  position: relative;
+  overflow: hidden;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .btn-group-upload .btn-add .icon-add,
+.BusinessArchives .ba--main-wrapper .ba--main__content .btn-group-upload .btn-add .path1,
+.BusinessArchives .ba--main-wrapper .ba--main__content .btn-group-upload .btn-add .path2 {
+  font-style: normal;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .btn-group-upload .btn-add .icon-add {
+  margin-right: 5px;
+}
+.BusinessArchives .ba--main-wrapper .ba--main__content .btn-group-upload .btn-add .upload-file {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+}

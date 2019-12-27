@@ -1,0 +1,103 @@
+.bigdata-wrapper {
+  .common-section {
+    &.first-section {
+      background: url("../assets/images/banner-bigdata.png") top center no-repeat;
+      .bigdata-container {
+        margin: 0 auto;
+        width: 1200px;
+      }
+    }
+    &.second-section {
+      .bigdata-container {
+        width: 1209px;
+        margin: 50px auto;
+      }
+    }
+    .bigdata-container {
+      .service-wrapper {
+        .corp-info {
+          color: #fff;
+          text-align: center;
+          padding-top: 180px;
+          padding-bottom: 160px;
+          width: 836px;
+          margin: 0 auto;
+          &:before {
+            content: attr(data-before);
+            display: block;
+            font-size: 32px;
+          }
+          .txt {
+            font-size: 16px;
+            color: #f6f6f6;
+            line-height: 32px;
+            display: block;
+          }
+        }
+        .icon-list {
+          ul {
+            font-size: 0;
+            text-align: center;
+            li {
+              display: inline-block;
+              vertical-align: middle;
+              margin: 0 15px;
+              &:after {
+                content: attr(data-after);
+                display: block;
+                font-size: 16px;
+                color: #fff;
+              }
+              .icon {
+                display: block;
+                width: 54px;
+                height: 54px;
+                border-radius: 4px;
+                margin-bottom: 10px;
+                background-color: rgba(58, 153, 216, .8);
+              }
+            }
+          }
+        }
+      }
+      .bigdata-list-wrapper {
+        ul {
+          font-size: 0;
+          li {
+            display: inline-block;
+            vertical-align: middle;
+            width: 393px;
+            height: 288px;
+            margin: 20px 5px;
+            .img-wrapper {
+              height: 222px;
+              .img {
+                max-width: 100%;
+              }
+            }
+            .txt-wrapper {
+              padding: 15px;
+              .txt-title, .txt-summary {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                display: block;
+                overflow: hidden;
+              }
+              .txt-title {
+                font-size: 18px;
+                color: #000;
+                margin-bottom: 5px;
+              }
+              .txt-summary {
+                font-size: 14px;
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1280px) {
+}

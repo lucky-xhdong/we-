@@ -1,0 +1,102 @@
+.icon-weedu {
+  display: inline-block;
+  vertical-align: middle;
+}
+.icon-weedu.icon-search {
+  background: url("../images/bg-weedu.png") no-repeat;
+  background-position: 0 0;
+}
+.icon-weedu.icon-arrow-up,
+.icon-weedu.icon-arrow-down {
+  width: 32px;
+  height: 29px;
+  background: url("../images/bg-weedu.png") no-repeat;
+  background-position: -22px 0;
+}
+.icon-weedu.icon-arrow-down {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}
+.icon-weedu.icon-base-education {
+  background: url("../images/bg-weedu.png") no-repeat;
+  background-position: 0 -34px;
+}
+.icon-weedu.icon-school {
+  background: url("../images/bg-weedu.png") no-repeat;
+  background-position: 0 -141px;
+}
+.icon-weedu.icon-industry {
+  background: url("../images/bg-weedu.png") no-repeat;
+  background-position: 0 -248px;
+}
+.icon-weedu.icon-aboutus {
+  background: url("../images/bg-weedu.png") no-repeat;
+  background-position: 0 -355px;
+}
+.icon-weedu.icon-time {
+  background: url("../images/bg-weedu.png") no-repeat;
+  background-position: -56px 0;
+}
+.icon-weedu.icon-eye {
+  background: url("../images/bg-weedu.png") no-repeat;
+  background-position: -70px 0;
+}
+.icon-weedu.icon-comment {
+  background: url("../images/bg-weedu.png") no-repeat;
+  background-position: -56px -14px;
+}
+.icon-weedu.icon-like {
+  background: url("../images/bg-weedu.png") no-repeat;
+  background-position: -72px -13px;
+}
+.icon-weedu.icon-weibo {
+  background: url("../images/bg-weedu.png") no-repeat;
+  background-position: 0 -461px;
+}
+.icon-weedu.icon-wechat {
+  background: url("../images/bg-weedu.png") no-repeat;
+  background-position: -34px -461px;
+}
+.icon-weedu.icon-thumb {
+  background: url("../images/bg-weedu.png") no-repeat;
+  background-position: 0 -490px;
+}
+.icon-weedu.icon-like-lg {
+  background: url("../images/bg-weedu.png") no-repeat;
+  background-position: -58px -490px;
+}
+.icon-weedu.icon-group {
+  background: url("../images/bg-weedu.png") no-repeat;
+  background-position: 0 -538px;
+}
+.icon-weedu.icon-develop {
+  background: url("../images/bg-weedu.png") no-repeat;
+  background-position: 0 -645px;
+}
+.icon-weedu.icon-partner {
+  background: url("../images/bg-weedu.png") no-repeat;
+  background-position: 0 -752px;
+}
+.icon-weedu.icon-primary {
+  background: url("../images/bg-weedu.png") no-repeat;
+  background-position: 0 -859px;
+}
+.icon-weedu.icon-junior {
+  background: url("../images/bg-weedu.png") no-repeat;
+  background-position: 0 -969px;
+}
+.icon-weedu.icon-senior {
+  background: url("../images/bg-weedu.png") no-repeat;
+  background-position: 0 -1079px;
+}
+.icon-weedu.icon-vocational {
+  background: url("../images/bg-weedu.png") no-repeat;
+  background-position: 0 -1187px;
+}
+.icon-weedu.icon-university {
+  background: url("../images/bg-weedu.png") no-repeat;
+  background-position: 0 -1294px;
+}

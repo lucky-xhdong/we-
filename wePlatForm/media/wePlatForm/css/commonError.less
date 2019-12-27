@@ -1,0 +1,64 @@
+@import "variable";
+.common-error-wrapper {
+  background:@background-color20 url("../images/bg-common-error.png") no-repeat;
+  height:900px;
+  .common-error-container {
+    position: relative;
+    width: auto;
+    margin:0 auto;
+    .common-error__tip {
+      background:@background-color12;
+      border-radius:7px;
+      width:365px;
+      height:76px;
+      position: absolute;
+      top: 240px;
+      left: 170px;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: -30px;
+        top:50%;
+        margin-top: -15px;
+        background: url("../images/common-error-arrow.png") no-repeat;
+      }
+      .tip-txt {
+        font-family:@font-family;
+        font-size:24px;
+        color:@color5;
+        text-align:left;
+        padding:0 20px;
+        .tip-link {
+          color: @color13;
+          padding:0 5px;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .common-error__img {
+      width:400px;
+      height:115px;
+      position: absolute;
+      top: 440px;
+      right: 280px;
+      img {
+        max-width: 100%;
+      }
+    }
+    .common-error__txt {
+      position: absolute;
+      top: 600px;
+      right: 190px;
+      .txt {
+        font-family:@font-family;
+        font-size:24px;
+        color:@color14;
+        text-align:center;
+      }
+    }
+  }
+}

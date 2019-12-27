@@ -1,0 +1,118 @@
+@import "variable";
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.container-fluid {
+}
+.common-left-menu {
+  background: @background-color2;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  right: 0;
+  .logo-wrapper {
+    height: 90px;
+    background: @background-color3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .icon-logo {
+      margin-right: 10px;
+      font-size: 24px;
+      &:before {
+        color: @color;
+      }
+    }
+    .txt-logo {
+      color: @color;
+      font-size: 24px;
+    }
+  }
+  .nav {
+    border-right: none;
+    background-color: @background-color2;
+    .nav-item {
+      &:hover, &.active {
+        background-color: @background-color3;
+        .nav-item__sub {
+          .nav-item__sub_item {
+            border-left:4px solid @border-color1;
+          }
+        }
+      }
+      .nav-item__main {
+        position: relative;
+        padding: 10px 15px;
+        .icon-menu-left, .icon-menu-right {
+          position: absolute;
+          top:50%;
+          color: @color;
+        }
+        .icon-menu-left {
+          margin-top: -8px;
+        }
+        .icon-menu-right {
+          right:0;
+          -webkit-transition: all .2s ease .1s;
+          -moz-transition: all .2s ease .1s;
+          -ms-transition: all .2s ease .1s;
+          -o-transition: all .2s ease .1s;
+          transition: all .2s ease .1s;
+          -webkit-transform: scale(.5);
+          -moz-transform: scale(.5);
+          -ms-transform: scale(.5);
+          -o-transform: scale(.5);
+          transform: scale(.5);
+          padding: 15px 5px;
+          cursor: pointer;
+          margin-top: -22px;
+        }
+        .nav-link {
+          padding-left:30px;
+          color: @color;
+        }
+        &:hover {
+          .icon-menu-right {
+            -webkit-transform: rotate(180deg) scale(.5);
+            -moz-transform: rotate(180deg) scale(.5);
+            -ms-transform: rotate(180deg) scale(.5);
+            -o-transform: rotate(180deg) scale(.5);
+            transform: rotate(180deg) scale(.5);
+          }
+        }
+      }
+      .nav-item__sub {
+        padding-left:0;
+        &.hide {
+          display: none;
+        }
+        .nav-item__sub_item {
+          list-style: none;
+          height: 44px;
+          line-height: 44px;
+          padding-left: 42px;
+          padding-right: 10px;
+          border-left:4px solid @border-color;
+          a {
+            display: block;
+            color: @color;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+          &:hover, &.active {
+            background-color: @background-color4;
+            border-left:4px solid @border-color2;
+            a {
+              color: @color2;
+            }
+          }
+        }
+      }
+    }
+  }
+}

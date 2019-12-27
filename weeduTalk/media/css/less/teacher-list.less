@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.teacher-list-container {
+  background-color: #f4f9fc;
+  width: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  .tlc-handle-group {
+    background-color:#fff;
+    box-shadow:0 0 4px 0 rgba(0,0,0,.3);
+    margin: 20px 40px;
+    padding: 0 25px;
+    display: flex;
+    .tlc-tabs {
+      flex: 1;
+      ul {
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        li {
+          display: inline-block;
+          vertical-align: middle;
+          list-style: none;
+          width: 32%;
+          padding: 0 10px;
+          line-height: 44px;
+          text-align: center;
+          .txt {
+            font-size:14px;
+            color:#999;
+            text-decoration: none;
+          }
+          &:hover, &.active {
+            .txt {
+              color:#17b6fe;
+            }
+          }
+        }
+      }
+    }
+    .search-group {
+      flex: 0 0 25%;
+      position: relative;
+      padding: 7px 0;
+      .form-control {
+        border: none;
+        outline: none;
+        padding: 5px 25px 5px 10px;
+        height: 30px;
+        line-height: 30px;
+        width: 100%;
+      }
+      .btn-search {
+        position: absolute;
+        top: 12px;
+        right: 0;
+        font-size: 0;
+        width: 20px;
+        height: 20px;
+        border: none;
+        outline: none;
+        background: url("../../images/icon-search.png") no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+      }
+    }
+  }
+  .tlc-members {
+    margin: 20px 40px;
+    box-shadow:0 0 4px 0 rgba(0,0,0,.3);
+    ul {
+      margin: 0;
+      padding: 0;
+      font-size: 0;
+      li {
+        list-style: none;
+        width: 50%;
+        display: inline-block;
+        height:120px;
+        overflow: hidden;
+        background-color: #fff;
+        border-bottom: 1px solid #f7f7f7;
+        &:nth-child(even) {
+          .tlc-members_inner {
+            border-left: 1px solid #f7f7f7;
+          }
+        }
+        .tlc-members_inner {
+          display: flex;
+          padding: 0 12px;
+          .index {
+            flex: 0 0 40px;
+            margin: 40px 0;
+            text-align:center;
+            .txt {
+              line-height: 42px;
+              font-size:30px;
+              color:#666;
+            }
+          }
+          .img-group {
+            height: 80px;
+            flex: 0 0 80px;
+            margin: 20px 0;
+            .avatar {
+              max-width: 100%;
+            }
+          }
+          .txt-group {
+            flex: 1;
+            overflow: hidden;
+            .title {
+              font-size:16px;
+              color:#333;
+              margin: 18px 25px 9px;
+              text-align:left;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            .total {
+              display: flex;
+              .txt-time, .txt-score, .txt-days {
+                flex: 1;
+                text-align:center;
+                position: relative;
+                font-size: 16px;
+                margin-top: 28px;
+                &:before {
+                  content: attr(data-before);
+                  position: absolute;
+                  top: -28px;
+                  font-size:12px;
+                  color:#999;
+                  line-height:28px;
+                  text-align: center;
+                  left: 0;
+                  right: 0;
+                }
+                &:after {
+                  content: attr(data-after);
+                  font-size: 12px;
+                  color: #333;
+                }
+                &.active {
+                  color: #63cbfc;
+                  &:after {
+                    color: #63cbfc;
+                  }
+                }
+              }
+              .txt-time, .txt-score {
+                border-right: 1px solid #d8d8d8;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 667px) {
+  .teacher-list-container {
+    .tlc-handle-group {
+      display: block;
+      box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+      margin: 10px 20px;
+      padding: 0 15px;
+    }
+    .tlc-members {
+      margin: 10px 20px;
+      box-shadow:0 0 2px 0 rgba(0,0,0,.3);
+      ul {
+        li {
+          width: 100%;
+          display: block;
+          .tlc-members_inner {
+            padding: 0 5px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .teacher-list-container {
+    .tlc-handle-group {
+      .tlc-tabs {
+        padding-top: 15px;
+        ul {
+          li {
+            line-height: 22px;
+          }
+        }
+      }
+    }
+    .tlc-members {
+      ul {
+        li {
+          height: 100px;
+          .tlc-members_inner {
+            .index {
+              margin: 30px 0;
+              flex: 0 0 20px;
+              .txt {
+                font-size: 18px;
+              }
+            }
+            .img-group {
+              flex: 0 0 60px;
+              height: 60px;
+            }
+            .txt-group {
+              .title {
+                margin: 12px 10px 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

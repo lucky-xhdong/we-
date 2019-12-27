@@ -1,0 +1,18 @@
+@import "variable";
+.common-breadcrumb {
+    .breadcrumb {
+        border-radius: 0;
+        margin-bottom:0;
+        background-color: transparent;
+        .breadcrumb-item {
+            a {
+                color: @color4;
+            }
+        }
+        .breadcrumb-item+ .breadcrumb-item {
+            &:before {
+                content: '>';
+            }
+        }
+    }
+}
